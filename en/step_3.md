@@ -1,16 +1,16 @@
 ## Getting set up
 
-Once you open Scratch, you’ll see a screen like the one below. 
-This screen has a few parts you’ll need to remember. They are highlighted in the picture below. 
+Once you open Scratch, you’ll see a screen like the one below.
 
 + Look for each of the following parts and remember them.
 
+ ### The Stage
+
  ![Scratch window with the stage highlighted](images/hlStage.png)
- The Stage
 
 --- collapse ---
 ---
-title: Stage
+title: What is the stage?
 ---
 This is where your Scratch Programs run. It has
 
@@ -20,8 +20,9 @@ This is where your Scratch Programs run. It has
 
 --- /collapse ---
 
+ ### The Sprite List
+
  ![Scratch window with the sprite list highlighted](images/hlSpriteList.png)
- The Sprite List
 
 --- collapse ---
 ---
@@ -38,9 +39,10 @@ In Scratch, the sprite is:
 
 --- /collapse ---
 
- ![Scratch window with the blocks pallet highlighted](images/hlBlocksPallet.png)
- The Code Blocks Pallet
+ ### The Code Blocks Pallete
 
+ ![Scratch window with the blocks pallet highlighted](images/hlBlocksPallete.png)
+ 
 --- collapse ---
 ---
 title: Code blocks
@@ -51,14 +53,13 @@ There are 10 categories of blocks, which are colour coded, and you can select ea
 
 --- /collapse ---
 
+ ### The Current Sprite panel
 
  ![Scratch window with the current sprite panel highlighted](images/hlCurrentSpritePanel.png)
- The Current Sprite panel
-
 
 --- collapse ---
 ---
-title: Current Sprite panel
+title: What is the current sprite?
 ---
 
 The **current sprite** is the one that's selected in the **sprite list**.
