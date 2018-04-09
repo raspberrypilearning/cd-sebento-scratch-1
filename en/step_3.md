@@ -1,44 +1,71 @@
-## Getting Setup
+## Getting set up
 
-+ You’re going to need to have **Scratch**! You can either download it and install it on your computer by going to [dojo.soy/downloadscratch](dojo.soy/downloadscratch) or use it in your web browser by going to [dojo.soy/usescratch](dojo.soy/usescratch). Do one of these two and once you’re set up, move on to the next step.
-
-Once you sign-in to the online Scratch, or load it on your computer, you’ll see a screen like the one below.
-
+Once you open Scratch, you’ll see a screen like the one below. 
 This screen has a few parts you’ll need to remember. They are highlighted in the picture below. 
 
-![](images/setup1.png)
++ Look for each of the following parts and remember them.
 
-   * Stage
-   * Start Program
-   * Stop Program
-   * Current Sprite Panel
-   * Sprite List
-   * Code Blocks Palette
+ ![Scratch window with the stage highlighted](images/hlStage.png)
+ The Stage
 
-There are a few words from that picture that need explaining:
+--- collapse ---
+--- 
+title: Stage
+---
+This is where your Scratch Programs run. It has
 
-### The Stage
+* One or more **backgrounds** \(images on the background of the screen\)
 
-   This is where your Scratch Programs run. It has
+* Any **code blocks** associated with it \(we’ll get to this\)
 
-   * One or more **backgrounds** \(images on the background of the screen\)
-   * Any **code blocks** associated with it \(we’ll get to this\)
-     **Sprites**
+--- /collapse ---
 
-   Any object that goes on the stage is a sprite.  
-   In Scratch, the sprite is:
+ ![Scratch window with the sprite list highlighted](images/hlSpriteList.png)
+ The Sprite List
 
-   * The **image** on the stage
-   * Any alternative **costumes** \(looks\) it has
-   * Any **sounds** associated with it
-   * Any **code blocks** associated with it ![](images/setup2.png)
+--- collapse ---
+--- 
+title: What is a Sprite?
+---
 
-   The **current sprite** is the one that's selected in the **sprite list**.
+Any object that goes on the stage is a sprite.  
 
-### Code Blocks
+In Scratch, the sprite is:
+* The **image** on the stage
+* Any alternative **costumes** \(looks\) it has
+* Any **sounds** associated with it
+* Any **code blocks** associated with it ![](images/setup2.png)
 
-   Code in Scratch comes as blocks, that you click together to make programs. You choose blocks from the **code blocks palette** and drag them into the **current sprite panel**, then click them together.  
-   There are 10 categories of blocks, which are colour coded, and you can select each category from the list at the top of the **code blocks palette**.
+--- /collapse ---
+
+ ![Scratch window with the blocks pallet highlighted](images/hlBlocksPallet.png)
+ The Code Blocks Pallet
+
+--- collapse ---
+--- 
+title: Code blocks
+---
+
+Code in Scratch comes as blocks, that you click together to make programs. You choose blocks from the **code blocks palette** and drag them into the **current sprite panel**, then click them together.  
+There are 10 categories of blocks, which are colour coded, and you can select each category from the list at the top of the **code blocks palette**.
+
+--- /collapse ---
+
+
+ ![Scratch window with the current sprite panel highlighted](images/hlCurrentSpritePanel.png)
+ The Current Sprite panel
+
+
+--- collapse ---
+--- 
+title: Current Sprite panel
+---
+
+The **current sprite** is the one that's selected in the **sprite list**.
+
+The **current sprite panel** is where you can see the code, costumes, and sounds for the selected sprite.
+
+--- /collapse ---
 
 + Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.  
    
