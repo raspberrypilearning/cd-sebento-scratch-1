@@ -9,7 +9,7 @@ This screen has a few parts you’ll need to remember. They are highlighted in t
  The Stage
 
 --- collapse ---
---- 
+---
 title: Stage
 ---
 This is where your Scratch Programs run. It has
@@ -24,7 +24,7 @@ This is where your Scratch Programs run. It has
  The Sprite List
 
 --- collapse ---
---- 
+---
 title: What is a Sprite?
 ---
 
@@ -42,7 +42,7 @@ In Scratch, the sprite is:
  The Code Blocks Pallet
 
 --- collapse ---
---- 
+---
 title: Code blocks
 ---
 
@@ -57,7 +57,7 @@ There are 10 categories of blocks, which are colour coded, and you can select ea
 
 
 --- collapse ---
---- 
+---
 title: Current Sprite panel
 ---
 
