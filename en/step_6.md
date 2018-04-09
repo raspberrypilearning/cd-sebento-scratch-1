@@ -1,49 +1,35 @@
-## All the sprites
+## Looking cool
 
-Now you have a shark that moves about underwater. Nice! Time to add some fish for it to catch!
+So your cat moves up and down, as well as left to right. You should probably put it somewhere sensible for that... like under water! Scratch has a library of backgrounds and sprites for you to use to make your project look awesome.
 
-+ Click the **new sprite** button and then choose a fish from the screen that opens. 
++ Select the stage.
 
-![](images/sprites1.png)
++ Click on **Backdrops**.
 
-That fish is a bit big compared to your shark though. You can use **grow** and **shrink** to make it the right size. 
+![](images/cool1a.png)
 
-![](images/sprites2.png)
++ Click the icon to **Choose backdrop from library**. 
 
-+ Click on **grow** or **shrink** and then click on the fish to make it get bigger or smaller.
+![](images/cool1b.png)
+ 
++ Then pick your favourite underwater background!
 
-Nice! Later, you're going to add some code to make the fish move around on its own, without help from the player. Your player will be the shark, trying to catch the fish.
+Great! Of course, now you have a cat underwater. Cats aren’t usually big fans of that, but you can fix that. You can turn the cat into a shark!
 
-However, it does look a little funny to have that shark swimming backwards. Just like you’d usually turn around rather than walking backwards, the shark would turn around rather than swimming that way. Luckily for you, Scratch has a block for this!
++ First, select the cat and click on the **Costumes** tab 
 
-+ The `point in direction`{:class="blockmotion"} block lets you pick the direction your sprite is pointing in. You can type in any number, but it comes with the four you'll need most already in there: `up`, `down`, `left` and `right`. You’ll find it in the **motion** blocks section. 
+![](images/cool2.png)
 
-+ Grab the `point in direction`{:class="blockmotion"} block and snap a couple of them into your shark’s code, like this: 
++ Then, click on **Choose Costume from Library** 
 
-```blocks
-    when [left arrow v] key pressed
-    point in direction (-90)
-    move (10) steps
-```
+![](images/cool3.png)
 
-```blocks
-    when [right arrow v] key pressed
-    point in direction (90)
-    move (10) steps
-```
++ Pick this shark 
 
-+ Change the -10 to 10: the shark is just swimming forward now!
+![](images/cool4.png)
 
-If you tried moving the shark around after you added the `point in direction`{:class="blockmotion"} blocks, you might have noticed something a little strange happening. The shark may not be turning quite right! 
++ Now remove the cat costumes by selecting each of them and clicking on the **x** 
 
-![](images/sprites4.png)
+![](images/cool5.png)
 
-The problem here is that the shark sprite started, as all sprites do, with the `all around` **rotation style**, and what you need it to have is the `left-right` style.
-
-+ As usual, there’s a block for that and it’s in **motion**! You just need to update your reset code from Card 3 to set the rotation style to `left-right`, like this: 
-
-```blocks
-    when green flag clicked
-    set rotation style [left-right v]
-    go to x: (0) y: (0)
-```
+Now you have a shark!

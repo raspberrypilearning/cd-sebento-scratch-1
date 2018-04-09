@@ -1,70 +1,54 @@
-## Adding & removing code
+## Getting Setup
 
-Great! You’ve written your first Scratch program. Time to learn a little more about gettng code in and out of Scratch! Scratch code is made up of **blocks** that you snap together to make programs. 
++ You’re going to need to have **Scratch**! You can either download it and install it on your computer by going to [dojo.soy/downloadscratch](dojo.soy/downloadscratch) or use it in your web browser by going to [dojo.soy/usescratch](dojo.soy/usescratch). Do one of these two and once you’re set up, move on to the next step.
 
-![](images/code1.png)
+Once you sign-in to the online Scratch, or load it on your computer, you’ll see a screen like the one below.
 
-These blocks come from the **Code Blocks Pallet** where they are broken up into different categories. 
+This screen has a few parts you’ll need to remember. They are highlighted in the picture below. 
 
-+ By clicking on the category names, you can see the blocks in that category. Here, the **motion** category is selected. 
+![](images/setup1.png)
 
-![](images/code2a.png)
+   * Stage
+   * Start Program
+   * Stop Program
+   * Current Sprite Panel
+   * Sprite List
+   * Code Blocks Palette
 
-+ All of the blocks in the selected category are shown in a list. You can pick the one you want, click on it and hold down the mouse button, then just drag it onto the **current sprite panel** and let go. 
+There are a few words from that picture that need explaining:
 
-![](images/code2b.png)
+### The Stage
 
-+ Once the block is in the **current sprite pane** you can move it around and snap it to other blocks. If you want to see what a block does, you can double-click on it and it will run!
+   This is where your Scratch Programs run. It has
 
-Normally, you want your blocks to run automatically, when something happens. This is why most of your programs will start with a block from the **events** category. Most often, it will be this one: 
+   * One or more **backgrounds** \(images on the background of the screen\)
+   * Any **code blocks** associated with it \(we’ll get to this\)
+     **Sprites**
 
-![](images/code3.png)
+   Any object that goes on the stage is a sprite.  
+   In Scratch, the sprite is:
 
-The code blocks connected to this block will run after the **green flag** is clicked
+   * The **image** on the stage
+   * Any alternative **costumes** \(looks\) it has
+   * Any **sounds** associated with it
+   * Any **code blocks** associated with it ![](images/setup2.png)
 
-Code blocks run from top to bottom, so the order you snap your code together in matters. In this example, the sprite will `say`{:class="blocklooks"} `Hello!` before it will `play`{:class="blocksound"} the `meow` sound. 
+   The **current sprite** is the one that's selected in the **sprite list**.
 
-![](images/code4.png)
+### Code Blocks
 
-+ Removing, or deleting, code blocks you don’t want in your program is easy! You just have to click on the **scissors** icon and then click on the code you want to remove. 
+   Code in Scratch comes as blocks, that you click together to make programs. You choose blocks from the **code blocks palette** and drag them into the **current sprite panel**, then click them together.  
+   There are 10 categories of blocks, which are colour coded, and you can select each category from the list at the top of the **code blocks palette**.
 
-![](images/code5.png)
++ Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.  
+   
++ Go to the **Events** category in the **code blocks palette** and choose the `when [flag symbol] clicked`{:class="blockevents"} event, then drag it onto the **current sprite panel**.  
 
-Be careful though! **You will delete all the blocks connected to the one you click on**. If you do this by accident and want to get your code back, you can use the **edit** menu and click on **undelete**. 
++ Then go to **Looks** in the **code blocks palette** and choose the `say [Hello!] for [2] secs`{:class="blocklooks"} block and drag it onto the **current sprite panel**, connecting it to the end of the other block, like this: 
 
-+ Try adding, deleting, and undeleting some code blocks now! 
+![](images/setup3.png)
 
-![](images/code6.png)
++ Now click the **Start Program** button and watch what happens!
 
-Now you know how to move code around and make things happen, time to try a simple program: Making the Scratch Cat walk in a circle!
 
-+ Make sure you have the cat selected in the sprite list and then drag these blocks together. You’ll find them in **events** and **motion**:
 
-```blocks
-    when green flag clicked
-    move [10] steps
-``` 
-
-+ Then, click on the green flag above the **stage**. If you click too many times and the cat walks away, you can drag it back! 
-
-![](images/code7.png)
-
-That’s a cat walking in a straight line... not exactly what you want. 
-
-+ Snap this block to the end to make it walk in a circle. It’s in **motion** too. 
-
-```blocks
-    turn cw (15) degrees
-```
-
-This block makes the cat turn 15 degrees of the full 360 degrees that make up a circle. You can change that number, and the number of steps, by clicking on the number and typing a new value.
-
-![](images/code9.png)
-
-+ Now save your work! You do this by going to the **file** menu and clicking **save**. 
-
-![](images/code10.png)
-
-+ Remember to save regularly as you work!
-
-+ You can also use **save as** to save a copy of your program with a new name.

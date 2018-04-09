@@ -1,92 +1,49 @@
-## Remote control fish
+## All the sprites
 
-1Ok, now it's time to make the fish swim on its own. To do this, you’re going to need a new kind of block: a **control** block. These let you do things a certain number of times, or under certain conditions.
+Now you have a shark that moves about underwater. Nice! Time to add some fish for it to catch!
 
-+ Select your fish sprite and drag a `when green flag clicked`{:class="blockevents"} **event** block, a `forever`{:class="blockcontrol"} **control** block and a `move 10 steps`{:class="blockmotion"} **motion** block into the **sprite panel** like this: 
++ Click the **new sprite** button and then choose a fish from the screen that opens. 
 
-```blocks
-    when green flag clicked
-    forever
-        move (10) steps
-    end
-```
+![](images/sprites1.png)
 
-The fish does whatever is in the `forever`{:class="blockcontrol"} block over and over again, forever. Once it has reached the end it goes back to the top of the block and starts again. Now click the green flag and watch what happens!
+That fish is a bit big compared to your shark though. You can use **grow** and **shrink** to make it the right size. 
 
-Well, that fish just crashed into the side of the **stage**, and it was moving far too fast for your shark to catch. First, you need to slow it down. That’s actually pretty easy, you just need it to wait for a little while after it moves those 10 steps.
+![](images/sprites2.png)
 
-+ There’s a **control** block that can help you here: 
++ Click on **grow** or **shrink** and then click on the fish to make it get bigger or smaller.
 
-```blocks
-    wait (1) secs
-```
+Nice! Later, you're going to add some code to make the fish move around on its own, without help from the player. Your player will be the shark, trying to catch the fish.
 
-+ You can set how many **seconds** you want the fish to wait. For now, try half a second `(0.5)`. You can test out different values later, to see which is the best for the game. Remember you can change the number of steps too! 
+However, it does look a little funny to have that shark swimming backwards. Just like you’d usually turn around rather than walking backwards, the shark would turn around rather than swimming that way. Luckily for you, Scratch has a block for this!
+
++ The `point in direction`{:class="blockmotion"} block lets you pick the direction your sprite is pointing in. You can type in any number, but it comes with the four you'll need most already in there: `up`, `down`, `left` and `right`. You’ll find it in the **motion** blocks section. 
+
++ Grab the `point in direction`{:class="blockmotion"} block and snap a couple of them into your shark’s code, like this: 
 
 ```blocks
-    when green flag clicked
-    forever
-        move (10) steps
-        wait (0.5) secs
-    end
+    when [left arrow v] key pressed
+    point in direction (-90)
+    move (10) steps
 ```
-
-
-The fish moves now, but you need it to bounce off the edge too. 
-
-+ Yet again, there’s a **motion** block for this! It’s the `if touching edge bounce`{:class="blockmotion"} block. It checks if the sprite is touching the edge and, if it is, turns left, right, up or down as appropriate. Of course, this will lead to an upside-down fish, so you need `set rotation style`{:class="blockmotion"} again. 
 
 ```blocks
-    when green flag clicked
-    set rotation style [left-right v]
-    forever
-        move (10) steps
-        wait (0.5) secs
-        if on edge, bounce
-    end
+    when [right arrow v] key pressed
+    point in direction (90)
+    move (10) steps
 ```
 
-The fish moves back and forward now, but only in a straight line. That's going to be a bit too easy for the player to catch with the shark. You need to make the fish swim more unpredictably.
++ Change the -10 to 10: the shark is just swimming forward now!
 
-+ You already know from Card 2 how to make a sprite turn, so start there: Add a turn into the fish’s swimming and click the green flag. 
+If you tried moving the shark around after you added the `point in direction`{:class="blockmotion"} blocks, you might have noticed something a little strange happening. The shark may not be turning quite right! 
+
+![](images/sprites4.png)
+
+The problem here is that the shark sprite started, as all sprites do, with the `all around` **rotation style**, and what you need it to have is the `left-right` style.
+
++ As usual, there’s a block for that and it’s in **motion**! You just need to update your reset code from Card 3 to set the rotation style to `left-right`, like this: 
 
 ```blocks
     when green flag clicked
     set rotation style [left-right v]
-    forever
-        move (10) steps
-        turn cw (10) degrees
-        wait (0.5) secs
-        if on edge, bounce
-    end
+    go to x: (0) y: (0)
 ```
-
-It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
-
-**Operators** take in one or more values (numbers, text, true/false values) and give back a single value. You can tell the kind of value it will give back by the shape of the block: round ends give numbers or text, pointy ends give true/false. 
-
-```blocks
-    (() + ())
-
-    (join [hello ] [world])
-
-    <[] = []>
-```
-
-+ You need the `pick random`{:class="blockoperators"} **operator** block, and you need to plug it into the `turn degrees`{:class="blockmotion"} **motion** block by clicking and dragging it into the field where you set the number of degrees. You can change the minimum and maximum numbers it will pick, but the default values (1 and 10) are pretty good for this game, so you can just leave them.
-
-+ Update the fish code to this and then run it by clicking the green flag: 
-
-```blocks
-    when green flag clicked
-    set rotation style [left-right v]
-    forever 
-        move (10) steps
-        turn cw (pick random (1) to (10)) degrees
-        wait (0.5) secs
-        if on edge, bounce
-    end
-```
- 
-#### Next: Catching that fish!
-

@@ -1,80 +1,92 @@
-## Fishing!
+## Remote control fish
 
-The shark moves, the fish swims, but they don’t interact: If the fish swims right into the shark’s mouth, nothing happens. Time to change that!
+1Ok, now it's time to make the fish swim on its own. To do this, you’re going to need a new kind of block: a **control** block. These let you do things a certain number of times, or under certain conditions.
 
-First, you need to know if the fish is touching the shark. For this, you'll need a **control** block and a **sensing** block. **Sensing** blocks collect information, like where the sprite is, what it’s touching, etc.
-
-+ The **control** block is an `if... then`{:class="blockcontrol"} block and needs to be given a true/false value. 
-
-+ The **sensing** block you’re going to use is `touching...`{:class="blocksensing"} where you have to pick the sprite name (if you haven’t changed it, it'll be Sprite1). From those pointy ends, you can tell it’s going to give you the true/false value `if... then`{:class="blockcontrol"} needs.
-
-+ You can add this into the `forever`{:class="blockcontrol"} loop on the fish, after the `if on edge bounce`{:class="blockmotion"}: 
-
-```blocks
-    if on edge, bounce
-    if <touching [Sprite1 v] ?> then
-    end
-```
-
-Of course, you’ve just added an `if... then`{:class="blockcontrol"} with no then. 
-
-+ You can make the fish vanish, as if the shark ate it by using the `hide`{:class="blocklooks"} block you can find in **looks** inside the `if... then`{:class="blockcontrol"}. 
-
-```blocks
-    if <touching [Sprite1 v] ?> then
-        hide
-    end
-```
-
-Now once the shark catches the fish it disappears for good. That’s not great. 
-
-+ Put the `show`{:class="blocklooks"} block, also from **looks** in at the very start of the fish code, so you can reset the game. 
++ Select your fish sprite and drag a `when green flag clicked`{:class="blockevents"} **event** block, a `forever`{:class="blockcontrol"} **control** block and a `move 10 steps`{:class="blockmotion"} **motion** block into the **sprite panel** like this: 
 
 ```blocks
     when green flag clicked
-    show
-    set rotation style [left-right v]
     forever
-```
-
-Better, but you don’t want the player restarting every time they catch one fish! 
-
-+ You can be clever here — when the fish is hidden, wait, move it, then show it again. It looks like lots of fish, but it’s that one sprite moving around! 
-
-```blocks
-    if on edge, bounce
-    if <touching [Sprite1 v] ?> then
-        hide
-        wait (1) secs
-        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-        show
+        move (10) steps
     end
 ```
 
-That’s a game! There’s no way to keep score, though... or to win. You can fix that too! To keep score, you’ll need somewhere to store the score, a way of adding to it and a way of resetting it when the game is restarted.
+The fish does whatever is in the `forever`{:class="blockcontrol"} block over and over again, forever. Once it has reached the end it goes back to the top of the block and starts again. Now click the green flag and watch what happens!
 
-First: Storing it. When you want to store information in a program, you use something called a variable. Think of it like a box with a label on it: you can put something in it, check what’s in it and change what’s in it. You’ll find variables under **data**, but you need to create one first! 
+Well, that fish just crashed into the side of the **stage**, and it was moving far too fast for your shark to catch. First, you need to slow it down. That’s actually pretty easy, you just need it to wait for a little while after it moves those 10 steps.
 
-+ Click **Make a Variable**.
++ There’s a **control** block that can help you here: 
 
-![](images/catch5.png)
+```blocks
+    wait (1) secs
+```
 
-+ Enter `Score` as the name. 
++ You can set how many **seconds** you want the fish to wait. For now, try half a second `(0.5)`. You can test out different values later, to see which is the best for the game. Remember you can change the number of steps too! 
 
-![](images/catch6.png)
+```blocks
+    when green flag clicked
+    forever
+        move (10) steps
+        wait (0.5) secs
+    end
+```
 
-Check out your new variable and the blocks for it!
 
-![](images/catch7.png)
+The fish moves now, but you need it to bounce off the edge too. 
 
-Now you need to update the variable whenever a fish is eaten, and to reset it when the game is restarted. Those are both pretty easy:
++ Yet again, there’s a **motion** block for this! It’s the `if touching edge bounce`{:class="blockmotion"} block. It checks if the sprite is touching the edge and, if it is, turns left, right, up or down as appropriate. Of course, this will lead to an upside-down fish, so you need `set rotation style`{:class="blockmotion"} again. 
 
-+ From the **data** section, take the `Set Score to 0`{:class="blockdata"} and `Change Score by 1`{:class="blockdata"} blocks and put them into your program: 
+```blocks
+    when green flag clicked
+    set rotation style [left-right v]
+    forever
+        move (10) steps
+        wait (0.5) secs
+        if on edge, bounce
+    end
+```
 
-![](images/catch8.png)
+The fish moves back and forward now, but only in a straight line. That's going to be a bit too easy for the player to catch with the shark. You need to make the fish swim more unpredictably.
 
-Cool! Now you’ve got a score and everything. 
++ You already know from Card 2 how to make a sprite turn, so start there: Add a turn into the fish’s swimming and click the green flag. 
 
-+ Pick a score at which the player wins and make something cool happen! Maybe the shark congratulates them, or a "You Win" sprite appears, or music plays or... you get the idea!
+```blocks
+    when green flag clicked
+    set rotation style [left-right v]
+    forever
+        move (10) steps
+        turn cw (10) degrees
+        wait (0.5) secs
+        if on edge, bounce
+    end
+```
 
+It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
+
+**Operators** take in one or more values (numbers, text, true/false values) and give back a single value. You can tell the kind of value it will give back by the shape of the block: round ends give numbers or text, pointy ends give true/false. 
+
+```blocks
+    (() + ())
+
+    (join [hello ] [world])
+
+    <[] = []>
+```
+
++ You need the `pick random`{:class="blockoperators"} **operator** block, and you need to plug it into the `turn degrees`{:class="blockmotion"} **motion** block by clicking and dragging it into the field where you set the number of degrees. You can change the minimum and maximum numbers it will pick, but the default values (1 and 10) are pretty good for this game, so you can just leave them.
+
++ Update the fish code to this and then run it by clicking the green flag: 
+
+```blocks
+    when green flag clicked
+    set rotation style [left-right v]
+    forever 
+        move (10) steps
+        turn cw (pick random (1) to (10)) degrees
+        wait (0.5) secs
+        if on edge, bounce
+    end
+```
+ 
+#### Next: Catching that fish!
 
