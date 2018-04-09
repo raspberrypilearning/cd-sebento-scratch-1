@@ -1,20 +1,25 @@
-title: cd-sebento-scratch-1
+title: Beginner Scratch
 hero_image: images/banner.png
-description: cd-sebento-scratch-1 description
+description: Make your first Scratch program
 theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
-duration: 2 # possible values: 1, 2 or 3
-version: 4
+duration: 2
 listed: false
 ingredient: false
 copyedit: false
-last_tested: "2018-04-09"
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
-interests: "animals, big-project, music, literature, space, cybersecurity-and-cryptography, humour, weather, photography, art, games, robotics, wearable-technology"
-technologies: "electronic-components, sonic-pi, sense-hat, raspberry-pi, pi-camera, blender, scratch, html-css-javascript, python, microbit"
-hardware: "electronic-components, sense-hat, raspberry-pi, pi-camera, microbit"
-software: "sonic-pi, blender, scratch, html-css-javascript, python"
-site_areas:
-steps:
-  - title: Introduction
-  - title: What you will need
-  - title: Step title
+curriculum: 0, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: animals, art, humour, space, photography, outdoors, music, games
+technologies: scratch
+site_areas: coderdojo
+hardware: electronic-components, sense-hat
+software: scratch
+version: 3
+last_tested: 2017-01-01
+steps: 
+- title: Introduction
+- title: Getting Setup
+- title: Adding & removing code
+- title: Moving things around
+- title: Looking cool
+- title: All the sprites
+- title: Remote control fish
+- title: Fishing!
