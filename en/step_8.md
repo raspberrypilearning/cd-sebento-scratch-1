@@ -86,7 +86,7 @@ Of course, this will lead to an upside-down fish, so you need `set rotation styl
 
 The fish moves back and forward now, but only in a straight line. That's going to be a bit too easy for the player to catch with the shark. You need to make the fish swim more unpredictably.
 
-You already know from Card 2 how to make a sprite turn, so start there! 
+You already know from a previous step how to make a sprite turn, so start there! 
 
 + Add a turn into the fish’s swimming and click the green flag. 
 
@@ -103,7 +103,7 @@ You already know from Card 2 how to make a sprite turn, so start there!
 
 It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
 
--- collapse ---
+--- collapse ---
 ---
 title: What's an operator?
 ---

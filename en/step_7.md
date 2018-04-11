@@ -58,7 +58,7 @@ As usual, there’s a block for that and it’s in **motion**!
 
 + Look in the **motion** category for the block `set rotation style`{:class="blockmotion"}.
 
-+ Add the block to your reset code from Card 3 and set the rotation style to `left-right`, like this: 
++ Add the block to your reset code from earlier and set the rotation style to `left-right`, like this: 
 
 ```blocks
     when green flag clicked
