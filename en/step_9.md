@@ -1,4 +1,4 @@
-## Catching those mosquitos!
+## Flycatching!
 
 The parrot moves, the mosquito flies, but they don’t interact: If the mosquito flies right into the parrot’s mouth, nothing happens. Time to change that!
 

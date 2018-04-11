@@ -19,7 +19,7 @@ Nice! Later, you're going to add some code to make the mosquito move around on i
 title: What about the backwards parrot?
 ---
 
-It does look a little funny to have that parrot flyming backwards. Just like you’d usually turn around rather than walking backwards, the parrot would turn around rather than flyming that way. Luckily for you, Scratch has a block for this!
+It does look a little funny to have that parrot flying backwards. Just like you’d usually turn around rather than walking backwards, the parrot would turn around rather than flying that way. Luckily for you, Scratch has a block for this!
 
 The `point in direction`{:class="blockmotion"} block lets you pick the direction your sprite is pointing in. You can type in any number, but it comes with the four you'll need most already in there: `up`, `down`, `left` and `right`. You’ll find it in the **motion** blocks section. 
 

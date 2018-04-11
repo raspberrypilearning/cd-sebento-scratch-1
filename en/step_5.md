@@ -41,7 +41,7 @@ Now you have a parrot!
 + Finally, click on the **Scripts** tab again and add this code to make the parrot introduce the game:
 
 ```blocks
-    when green flag pressed
+    when green flag clicked
     say [Hello! I need your help.] for (3) secs
     say [I need to get rid of all the mosquitos!] for (3) secs
     say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs

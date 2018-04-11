@@ -88,7 +88,7 @@ The mosquito moves back and forward now, but only in a straight line. That's goi
 
 You already know from a previous step how to make a sprite turn, so start there! 
 
-+ Add a turn into the mosquito’s flyming and click the green flag. 
++ Add a turn into the mosquito’s flying and click the green flag. 
 
 ```blocks
     when green flag clicked

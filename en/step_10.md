@@ -51,9 +51,6 @@ Now you need to update the variable whenever a mosquito is eaten, and to reset i
     end
 ```
 
-
-![](images/catch8.png)
-
 Cool! Now you’ve got a score and everything. 
 
 --- challenge ---
