@@ -4,13 +4,15 @@ So your cat moves up and down, as well as left to right. You should probably put
 
 + Select the stage.
 
+![Selecting the stage](images/looksSelectStage.png)
+
 + Click on **Backdrops**.
 
-![](images/cool1a.png)
+![The Backdrops tab](images/looksBackdrops.png)
 
 + Click the icon to **Choose backdrop from library**. 
 
-![](images/cool1b.png)
+![The Choose backdrop icon](images/looksChooseBg.png)
  
 + Then pick your favourite underwater background!
 
