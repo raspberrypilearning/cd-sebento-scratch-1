@@ -4,7 +4,7 @@ Once you open Scratch, you’ll see a screen like the one below.
 
 + Look for each of the following parts and remember them.
 
- ### The Stage
+### The Stage
 
  ![Scratch window with the stage highlighted](images/hlStage.png)
 
@@ -20,7 +20,7 @@ This is where your Scratch Programs run. It has
 
 --- /collapse ---
 
- ### The Sprite List
+### The Sprite List
 
  ![Scratch window with the sprite list highlighted](images/hlSpriteList.png)
 
@@ -39,9 +39,9 @@ In Scratch, the sprite is:
 
 --- /collapse ---
 
- ### The Code Blocks Pallete
+### The Code Blocks Pallete
 
- ![Scratch window with the blocks pallet highlighted](images/hlBlocksPallete.png)
+ ![Scratch window with the blocks pallet highlighted](images/hlBlocksPalette.png)
  
 --- collapse ---
 ---
@@ -53,7 +53,7 @@ There are 10 categories of blocks, which are colour coded, and you can select ea
 
 --- /collapse ---
 
- ### The Current Sprite panel
+### The Current Sprite panel
 
  ![Scratch window with the current sprite panel highlighted](images/hlCurrentSpritePanel.png)
 
