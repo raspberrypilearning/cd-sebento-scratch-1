@@ -1,10 +1,10 @@
-## Fishing!
+## Catching those mosquitos!
 
-The shark moves, the fish swims, but they don’t interact: If the fish swims right into the shark’s mouth, nothing happens. Time to change that!
+The parrot moves, the mosquito flies, but they don’t interact: If the mosquito flies right into the parrot’s mouth, nothing happens. Time to change that!
 
-First, you need to know if the fish is touching the shark. For this, you'll need a **control** block and a **sensing** block. 
+First, you need to know if the mosquito is touching the parrot. For this, you'll need a **control** block and a **sensing** block. 
 
-+ Add the `if... then`{:class="blockcontrol"} **control** block into the `forever`{:class="blockcontrol"} loop on the fish, after the `if on edge bounce`{:class="blockmotion"}.
++ Add the `if... then`{:class="blockcontrol"} **control** block into the `forever`{:class="blockcontrol"} loop on the mosquito, after the `if on edge bounce`{:class="blockmotion"}.
 
 + Drag the `touching...`{:class="blocksensing"} block into the space at the top of the `if... then`{:class="blockcontrol"} block and click the little triangle to pick the sprite name (if you haven’t changed it, it'll be Sprite1)
 
@@ -33,7 +33,7 @@ From those pointy ends, you can tell it’s going to give you the true/false val
 
 Of course, you’ve just added an `if... then`{:class="blockcontrol"} with no 'then'. 
 
-You can make the fish vanish, as if the shark ate it by using the `hide`{:class="blocklooks"} block.
+You can make the mosquito vanish, as if the parrot ate it by using the `hide`{:class="blocklooks"} block.
 
 + Find the `hide`{:class="blocklooks"} block in **looks** and put it inside the `if... then`{:class="blockcontrol"}. 
 
@@ -43,9 +43,9 @@ You can make the fish vanish, as if the shark ate it by using the `hide`{:class=
     end
 ```
 
-Now once the shark catches the fish it disappears for good. That’s not great. 
+Now once the parrot catches the mosquito it disappears for good. That’s not great. 
 
-+ Put the `show`{:class="blocklooks"} block, also from **looks** in at the very start of the fish code, so you can reset the game. 
++ Put the `show`{:class="blocklooks"} block, also from **looks** in at the very start of the mosquito code, so you can reset the game. 
 
 ```blocks
     when green flag clicked
@@ -54,7 +54,7 @@ Now once the shark catches the fish it disappears for good. That’s not great.
     forever
 ```
 
-Better, but you don’t want the player restarting every time they catch one fish! 
+Better, but you don’t want the player restarting every time they catch one mosquito! 
 
 
 + Update the code inside your `if... then`{:class="blockcontrol"} block to look like this:
@@ -74,9 +74,9 @@ Better, but you don’t want the player restarting every time they catch one fis
 title: How does it work?
 ---
 
-You are being clever here — when the fish is hidden, wait, move it, then show it again. 
+You are being clever here — when the mosquito is hidden, wait, move it, then show it again. 
 
-It looks like lots of fish, but it’s that one sprite moving around! 
+It looks like lots of mosquito, but it’s that one sprite moving around! 
 
 --- /collapse ---
 

@@ -1,8 +1,8 @@
-## Remote control fish
+## Remote control mosquito
 
-Ok, now it's time to make the fish swim on its own. To do this, you’re going to need a new kind of block: a **control** block. 
+Ok, now it's time to make the mosquito fly on its own. To do this, you’re going to need a new kind of block: a **control** block. 
 
-+ Select your fish sprite and drag a `when green flag clicked`{:class="blockevents"} **event** block, a `forever`{:class="blockcontrol"} **control** block and a `move 10 steps`{:class="blockmotion"} **motion** block into the **sprite panel** like this: 
++ Select your mosquito sprite and drag a `when green flag clicked`{:class="blockevents"} **event** block, a `forever`{:class="blockcontrol"} **control** block and a `move 10 steps`{:class="blockmotion"} **motion** block into the **sprite panel** like this: 
 
 ```blocks
     when green flag clicked
@@ -18,13 +18,13 @@ title: What does the new block do?
 
 Control blocks let you do things a certain number of times, or under certain conditions.
 
-The fish does whatever is in the `forever`{:class="blockcontrol"} block over and over again, forever. Once it has reached the end it goes back to the top of the block and starts again. 
+The mosquito does whatever is in the `forever`{:class="blockcontrol"} block over and over again, forever. Once it has reached the end it goes back to the top of the block and starts again. 
 
 --- /collapse ---
 
 + Now click the green flag and watch what happens!
 
-Well, that fish just crashed into the side of the **stage**, and it was moving far too fast for your shark to catch. 
+Well, that mosquito just crashed into the side of the **stage**, and it was moving far too fast for your parrot to catch. 
 
 First, you need to slow it down. That’s actually pretty easy, you just need it to wait for a little while after it moves those 10 steps. There’s a **control** block that can help you here: 
 
@@ -49,7 +49,7 @@ First, you need to slow it down. That’s actually pretty easy, you just need it
 title: Making adjustments
 ---
 
-The number you set in the `wait`{:class="blockcontrol"} block is how many **seconds** you want the fish to wait. `0.5` is half a second. 
+The number you set in the `wait`{:class="blockcontrol"} block is how many **seconds** you want the mosquito to wait. `0.5` is half a second. 
 
 You can test out different values to see which is the best for the game. 
 
@@ -57,7 +57,7 @@ Remember you can change the number of steps too!
 
 --- /collapse ---
 
-The fish moves now, but you need it to bounce off the edge too. Yet again, there’s a **motion** block for this! 
+The mosquito moves now, but you need it to bounce off the edge too. Yet again, there’s a **motion** block for this! 
 
 + Find the `if on edge bounce`{:class="blockmotion"} block and add it in after the `wait`{:class="blockcontrol"}.
 
@@ -70,9 +70,9 @@ The `if on edge bounce`{:class="blockmotion"} block checks if the sprite is touc
 
 --- /collapse ---
 
-Of course, this will lead to an upside-down fish, so you need `set rotation style`{:class="blockmotion"} again. 
+Of course, this will lead to an upside-down mosquito, so you need `set rotation style`{:class="blockmotion"} again. 
 
-+ Update your code to set the rotation style of the fish to `left-right`:
++ Update your code to set the rotation style of the mosquito to `left-right`:
 
 ```blocks
     when green flag clicked
@@ -84,11 +84,11 @@ Of course, this will lead to an upside-down fish, so you need `set rotation styl
     end
 ```
 
-The fish moves back and forward now, but only in a straight line. That's going to be a bit too easy for the player to catch with the shark. You need to make the fish swim more unpredictably.
+The mosquito moves back and forward now, but only in a straight line. That's going to be a bit too easy for the player to catch with the parrot. You need to make the mosquito fly more unpredictably.
 
 You already know from a previous step how to make a sprite turn, so start there! 
 
-+ Add a turn into the fish’s swimming and click the green flag. 
++ Add a turn into the mosquito’s flyming and click the green flag. 
 
 ```blocks
     when green flag clicked
@@ -137,5 +137,5 @@ Note: You can change the minimum and maximum numbers it will pick, but the defau
 
 + Then click the green flag to run the code!
  
-#### Next: Catching that fish!
+#### Next: Catching that mosquito!
 

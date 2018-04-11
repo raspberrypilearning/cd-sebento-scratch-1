@@ -1,37 +1,108 @@
-## Looking cool
+## Moving things around
 
-So your cat moves up and down, as well as left to right. You should probably put it somewhere sensible for that... like under water! Scratch has a library of backgrounds and sprites for you to use to make your project look awesome.
+Right now your parrot moves in a circle, but wouldn’t it be more fun to control it with the arrow keys? On this card, you’re going learn how to do that!
 
-+ Select the stage.
+As you’ve probably guessed, you’re going to need **event** and **motion** blocks again! 
 
-![Selecting the stage](images/looksSelectStage.png)
++ This time, look for this block and drag it onto the current sprite panel:
 
-+ Click on **Backdrops**.
+```blocks
+    when [space v] key pressed
+```
 
-![The Backdrops tab](images/looksBackdrops.png)
++ Click the little arrow (▼) beside `space`. You will see a list of all the keys on your keyboard that you can pick from. 
 
-+ Click the icon to **Choose backdrop from library**. 
+You’re going to need four of these blocks and you can connect them to **motion** blocks like this: 
 
-![The Choose backdrop icon](images/looksChooseBg.png)
- 
-+ Then pick your favourite underwater background!
+```blocks
+    when [left arrow v] key pressed
+    move (-10) steps
+```
 
-Great! Of course, now you have a cat underwater. Cats aren’t usually big fans of that, but you can fix that. You can turn the cat into a shark!
+```blocks
+    when [right arrow v] key pressed
+    move (10) steps
+```
 
-+ First, select the cat and click on the **Costumes** tab 
+```blocks
+    when [up arrow v] key pressed
+```
 
-![](images/cool2.png)
+```blocks
+    when [down arrow v] key pressed
+```
 
-+ Then, click on **Choose Costume from Library** 
+Note: -10 means: **go back 10 steps**
 
-![](images/cool3.png)
++ Add the blocks above to your program and click the green flag to test out your code.
 
-+ Pick this shark 
+Your parrot moves back and forwards now, which is pretty cool, but it doesn’t move up or down. Also, if you look through the **motion** blocks, you’ll see there are no blocks for “up” or “down”. There are a whole bunch of them related to **x** and **y** though... let's try those!
 
-![](images/cool4.png)
 
-+ Now remove the cat costumes by selecting each of them and clicking on the **x** 
++ Grab two `change y by`{:class="blockmotion"} blocks and add update your code like this: 
 
-![](images/cool5.png)
+```blocks
+    when [left arrow v] key pressed
+    move (-10) steps
+```
 
-Now you have a shark!
+```blocks
+    when [right arrow v] key pressed
+    move (10) steps
+```
+
+```blocks
+    when [up arrow v] key pressed
+    change y by (10)
+```
+
+```blocks
+    when [down arrow v] key pressed
+    change y by (-10)
+```
+
+Now when the arrows are pressed, the parrot can move all over the stage!
+
+--- collapse ---
+---
+title: How do x and y coordinates work?
+---
+
+When programmers need to talk about the positions of objects, like sprites, we often use **x** and **y** coordinates to describe them. The **x-axis** runs from left to right, while the **y-axis** runs from bottom to top. 
+
+![](images/moving3.png)
+
+A sprite can be loparroted by the coordinates of its centre, written something like (15, -27) where 15 is the **x** position and -27 is the **y** position.
+
++ To get a feel for how this actually works, take the `go to`{:class="blockmotion"} block from motion and drop it onto your **sprite panel**. You don’t need to connect it to anything. 
+
+```blocks
+    go to x: (15) y: (-27)
+```
+
++ Next, pick some values for **x** and **y**, fill them in, and **double click on the block**. Try different sets of values to see where the parrot goes! In Scratch **x** goes from -240 to 240 and **y** goes from -180 to 180.
+
+--- /collapse ---
+
+### Restarting the game
+
+The parrot moves all over the screen, but imagine this is a game: How do you restart it? You need to get the parrot back to its original location when the player starts the game. In Scratch, they start the game by clicking on the green flag, so you need to change the parrot’s **x** and **y** coordinates when that happens.
+
+That’s actually pretty easy! The centre of the stage is (0,0) in **x** and **y** coordinates. 
+
+So all you need is an **event** block for that green flag and the **go to** block you’re already using. 
+
++ Drag the flag event block onto the current sprite panel.
+
+```blocks
+    when green flag clicked
+```
+
++ Then set the `go to`{:class="blockmotion"} to `(0,0)` and snap it to the flag event block. 
+
+```blocks
+    when green flag clicked
+    go to x: (0) y: (0)
+```
+
++ Now when you click the green flag, you should see the parrot return to the centre of the stage.

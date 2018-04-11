@@ -1,31 +1,31 @@
 ## All the sprites
 
-Now you have a shark that moves about underwater. Nice! Time to add some fish for it to catch!
+Now you have a parrot that you can move around using the arrow keys. Nice! Time to add some mosquitos for it to catch!
 
-+ Click the **new sprite** button and then choose a fish from the screen that opens. 
++ Click the **new sprite** button. Scratch doesn't have any ready-made mosquito costumes so you are going to draw one!
 
-![](images/sprites1.png)
+![](images/spritesPaintNew.png)
 
-That fish is a bit big compared to your shark though. You can use **grow** and **shrink** to make it the right size. 
+If your mosquito is a bit big compared to your parrot, you can use **grow** and **shrink** to make them both the right size. 
 
 ![](images/sprites2.png)
 
-+ Click on **grow** or **shrink** and then click on the fish to make it get bigger or smaller.
++ Click on **grow** or **shrink** and then click on the mosquito to make it get bigger or smaller.
 
-Nice! Later, you're going to add some code to make the fish move around on its own, without help from the player. Your player will be the shark, trying to catch the fish.
+Nice! Later, you're going to add some code to make the mosquito move around on its own, without help from the player. Your player will be the parrot, trying to catch the mosquito.
 
 --- collapse ---
 ---
-title: What about the backwards shark?
+title: What about the backwards parrot?
 ---
 
-It does look a little funny to have that shark swimming backwards. Just like you’d usually turn around rather than walking backwards, the shark would turn around rather than swimming that way. Luckily for you, Scratch has a block for this!
+It does look a little funny to have that parrot flyming backwards. Just like you’d usually turn around rather than walking backwards, the parrot would turn around rather than flyming that way. Luckily for you, Scratch has a block for this!
 
 The `point in direction`{:class="blockmotion"} block lets you pick the direction your sprite is pointing in. You can type in any number, but it comes with the four you'll need most already in there: `up`, `down`, `left` and `right`. You’ll find it in the **motion** blocks section. 
 
 --- /collapse ---
 
-+ Grab the `point in direction`{:class="blockmotion"} block from **motion** and snap a couple of them into your shark’s code, like this: 
++ Grab the `point in direction`{:class="blockmotion"} block from **motion** and snap a couple of them into your parrot’s code, like this: 
 
 ```blocks
     when [left arrow v] key pressed
@@ -41,16 +41,16 @@ The `point in direction`{:class="blockmotion"} block lets you pick the direction
 
 + Change the steps from `-10` to `10`.
 
-If you tried moving the shark around after you added the `point in direction`{:class="blockmotion"} blocks, you might have noticed something a little strange happening. The shark may not be turning quite right! 
+If you tried moving the parrot around after you added the `point in direction`{:class="blockmotion"} blocks, you might have noticed something a little strange happening. The parrot may not be turning quite right! 
 
-![](images/sprites4.png)
+![Upside down parrot](images/spritesUpsideDown.png)
 
 --- collapse ---
 ---
 title: Why does it go upside down?
 ---
 
-The problem here is that the shark sprite started, as all sprites do, with the `all around` **rotation style**, and what you need it to have is the `left-right` style.
+The problem here is that the parrot sprite started, as all sprites do, with the `all around` **rotation style**, and what you need it to have is the `left-right` style.
 
 As usual, there’s a block for that and it’s in **motion**! 
 
