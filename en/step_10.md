@@ -34,9 +34,9 @@ Now you need to update the variable whenever a mosquito is eaten, and to reset i
 
 ```blocks
     when green flag clicked
+    set [Score v] to [0]
     set rotation style [left-right v]
     go to x: (0) y: (0)
-    set [Score v] to [0]
 ```
 
 ### Code for the mosquito
@@ -52,6 +52,19 @@ Now you need to update the variable whenever a mosquito is eaten, and to reset i
 ```
 
 Cool! Now you’ve got a score and everything. 
+
++ Finally, and add this code to make the parrot introduce the game:
+
+```blocks
+    when green flag clicked
+    set [Score v] to [0]
+    set rotation style [left-right v]
+    go to x: (0) y: (0)
+    say [Hello! I need your help.] for (3) secs
+    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (5) secs
+    say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
+    say [Please help me catch them and protect my friends!] for (3) secs
+```
 
 --- challenge ---
 

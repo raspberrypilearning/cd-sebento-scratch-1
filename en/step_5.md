@@ -37,13 +37,3 @@ Great! Now let's turn the cat into a parrot!
 ![](images/cool5.png)
 
 Now you have a parrot!
-
-+ Finally, click on the **Scripts** tab again and add this code to make the parrot introduce the game:
-
-```blocks
-    when green flag clicked
-    say [Hello! I need your help.] for (3) secs
-    say [I need to get rid of all the mosquitos!] for (3) secs
-    say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
-    say [Please help me catch them and protect my friends!] for (4) secs
-```

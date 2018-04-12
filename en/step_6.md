@@ -90,7 +90,7 @@ The parrot moves all over the screen, but imagine this is a game: How do you res
 
 That’s actually pretty easy! The centre of the stage is (0,0) in **x** and **y** coordinates. 
 
-So all you need is an **event** block for that green flag and the **go to** block you’re already using. 
+So all you need is an **event** block for that green flag and the **go to** block from **motion**. 
 
 + Drag the flag event block onto the current sprite panel.
 
@@ -98,11 +98,13 @@ So all you need is an **event** block for that green flag and the **go to** bloc
     when green flag clicked
 ```
 
-+ Then set the `go to`{:class="blockmotion"} to `(0,0)` and snap it to the flag event block. 
++ Then find the `go to`{:class="blockmotion"} **motion** block and snap it on to your flag event block.
 
 ```blocks
     when green flag clicked
     go to x: (0) y: (0)
 ```
+
++ Set the both the `x` and the `y` to `0` in the `go to`{:class="blockmotion"} block if they are not already `0`. 
 
 + Now when you click the green flag, you should see the parrot return to the centre of the stage.
