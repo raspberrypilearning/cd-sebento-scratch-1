@@ -34,6 +34,6 @@ Great! Now let's turn the cat into a parrot!
 
 + Now remove the cat costumes by selecting each of them and clicking on the **x** 
 
-![](images/cool5.png)
+![](images/coolDeleteCostumes.png)
 
-Now you have a parrot!
+Great! You have a parrot!

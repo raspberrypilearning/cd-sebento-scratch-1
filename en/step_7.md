@@ -10,7 +10,7 @@ If your mosquito is a bit big compared to your parrot, you can use **grow** and 
 
 ![](images/sprites2.png)
 
-+ Click on **grow** or **shrink** and then click on the mosquito to make it get bigger or smaller.
++ Click on **grow** or **shrink** and then click on one of the sprites to make it get bigger or smaller.
 
 Nice! Later, you're going to add some code to make the mosquito move around on its own, without help from the player. Your player will be the parrot, trying to catch the mosquito.
 

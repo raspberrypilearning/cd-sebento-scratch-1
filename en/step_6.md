@@ -2,6 +2,8 @@
 
 Right now your parrot moves in a circle, but wouldn’t it be more fun to control it with the arrow keys? On this card, you’re going learn how to do that!
 
++ Start by deleting any code that you have for the parrot.
+
 As you’ve probably guessed, you’re going to need **event** and **motion** blocks again! 
 
 + This time, look for this block and drag it onto the current sprite panel:

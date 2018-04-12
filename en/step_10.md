@@ -18,7 +18,7 @@ Check out your new variable and the blocks for it!
 
 --- collapse ---
 ---
-title:
+title: What are variables?
 ---
 
 When you want to store information in a program, you use something called a variable. Think of it like a box with a label on it: you can put something in it, check what’s in it and change what’s in it. You’ll find variables under **data**, but you need to create them first! 
@@ -61,7 +61,7 @@ Cool! Now you’ve got a score and everything.
     set rotation style [left-right v]
     go to x: (0) y: (0)
     say [Hello! I need your help.] for (3) secs
-    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (5) secs
+    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (4) secs
     say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
     say [Please help me catch them and protect my friends!] for (3) secs
 ```

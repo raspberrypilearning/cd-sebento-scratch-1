@@ -1,6 +1,6 @@
 ## Flycatching!
 
-The parrot moves, the mosquito flies, but they don’t interact: If the mosquito flies right into the parrot’s mouth, nothing happens. Time to change that!
+The parrot moves, the mosquito flies, but they don’t interact: If the mosquito flies right into the parrot’s beak, nothing happens. Time to change that!
 
 First, you need to know if the mosquito is touching the parrot. For this, you'll need a **control** block and a **sensing** block. 
 
