@@ -1,7 +1,7 @@
-title: Beginner Scratch
+title: Beginner Scratch Sushi Cards
 hero_image: images/banner.png
 description: Make your first Scratch program
-theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: false
 ingredient: false
@@ -12,7 +12,7 @@ technologies: scratch
 site_areas: coderdojo
 hardware: electronic-components, sense-hat
 software: scratch
-version: 3
+version: 1
 last_tested: 2017-01-01
 steps: 
 - title: Introduction

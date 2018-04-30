@@ -34,9 +34,11 @@ title: Running the code
 
 Normally, you want your blocks to run automatically, when something happens. This is why most of your programs will start with a block from the **events** category. Most often, it will be this one: 
 
-![](images/code3.png)
+```blocks
+    when green flag clicked
+```
 
-The code blocks connected to this block will run after the **green flag** is clicked
+The code blocks connected to this block will run after the **green flag** is clicked.
 
 Code blocks run from top to bottom, so the order you snap your code together in matters. In this example, the sprite will `say`{:class="blocklooks"} `Hello!` before it will `play`{:class="blocksound"} the `meow` sound. 
 
@@ -95,4 +97,4 @@ This block makes the cat turn 15 degrees of the full 360 degrees that make up a 
 ![](images/code10.png)
 
 ### Top tip!
-You can also use **save as** to save a copy of your program with a new name.
+You can also use **Save as** to save a copy of your program with a new name.
