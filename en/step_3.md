@@ -10,9 +10,9 @@ Once you open Scratch, you’ll see a screen like the one below.
 
 --- collapse ---
 ---
-title: What is the stage?
+title: What is the Stage?
 ---
-This is where your Scratch Programs run. It has
+This is where your Scratch programs run. It has:
 
 * One or more **backgrounds** \(images on the background of the screen\)
 
@@ -20,18 +20,18 @@ This is where your Scratch Programs run. It has
 
 --- /collapse ---
 
-### The Sprite List
+### The sprite list
 
  ![Scratch window with the sprite list highlighted](images/hlSpriteList.png)
 
 --- collapse ---
 ---
-title: What is a Sprite?
+title: What is a sprite?
 ---
 
-Any object that goes on the stage is a sprite.  
+Any object that goes on the Stage is a **sprite**.  
 
-In Scratch, the sprite is:
+The sprite includes:
 * The **image** on the stage
 * Any alternative **costumes** \(looks\) it has
 * Any **sounds** associated with it
@@ -39,7 +39,7 @@ In Scratch, the sprite is:
 
 --- /collapse ---
 
-### The Code Blocks Pallete
+### The code blocks palette
 
  ![Scratch window with the blocks pallet highlighted](images/hlBlocksPalette.png)
  
@@ -48,12 +48,13 @@ In Scratch, the sprite is:
 title: Code blocks
 ---
 
-Code in Scratch comes as blocks, that you click together to make programs. You choose blocks from the **code blocks palette** and drag them into the **current sprite panel**, then click them together.  
-There are 10 categories of blocks, which are colour coded, and you can select each category from the list at the top of the **code blocks palette**.
+Code in Scratch comes as blocks that you connect together to make programs. You choose blocks from the **code blocks palette** and drag them into the **current sprite panel**, then connect them.
+
+There are ten categories of blocks. They are colour coded, and you can select each category from the list at the top of the **code blocks palette**.
 
 --- /collapse ---
 
-### The Current Sprite panel
+### The current sprite panel
 
  ![Scratch window with the current sprite panel highlighted](images/hlCurrentSpritePanel.png)
 
@@ -70,22 +71,19 @@ The **current sprite panel** is where you can see the code, costumes, and sounds
 
 + Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.  
    
-+ Go to the **Events** category in the **code blocks palette** and choose the `when flag clicked`{:class="blockevents"} event, then drag it onto the **current sprite panel**.  
++ Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="blockevents"} block and drag it onto the **current sprite panel**.  
 
 ```blocks
     when green flag clicked
 ```
 
-+ Then go to **Looks** in the **code blocks palette** and choose the block
++ Then go to **Looks** in the **code blocks palette** and find the block
 
 ```blocks
     say [Hello!] for (2) secs
 ```
- and drag it onto the **current sprite panel**, connecting it to the end of the other block, like this: 
++ Drag it onto the **current sprite panel**, connecting it to the bottom of the other block, like this: 
 
 ![](images/setup3.png)
 
 + Now click the **Start Program** button and watch what happens!
-
-
-
