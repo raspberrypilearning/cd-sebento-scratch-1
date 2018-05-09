@@ -1,10 +1,10 @@
 ## Introduction
 
-These Sushi Cards are going to help you learn to create computer programs in Scratch.
+These Sushi Cards are going to help you learn to create computer programs in Scratch!
 
 ### What you will make
 
-You will make a game where you try to protect people from malaria by catching mosquitos.
+You will make a game where you will protect people from malaria by making a parrot catch mosquitoes.
 
 Here's an example of how the finished game might look:
     
@@ -12,15 +12,15 @@ Here's an example of how the finished game might look:
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/215534725/?autostart=false" frameborder="0"></iframe>
 </div>
 
-Press the green flag to run the project above. Use the arrow keys to move the parrot around and try to catch the mosquitos.
+Press the green flag to run the project above. Use the arrow keys to move the parrot around and try to catch the mosquitoes.
 
 ### What you will learn
 
 * Adding and deleting code blocks
-* Basic motion:  move `n` steps and turn `n` degrees
+* Basic motion:  move in steps, and turn by degrees
 * Using keyboard controls
 * Using x/y coordinates to position sprites
-* Changing the look of the stage and a sprite with costumes and show/hide
+* Changing the look of the Stage and of sprites with costumes and show/hide
 * Multiple sprites on screen
 * Forever loops
 * Detecting when sprites are touching
