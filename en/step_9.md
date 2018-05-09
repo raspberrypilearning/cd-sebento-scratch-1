@@ -1,4 +1,4 @@
-## Flycatching!
+## Let's catch some flies!
 
 The parrot moves, the mosquito flies, but they don’t interact: if the mosquito flies right into the parrot’s beak, nothing happens. Time to change that!
 
