@@ -1,4 +1,4 @@
-## Remote control mosquito
+## Remote-control mosquito
 
 Ok, now it's time to make the mosquito fly on its own. To do this, you’re going to need a new kind of block: a **control** block. 
 
