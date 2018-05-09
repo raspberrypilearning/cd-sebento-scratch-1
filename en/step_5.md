@@ -20,11 +20,11 @@ Scratch has a library of backgrounds and sprites for you to use to make your pro
 
 Great! Now let's turn the cat into a parrot!
 
-+ First, select the cat and click on the **Costumes** tab 
++ First, select the cat and click on the **Costumes** tab.
 
 ![](images/cool2.png)
 
-+ Then, click on **Choose Costume from Library** 
++ Then, click on **Choose costume from Library** 
 
 ![](images/cool3.png)
 
@@ -32,7 +32,7 @@ Great! Now let's turn the cat into a parrot!
 
 ![The parrot costume](images/looksParrot.png)
 
-+ Now remove the cat costumes by selecting each of them and clicking on the **x** 
++ Now remove the cat costumes by selecting each of them and clicking on the **x**.
 
 ![](images/coolDeleteCostumes.png)
 
