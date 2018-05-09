@@ -4,7 +4,7 @@ These Sushi Cards are going to help you learn to create computer programs in Scr
 
 ### What you will make
 
-You will make a game where you will protect people from malaria by making a parrot catch mosquitoes.
+You will make a game where you protect people from malaria by making a parrot catch mosquitoes.
 
 Here's an example of how the finished game might look:
     
