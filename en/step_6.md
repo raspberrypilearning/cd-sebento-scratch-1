@@ -34,14 +34,13 @@ You’re going to need four of these blocks and you can connect them to **motion
     when [down arrow v] key pressed
 ```
 
-Note: -10 means: **go back 10 steps**
+**Note**: `-10` means 'go back 10 steps'.
 
 + Add the blocks above to your program and click the green flag to test out your code.
 
-Your parrot moves back and forwards now, which is pretty cool, but it doesn’t move up or down. Also, if you look through the **motion** blocks, you’ll see there are no blocks for “up” or “down”. There are a whole bunch of them related to **x** and **y** though... let's try those!
+Your parrot moves back and forwards now, which is pretty cool, but it doesn’t move up or down. Also, if you look through the **motion** blocks, you’ll see there are no blocks for 'up' or 'down'. There are a whole bunch of them related to **x** and **y** though — let's try those!
 
-
-+ Grab two `change y by`{:class="blockmotion"} blocks and add update your code like this: 
++ Grab two `change y by`{:class="blockmotion"} blocks and update your code like this: 
 
 ```blocks
     when [left arrow v] key pressed
@@ -67,34 +66,34 @@ Now when the arrows are pressed, the parrot can move all over the stage!
 
 --- collapse ---
 ---
-title: How do x and y coordinates work?
+title: How do x- and y-coordinates work?
 ---
 
 When programmers need to talk about the positions of objects, like sprites, we often use **x** and **y** coordinates to describe them. The **x-axis** runs from left to right, while the **y-axis** runs from bottom to top. 
 
 ![](images/moving3.png)
 
-A sprite can be loparroted by the coordinates of its centre, written something like (15, -27) where 15 is the **x** position and -27 is the **y** position.
+A sprite can be located by the coordinates of its centre, written for example like `(15, -27)`, where `15` is the position along the x-axis position, and `-27` the position along the y-axis.
 
-+ To get a feel for how this actually works, take the `go to`{:class="blockmotion"} block from motion and drop it onto your **sprite panel**. You don’t need to connect it to anything. 
++ To get a feel for how this actually works, take the `go to`{:class="blockmotion"} block from motion and drop it onto your sprite panel. You don’t need to connect it to anything. 
 
 ```blocks
     go to x: (15) y: (-27)
 ```
 
-+ Next, pick some values for **x** and **y**, fill them in, and **double click on the block**. Try different sets of values to see where the parrot goes! In Scratch **x** goes from -240 to 240 and **y** goes from -180 to 180.
++ Next, pick some values for `x` and `y`, fill them in, and double-click on the block. Try different sets of values to see where the parrot goes! In Scratch, **x** goes from `-240` to `240`, and **y** goes from `-180` to `180`.
 
 --- /collapse ---
 
 ### Restarting the game
 
-The parrot moves all over the screen, but imagine this is a game: How do you restart it? You need to get the parrot back to its original location when the player starts the game. In Scratch, they start the game by clicking on the green flag, so you need to change the parrot’s **x** and **y** coordinates when that happens.
+The parrot moves all over the screen, but imagine this is a game: how do you restart it? You need to get the parrot back to its original location when the player starts the game. They'll start this game by clicking on the green flag, so you need to change the parrot’s `x` and `y` coordinates when that happens.
 
-That’s actually pretty easy! The centre of the stage is (0,0) in **x** and **y** coordinates. 
+That’s actually pretty easy! The centre of the stage is `(0,0)` in `x` and `y` coordinates. 
 
 So all you need is an **event** block for that green flag and the **go to** block from **motion**. 
 
-+ Drag the flag event block onto the current sprite panel.
++ Drag the `when green flag clicked`{:class="blockevent"} **event** block onto the current sprite panel.
 
 ```blocks
     when green flag clicked
@@ -109,4 +108,4 @@ So all you need is an **event** block for that green flag and the **go to** bloc
 
 + Set the both the `x` and the `y` to `0` in the `go to`{:class="blockmotion"} block if they are not already `0`. 
 
-+ Now when you click the green flag, you should see the parrot return to the centre of the stage.
++ Now click the green flag, and you should see the parrot return to the centre of the stage.
