@@ -1,111 +1,67 @@
-## Moving things around
+## All the sprites
 
-Right now your parrot moves in a circle, but wouldn’t it be more fun to control it with the arrow keys? On this card, you’re going learn how to do that!
+Now you have a parrot that you can move around using the arrow keys. Nice! Time to add some mosquitos for it to catch!
 
-+ Start by deleting any code that you have for the parrot.
++ Click the **New sprite** button. Scratch doesn't have any ready-made mosquito costumes, so you are going to draw one!
 
-As you’ve probably guessed, you’re going to need **event** and **motion** blocks again! 
+![](images/spritesPaintNew.png)
 
-+ This time, look for this block and drag it onto the current sprite panel:
+If your mosquito is a bit big compared to your parrot, you can use the **grow** and **shrink** buttons to make both sprites the right size. 
 
-```blocks
-    when [space v] key pressed
-```
+![](images/sprites2.png)
 
-+ Click the little arrow (▼) beside `space`. You will see a list of all the keys on your keyboard that you can pick from. 
++ Click on **grow** or **shrink** and then click on one of the sprites to make it bigger or smaller.
 
-You’re going to need four of these blocks and you can connect them to **motion** blocks like this: 
-
-```blocks
-    when [left arrow v] key pressed
-    move (-10) steps
-```
-
-```blocks
-    when [right arrow v] key pressed
-    move (10) steps
-```
-
-```blocks
-    when [up arrow v] key pressed
-```
-
-```blocks
-    when [down arrow v] key pressed
-```
-
-**Note**: `-10` means 'go back 10 steps'.
-
-+ Add the blocks above to your program and click the green flag to test out your code.
-
-Your parrot moves back and forwards now, which is pretty cool, but it doesn’t move up or down. Also, if you look through the **motion** blocks, you’ll see there are no blocks for 'up' or 'down'. There are a whole bunch of them related to **x** and **y** though — let's try those!
-
-+ Grab two `change y by`{:class="blockmotion"} blocks and update your code like this: 
-
-```blocks
-    when [left arrow v] key pressed
-    move (-10) steps
-```
-
-```blocks
-    when [right arrow v] key pressed
-    move (10) steps
-```
-
-```blocks
-    when [up arrow v] key pressed
-    change y by (10)
-```
-
-```blocks
-    when [down arrow v] key pressed
-    change y by (-10)
-```
-
-Now when the arrows are pressed, the parrot can move all over the stage!
+Nice! Later, you're going to add some code to make the mosquito move around on its own, without help from the player. Your player will be the parrot, trying to catch the mosquito.
 
 --- collapse ---
 ---
-title: How do x- and y-coordinates work?
+title: What about the backwards parrot?
 ---
 
-When programmers need to talk about the positions of objects, like sprites, we often use **x** and **y** coordinates to describe them. The **x-axis** runs from left to right, while the **y-axis** runs from bottom to top. 
+It does look a little funny to have that parrot flying backwards. Just like you’d usually turn around rather than walking backwards, the parrot would turn around rather than flying backwards. Luckily for you, Scratch has a block for this!
 
-![](images/moving3.png)
-
-A sprite can be located by the coordinates of its centre, written for example like `(15, -27)`, where `15` is the position along the x-axis position, and `-27` the position along the y-axis.
-
-+ To get a feel for how this actually works, take the `go to`{:class="blockmotion"} block from motion and drop it onto your sprite panel. You don’t need to connect it to anything. 
-
-```blocks
-    go to x: (15) y: (-27)
-```
-
-+ Next, pick some values for `x` and `y`, fill them in, and double-click on the block. Try different sets of values to see where the parrot goes! In Scratch, **x** goes from `-240` to `240`, and **y** goes from `-180` to `180`.
+The `point in direction`{:class="blockmotion"} block lets you pick the direction your sprite is pointing in. You’ll find it in the **Motion** blocks section. You can type in any number, but the block comes with the four directions you'll need most already in it: `up`, `down`, `left`, and `right`.
 
 --- /collapse ---
 
-### Restarting the game
-
-The parrot moves all over the screen, but imagine this is a game: how do you restart it? You need to get the parrot back to its original location when the player starts the game. They'll start this game by clicking on the green flag, so you need to change the parrot’s `x` and `y` coordinates when that happens.
-
-That’s actually pretty easy! The centre of the stage is `(0,0)` in `x` and `y` coordinates. 
-
-So all you need is an **event** block for that green flag and the **go to** block from **motion**. 
-
-+ Drag the `when green flag clicked`{:class="blockevent"} **event** block onto the current sprite panel.
++ Grab a couple of `point in direction`{:class="blockmotion"} block from the **Motion** list and connect them to your parrot’s code, like this: 
 
 ```blocks
-    when green flag clicked
+    when [left arrow v] key pressed
+    point in direction (-90)
+    move (10) steps
 ```
 
-+ Then find the `go to`{:class="blockmotion"} **motion** block and snap it on to your flag event block.
+```blocks
+    when [right arrow v] key pressed
+    point in direction (90)
+    move (10) steps
+```
+
++ Change the steps in the `move`{:class="blockmotion"} block from `-10` to `10`.
+
+If you tried moving the parrot around after you added the `point in direction`{:class="blockmotion"} blocks, you might have noticed something a little strange happening. The parrot may not be turning quite right! 
+
+![Upside down parrot](images/spritesUpsideDown.png)
+
+--- collapse ---
+---
+title: Why does it go upside down?
+---
+
+The problem here is that the parrot sprite started, as all sprites do, with the 'all around' **rotation style**, and what you need it to have is the 'left-right' style.
+
+As usual, there’s a block for that, and it’s in **Motion**! 
+
+--- /collapse ---
+
++ Look in the **Motion** category for the block `set rotation style`{:class="blockmotion"}.
+
++ Add the block to your reset code from earlier and set the rotation style to `left-right`, like this: 
 
 ```blocks
     when green flag clicked
+    set rotation style [left-right v]
     go to x: (0) y: (0)
 ```
-
-+ Set the both the `x` and the `y` to `0` in the `go to`{:class="blockmotion"} block if they are not already `0`. 
-
-+ Now click the green flag, and you should see the parrot return to the centre of the stage.

@@ -14,7 +14,10 @@ Here's an example of how the finished game might look:
 
 Press the green flag to run the project above. Use the arrow keys to move the parrot around and try to catch the mosquitoes.
 
-### What you will learn
+--- collapse ---
+---
+title: What you will learn
+---
 
 * Adding and deleting code blocks
 * Basic motion:  move in steps, and turn by degrees
@@ -24,3 +27,17 @@ Press the green flag to run the project above. Use the arrow keys to move the pa
 * Multiple sprites on screen
 * Forever loops
 * Detecting when sprites are touching
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: What you will need
+---
+
+You’re going to need **Scratch**! Do one of the following two and once you’re set up, move on to the next step.
+
++ Download Scratch and install it on your computer by going to [dojo.soy/downloadscratch](dojo.soy/downloadscratch) 
++ Use Scratch in your web browser by going to [dojo.soy/usescratch](dojo.soy/usescratch)
+
+--- /collapse ---
