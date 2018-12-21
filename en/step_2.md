@@ -71,15 +71,15 @@ The **current sprite panel** is where you can see the code, costumes, and sounds
 
 + Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.  
    
-+ Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="blockevents"} block and drag it onto the **current sprite panel**.  
++ Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="block3events"} block and drag it onto the **current sprite panel**.  
 
-```blocks
+```blocks3
     when green flag clicked
 ```
 
 + Then go to **Looks** in the **code blocks palette** and find the block
 
-```blocks
+```blocks3
     say [Hello!] for (2) secs
 ```
 + Drag it onto the **current sprite panel**, connecting it to the bottom of the other block, like this: 

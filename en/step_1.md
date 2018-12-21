@@ -1,3 +1,9 @@
+--- no-print ---
+
+This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-sebento-scratch-1-scratch2).
+
+--- /no-print ---
+
 ## Introduction
 
 These Sushi Cards are going to help you learn to create computer programs in Scratch!

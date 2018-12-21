@@ -28,11 +28,11 @@ When you want to store information in a program, you use something called a **va
 
 Now you need to update the variable whenever a mosquito is eaten, and to reset it when the game is restarted. Those are both pretty easy:
 
-+ From the **Data** section, take the `set Score to 0`{:class="blockdata"} and `change Score by 1`{:class="blockdata"} blocks and put them into your program: 
++ From the **Data** section, take the `set Score to 0`{:class="block3variables"} and `change Score by 1`{:class="block3variables"} blocks and put them into your program: 
 
 ### Code for the parrot
 
-```blocks
+```blocks3
     when green flag clicked
     set [Score v] to [0]
     set rotation style [left-right v]
@@ -41,7 +41,7 @@ Now you need to update the variable whenever a mosquito is eaten, and to reset i
 
 ### Code for the mosquito
 
-```blocks
+```blocks3
     if <touching [Sprite1 v] ?> then
         change [Score v] by [1]
         hide
@@ -55,7 +55,7 @@ Cool! Now you’ve got a score and everything.
 
 + Finally, and add this code to make the parrot introduce the game:
 
-```blocks
+```blocks3
     when green flag clicked
     set [Score v] to [0]
     set rotation style [left-right v]

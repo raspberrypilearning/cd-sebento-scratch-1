@@ -21,27 +21,27 @@ title: What about the backwards parrot?
 
 It does look a little funny to have that parrot flying backwards. Just like you’d usually turn around rather than walking backwards, the parrot would turn around rather than flying backwards. Luckily for you, Scratch has a block for this!
 
-The `point in direction`{:class="blockmotion"} block lets you pick the direction your sprite is pointing in. You’ll find it in the **Motion** blocks section. You can type in any number, but the block comes with the four directions you'll need most already in it: `up`, `down`, `left`, and `right`.
+The `point in direction`{:class="block3motion"} block lets you pick the direction your sprite is pointing in. You’ll find it in the **Motion** blocks section. You can type in any number, but the block comes with the four directions you'll need most already in it: `up`, `down`, `left`, and `right`.
 
 --- /collapse ---
 
-+ Grab a couple of `point in direction`{:class="blockmotion"} block from the **Motion** list and connect them to your parrot’s code, like this: 
++ Grab a couple of `point in direction`{:class="block3motion"} block from the **Motion** list and connect them to your parrot’s code, like this: 
 
-```blocks
+```blocks3
     when [left arrow v] key pressed
     point in direction (-90)
     move (10) steps
 ```
 
-```blocks
+```blocks3
     when [right arrow v] key pressed
     point in direction (90)
     move (10) steps
 ```
 
-+ Change the steps in the `move`{:class="blockmotion"} block from `-10` to `10`.
++ Change the steps in the `move`{:class="block3motion"} block from `-10` to `10`.
 
-If you tried moving the parrot around after you added the `point in direction`{:class="blockmotion"} blocks, you might have noticed something a little strange happening. The parrot may not be turning quite right! 
+If you tried moving the parrot around after you added the `point in direction`{:class="block3motion"} blocks, you might have noticed something a little strange happening. The parrot may not be turning quite right! 
 
 ![Upside down parrot](images/spritesUpsideDown.png)
 
@@ -56,11 +56,11 @@ As usual, there’s a block for that, and it’s in **Motion**!
 
 --- /collapse ---
 
-+ Look in the **Motion** category for the block `set rotation style`{:class="blockmotion"}.
++ Look in the **Motion** category for the block `set rotation style`{:class="block3motion"}.
 
 + Add the block to your reset code from earlier and set the rotation style to `left-right`, like this: 
 
-```blocks
+```blocks3
     when green flag clicked
     set rotation style [left-right v]
     go to x: (0) y: (0)

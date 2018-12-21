@@ -4,11 +4,11 @@ The parrot moves, the mosquito flies, but they don’t interact: if the mosquito
 
 First, you need to know if the mosquito is touching the parrot. For this, you'll need a **control** block and a **sensing** block. 
 
-+ Add the `if...then`{:class="blockcontrol"} **control** block into the `forever`{:class="blockcontrol"} loop on the mosquito, below the `if on edge bounce`{:class="blockmotion"} block.
++ Add the `if...then`{:class="block3control"} **control** block into the `forever`{:class="block3control"} loop on the mosquito, below the `if on edge bounce`{:class="block3motion"} block.
 
-+ Drag the `touching...`{:class="blocksensing"} block into the space at the top of the `if...then`{:class="blockcontrol"} block, and click the little triangle to pick the parrot sprite's name. If you haven’t changed it, it'll be 'Sprite1'.
++ Drag the `touching...`{:class="block3sensing"} block into the space at the top of the `if...then`{:class="block3control"} block, and click the little triangle to pick the parrot sprite's name. If you haven’t changed it, it'll be 'Sprite1'.
 
-```blocks
+```blocks3
     if on edge, bounce
     if <touching [Sprite1 v] ?> then
     end
@@ -19,25 +19,25 @@ First, you need to know if the mosquito is touching the parrot. For this, you'll
 title: How does it work?
 ---
 
-The `if...then`{:class="blockcontrol"} **control** block needs to be given a `True/False` value. 
+The `if...then`{:class="block3control"} **control** block needs to be given a `True/False` value. 
 
 **Sensing** blocks collect information, like where the sprite is, what it’s touching, etc. You're using the block
 
-```blocks
+```blocks3
     <touching [Sprite1 v] ?>
 ```
 
-From this block's pointy ends, you can tell it’s going to give you the `True/False` value that the `if...then`{:class="blockcontrol"} block needs.
+From this block's pointy ends, you can tell it’s going to give you the `True/False` value that the `if...then`{:class="block3control"} block needs.
 
 --- /collapse ---
 
-Of course, you’ve just added an `if...then`{:class="blockcontrol"} block with no 'then'. 
+Of course, you’ve just added an `if...then`{:class="block3control"} block with no 'then'. 
 
-You can make the mosquito disappear, as if the parrot ate it, by using the `hide`{:class="blocklooks"} block.
+You can make the mosquito disappear, as if the parrot ate it, by using the `hide`{:class="block3looks"} block.
 
-+ Find the `hide`{:class="blocklooks"} block in the **Looks** list, and put it inside `if...then`{:class="blockcontrol"}. 
++ Find the `hide`{:class="block3looks"} block in the **Looks** list, and put it inside `if...then`{:class="block3control"}. 
 
-```blocks
+```blocks3
     if <touching [Sprite1 v] ?> then
         hide
     end
@@ -45,9 +45,9 @@ You can make the mosquito disappear, as if the parrot ate it, by using the `hide
 
 Now once the parrot catches the mosquito, it disappears for good. That’s not great. 
 
-+ Put the `show`{:class="blocklooks"} block from **Looks** in at the very start of the mosquito code, so you can reset the game. 
++ Put the `show`{:class="block3looks"} block from **Looks** in at the very start of the mosquito code, so you can reset the game. 
 
-```blocks
+```blocks3
     when green flag clicked
     show
     set rotation style [left-right v]
@@ -56,9 +56,9 @@ Now once the parrot catches the mosquito, it disappears for good. That’s not g
 
 Better, but you don’t want the player to have to restart the game every time they catch a single mosquito! 
 
-+ Update the code inside your `if...then`{:class="blockcontrol"} block to look like this:
++ Update the code inside your `if...then`{:class="block3control"} block to look like this:
 
-```blocks
+```blocks3
     if on edge, bounce
     if <touching [Sprite1 v] ?> then
         hide
