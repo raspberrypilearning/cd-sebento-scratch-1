@@ -75,7 +75,7 @@ When programmers need to talk about the positions of objects, like sprites, we o
 
 A sprite can be located by the coordinates of its centre, written for example like `(15, -27)`, where `15` is the position along the x-axis position, and `-27` the position along the y-axis.
 
-+ To get a feel for how this actually works, select a sprite and use the `x` and `y` controls to move it around the stage by setting different values for the coordinates.
++ To try out how this works, select a sprite and set different values for its `x` and `y` coordinates to move the sprite around the Stage.
 
 ![](images/xycoords.png)
 
