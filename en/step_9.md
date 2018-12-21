@@ -2,39 +2,37 @@
 
 To keep score, you’ll need somewhere to store the score, a way of adding to it, and a way of resetting it when the game is restarted.
 
-+ First: storing it! Go to the **Data** blocks category and click **Make a Variable**.
++ First: storing it! Go to the **Variables** blocks category and click **Make a Variable**.
 
 ![](images/catch5.png)
 
-+ Enter `Score` as the name. 
++ Enter `score` as the name. 
 
 ![](images/catch6.png)
 
 Check out your new variable and the blocks for it!
 
-![The Score variable is displayed on the stage](images/scoreVariableStage.png)
-![The blocks for the Score variable](images/scoreVariableBlocks.png)
-
+![The score variable is displayed on the stage](images/scoreVariableStage.png)
 
 --- collapse ---
 ---
 title: What are variables?
 ---
 
-When you want to store information in a program, you use something called a **variable**. Think of it like a box with a label on it: you can put something in it, check what’s in it, and change what’s in it. You’ll find variables under **Data**, but you need to create them first! 
+When you want to store information in a program, you use something called a **variable**. Think of it like a box with a label on it: you can put something in it, check what’s in it, and change what’s in it. You’ll find variables under **Variables**, but you need to create them first! 
 
 --- /collapse ---
 
 
 Now you need to update the variable whenever a mosquito is eaten, and to reset it when the game is restarted. Those are both pretty easy:
 
-+ From the **Data** section, take the `set Score to 0`{:class="block3variables"} and `change Score by 1`{:class="block3variables"} blocks and put them into your program: 
++ From the **Variables** section, take the `set [my variable v] to [0]`{:class="block3variables"} and `change [my variable v] by [1]`{:class="block3variables"} blocks, click on the little arrows and then choose `score` from the list, and put them into your program: 
 
 ### Code for the parrot
 
 ```blocks3
     when green flag clicked
-    set [Score v] to [0]
+    set [score v] to [0]
     set rotation style [left-right v]
     go to x: (0) y: (0)
 ```
@@ -43,7 +41,7 @@ Now you need to update the variable whenever a mosquito is eaten, and to reset i
 
 ```blocks3
     if <touching [Sprite1 v] ?> then
-        change [Score v] by [1]
+        change [score v] by [1]
         hide
         wait (1) secs
         go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
@@ -57,7 +55,7 @@ Cool! Now you’ve got a score and everything.
 
 ```blocks3
     when green flag clicked
-    set [Score v] to [0]
+    set [score v] to [0]
     set rotation style [left-right v]
     go to x: (0) y: (0)
     say [Hello! I need your help.] for (3) secs

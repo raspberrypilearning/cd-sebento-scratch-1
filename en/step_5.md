@@ -75,13 +75,11 @@ When programmers need to talk about the positions of objects, like sprites, we o
 
 A sprite can be located by the coordinates of its centre, written for example like `(15, -27)`, where `15` is the position along the x-axis position, and `-27` the position along the y-axis.
 
-+ To get a feel for how this actually works, take the `go to`{:class="block3motion"} block from motion and drop it onto your sprite panel. You don’t need to connect it to anything. 
++ To get a feel for how this actually works, select a sprite and use the `x` and `y` controls to move it around the stage by setting different values for the coordinates.
 
-```blocks3
-    go to x: (15) y: (-27)
-```
+![](images/xycoords.png)
 
-+ Next, pick some values for `x` and `y`, fill them in, and double-click on the block. Try different sets of values to see where the parrot goes! In Scratch, **x** goes from `-240` to `240`, and **y** goes from `-180` to `180`.
++  Try different pairs values to see where the sprite goes! In Scratch, the x-axis goes from `-240` to `240`, and the y-axis goes from `-180` to `180`.
 
 --- /collapse ---
 

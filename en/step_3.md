@@ -46,11 +46,9 @@ Code blocks run from top to bottom, so the order in which you snap your code tog
 
 --- /collapse ---
 
-Removing, or deleting, code blocks you don’t want in your program is easy! Just click on the **scissors** icon and then click on the code you want to remove. 
+Removing or deleting code blocks you don’t want in your program is easy! Just drag them back into the code blocks palette.
 
-![](images/code5.png)
-
-Be careful though! **You will delete all the blocks connected to the one you click on**. If you do this by accident and want to get your code back, you can use the **edit** menu and click on **undelete**. 
+**Be careful:** dragging them into the code blocks pallette will delete all the blocks connected to the block you drag, so make sure to separate code blocks you want to keep from those you want to remove. If you delete some code blocks by accident and want to get them back, you can just right-click and choose the 'undo' option to get everything back.
 
 ![](images/code6.png)
 
@@ -92,9 +90,4 @@ This block makes the cat turn 15 degrees of the full 360 degrees that make up a 
 
 --- /collapse ---
 
-+ Now save your work! You do this by going to the **File** menu and clicking **Save**. Remember to save regularly as you work!
-
-![](images/code10.png)
-
-### Top tip!
-You can also use **Save as** to save a copy of your program with a new name.
++ Now save your work!

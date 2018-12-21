@@ -6,7 +6,7 @@ Now you have a parrot that you can move around using the arrow keys. Nice! Time 
 
 ![](images/spritesPaintNew.png)
 
-If your mosquito is a bit big compared to your parrot, you can use the **grow** and **shrink** buttons to make both sprites the right size. 
+If your mosquito is a bit big compared to your parrot, you can use the size control to make both sprites the right size! 
 
 ![](images/sprites2.png)
 
