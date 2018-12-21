@@ -48,7 +48,7 @@ Code blocks run from top to bottom, so the order in which you snap your code tog
 
 Removing or deleting code blocks you don’t want in your program is easy! Just drag them back into the code blocks palette.
 
-**Be careful:** dragging them into the code blocks pallette will delete all the blocks connected to the block you drag, so make sure to separate code blocks you want to keep from those you want to remove. If you delete some code blocks by accident and want to get them back, you can just right-click and choose the 'undo' option to get everything back.
+**Be careful:** when you drag a block into the code blocks palette, all the blocks connected to the block you drag will also be deleted, so make sure to separate code blocks you want to keep from those you want to remove. If you delete some code blocks by accident and want to get them back, you can right-click and then click on the **undo** option to get everything back.
 
 ![](images/code6.png)
 
