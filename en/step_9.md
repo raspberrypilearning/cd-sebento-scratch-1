@@ -1,66 +1,47 @@
-## Let's catch some flies!
+## Keeping score
 
-The parrot moves, the mosquito flies, but they don’t interact: if the mosquito flies right into the parrot’s beak, nothing happens. Time to change that!
+To keep score, you’ll need somewhere to store the score, a way of adding to it, and a way of resetting it when the game is restarted.
 
-First, you need to know if the mosquito is touching the parrot. For this, you'll need a **control** block and a **sensing** block. 
++ First: storing it! Go to the **Variables** blocks category and click **Make a Variable**.
 
-+ Add the `if...then`{:class="blockcontrol"} **control** block into the `forever`{:class="blockcontrol"} loop on the mosquito, below the `if on edge bounce`{:class="blockmotion"} block.
+![](images/catch5.png)
 
-+ Drag the `touching...`{:class="blocksensing"} block into the space at the top of the `if...then`{:class="blockcontrol"} block, and click the little triangle to pick the parrot sprite's name. If you haven’t changed it, it'll be 'Sprite1'.
++ Enter `score` as the name. 
 
-```blocks
-    if on edge, bounce
-    if <touching [Sprite1 v] ?> then
-    end
-```
+![](images/catch6.png)
+
+Check out your new variable and the blocks for it!
+
+![The score variable is displayed on the stage](images/scoreVariableStage.png)
 
 --- collapse ---
 ---
-title: How does it work?
+title: What are variables?
 ---
 
-The `if...then`{:class="blockcontrol"} **control** block needs to be given a `True/False` value. 
-
-**Sensing** blocks collect information, like where the sprite is, what it’s touching, etc. You're using the block
-
-```blocks
-    <touching [Sprite1 v] ?>
-```
-
-From this block's pointy ends, you can tell it’s going to give you the `True/False` value that the `if...then`{:class="blockcontrol"} block needs.
+When you want to store information in a program, you use something called a **variable**. Think of it like a box with a label on it: you can put something in it, check what’s in it, and change what’s in it. You’ll find variables under **Variables**, but you need to create them first! 
 
 --- /collapse ---
 
-Of course, you’ve just added an `if...then`{:class="blockcontrol"} block with no 'then'. 
 
-You can make the mosquito disappear, as if the parrot ate it, by using the `hide`{:class="blocklooks"} block.
+Now you need to update the variable whenever a mosquito is eaten, and to reset it when the game is restarted. Those are both pretty easy:
 
-+ Find the `hide`{:class="blocklooks"} block in the **Looks** list, and put it inside `if...then`{:class="blockcontrol"}. 
++ From the **Variables** section, take the `set [my variable v] to [0]`{:class="block3variables"} and `change [my variable v] by [1]`{:class="block3variables"} blocks. In each of the blocks, click on the little arrow and then choose `score` from the list. Then put the blocks into your program: 
 
-```blocks
-    if <touching [Sprite1 v] ?> then
-        hide
-    end
-```
+### Code for the parrot
 
-Now once the parrot catches the mosquito, it disappears for good. That’s not great. 
-
-+ Put the `show`{:class="blocklooks"} block from **Looks** in at the very start of the mosquito code, so you can reset the game. 
-
-```blocks
+```blocks3
     when green flag clicked
-    show
+    set [score v] to [0]
     set rotation style [left-right v]
-    forever
+    go to x: (0) y: (0)
 ```
 
-Better, but you don’t want the player to have to restart the game every time they catch a single mosquito! 
+### Code for the mosquito
 
-+ Update the code inside your `if...then`{:class="blockcontrol"} block to look like this:
-
-```blocks
-    if on edge, bounce
+```blocks3
     if <touching [Sprite1 v] ?> then
+        change [score v] by [1]
         hide
         wait (1) secs
         go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
@@ -68,15 +49,26 @@ Better, but you don’t want the player to have to restart the game every time t
     end
 ```
 
---- collapse ---
----
-title: How does it work?
----
+Cool! Now you’ve got a score and everything. 
 
-You are being clever here: when the mosquito is hidden, wait, move it, then show it again. 
++ Finally, and add this code to make the parrot introduce the game:
 
-It looks like lots of mosquitoes, but it’s that one sprite moving around! 
+```blocks3
+    when green flag clicked
+    set [score v] to [0]
+    set rotation style [left-right v]
+    go to x: (0) y: (0)
+    say [Hello! I need your help.] for (3) secs
+    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (4) secs
+    say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
+    say [Please help me catch them and protect my friends!] for (3) secs
+```
 
---- /collapse ---
+--- challenge ---
 
-That’s a game! But there’s no way to keep score yet...or to win. You can fix that too — on the next card!
+## Challenge: winning the game
+
++ Pick a score at which the player wins, and make something cool happen. Maybe the parrot congratulates them, or a "You win!" sprite appears, or music plays, or...you get the idea!
+
+--- /challenge ---
+
