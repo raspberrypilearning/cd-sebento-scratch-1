@@ -30,39 +30,17 @@ Now you need to update the variable whenever a mosquito is eaten, and to reset i
 
 ### Code for the parrot
 
-```blocks3
-    when green flag clicked
-    set [score v] to [0]
-    set rotation style [left-right v]
-    go to x: (0) y: (0)
-```
+![blocks_1546561609_4505222](images/blocks_1546561609_4505222.png)
 
 ### Code for the mosquito
 
-```blocks3
-    if <touching [Sprite1 v] ?> then
-        change [score v] by [1]
-        hide
-        wait (1) secs
-        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-        show
-    end
-```
+![blocks_1546561610_546158](images/blocks_1546561610_546158.png)
 
 Cool! Now you’ve got a score and everything. 
 
 + Finally, and add this code to make the parrot introduce the game:
 
-```blocks3
-    when green flag clicked
-    set [score v] to [0]
-    set rotation style [left-right v]
-    go to x: (0) y: (0)
-    say [Hello! I need your help.] for (3) secs
-    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (4) secs
-    say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
-    say [Please help me catch them and protect my friends!] for (3) secs
-```
+![blocks_1546561611_7174249](images/blocks_1546561611_7174249.png)
 
 --- challenge ---
 
