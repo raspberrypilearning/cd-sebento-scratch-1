@@ -8,31 +8,19 @@ As you’ve probably guessed, you’re going to need **event** and **motion** bl
 
 + This time, look for this block and drag it onto the current sprite panel:
 
-```blocks3
-    when [space v] key pressed
-```
+![blocks_1546561583_251405](images/blocks_1546561583_251405.png)
 
 + Click the little arrow (▼) beside `space`. You will see a list of all the keys on your keyboard that you can pick from. 
 
 You’re going to need four of these blocks and you can connect them to **motion** blocks like this: 
 
-```blocks3
-    when [left arrow v] key pressed
-    move (-10) steps
-```
+![blocks_1546561584_316975](images/blocks_1546561584_316975.png)
 
-```blocks3
-    when [right arrow v] key pressed
-    move (10) steps
-```
+![blocks_1546561585_3964732](images/blocks_1546561585_3964732.png)
 
-```blocks3
-    when [up arrow v] key pressed
-```
+![blocks_1546561586_4770188](images/blocks_1546561586_4770188.png)
 
-```blocks3
-    when [down arrow v] key pressed
-```
+![blocks_1546561587_564847](images/blocks_1546561587_564847.png)
 
 **Note**: `-10` means 'go back 10 steps'.
 
@@ -42,25 +30,13 @@ Your parrot moves back and forwards now, which is pretty cool, but it doesn’t 
 
 + Grab two `change y by`{:class="block3motion"} blocks and update your code like this: 
 
-```blocks3
-    when [left arrow v] key pressed
-    move (-10) steps
-```
+![blocks_1546561584_316975](images/blocks_1546561584_316975.png)
 
-```blocks3
-    when [right arrow v] key pressed
-    move (10) steps
-```
+![blocks_1546561585_3964732](images/blocks_1546561585_3964732.png)
 
-```blocks3
-    when [up arrow v] key pressed
-    change y by (10)
-```
+![blocks_1546561588_63184](images/blocks_1546561588_63184.png)
 
-```blocks3
-    when [down arrow v] key pressed
-    change y by (-10)
-```
+![blocks_1546561589_705027](images/blocks_1546561589_705027.png)
 
 Now when the arrows are pressed, the parrot can move all over the stage!
 
@@ -93,16 +69,11 @@ So all you need is an **event** block for that green flag and the **go to** bloc
 
 + Drag the `when green flag clicked`{:class="blockevent"} **event** block onto the current sprite panel.
 
-```blocks3
-    when green flag clicked
-```
+![blocks_1546561590_78123](images/blocks_1546561590_78123.png)
 
 + Then find the `go to`{:class="block3motion"} **motion** block and snap it on to your flag event block.
 
-```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-```
+![blocks_1546561591_842601](images/blocks_1546561591_842601.png)
 
 + Set the both the `x` and the `y` to `0` in the `go to`{:class="block3motion"} block if they are not already `0`. 
 

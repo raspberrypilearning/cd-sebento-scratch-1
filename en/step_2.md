@@ -73,15 +73,11 @@ The **current sprite panel** is where you can see the code, costumes, and sounds
    
 + Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="block3events"} block and drag it onto the **current sprite panel**.  
 
-```blocks3
-    when green flag clicked
-```
+![blocks_1546561575_701653](images/blocks_1546561575_701653.png)
 
 + Then go to **Looks** in the **code blocks palette** and find the block
 
-```blocks3
-    say [Hello!] for (2) secs
-```
+![blocks_1546561578_970527](images/blocks_1546561578_970527.png)
 + Drag it onto the **current sprite panel**, connecting it to the bottom of the other block, like this: 
 
 ![](images/setup3.png)
