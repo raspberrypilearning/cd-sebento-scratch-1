@@ -34,7 +34,9 @@ title: Running the code
 
 Normally, you want your blocks to run automatically whenever something specific happens. This is why most of your programs will start with a block from the **events** category. Most often, it will be this one: 
 
-![blocks_1546561580_036499](images/blocks_1546561580_036499.png)
+```blocks3
+    when green flag clicked
+```
 
 The code blocks connected to this block will run after the **green flag** is clicked.
 
@@ -58,7 +60,10 @@ Now you know how to move code around and make things happen, time to try a simpl
 
 + Make sure you have the cat selected in the sprite list and then drag the following blocks together. You’ll find them in the **Events** and **Motion** lists.
 
-![blocks_1546561581_1079879](images/blocks_1546561581_1079879.png)
+```blocks3
+    when green flag clicked
+    move [10] steps
+``` 
 
 + Then, click on the green flag above the **Stage**. 
 
@@ -70,7 +75,9 @@ You should see the cat walking in a straight line...not exactly what you want, r
 
 + Snap this block to the end to make it walk in a circle. It’s in the **Motion** list too. 
 
-![blocks_1546561582_178806](images/blocks_1546561582_178806.png)
+```blocks3
+    turn cw (15) degrees
+```
 
 --- collapse ---
 ---

@@ -27,9 +27,17 @@ The `point in direction`{:class="block3motion"} block lets you pick the directio
 
 + Grab a couple of `point in direction`{:class="block3motion"} block from the **Motion** list and connect them to your parrot’s code, like this: 
 
-![blocks_1546561592_922282](images/blocks_1546561592_922282.png)
+```blocks3
+    when [left arrow v] key pressed
+    point in direction (-90)
+    move (10) steps
+```
 
-![blocks_1546561594_013133](images/blocks_1546561594_013133.png)
+```blocks3
+    when [right arrow v] key pressed
+    point in direction (90)
+    move (10) steps
+```
 
 + Change the steps in the `move`{:class="block3motion"} block from `-10` to `10`.
 
@@ -52,4 +60,8 @@ As usual, there’s a block for that, and it’s in **Motion**!
 
 + Add the block to your reset code from earlier and set the rotation style to `left-right`{:class="block3motion"}, like this: 
 
-![blocks_1546561595_121423](images/blocks_1546561595_121423.png)
+```blocks3
+    when green flag clicked
+    set rotation style [left-right v]
+    go to x: (0) y: (0)
+```
