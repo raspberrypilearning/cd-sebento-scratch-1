@@ -23,9 +23,7 @@ Once the block is in the **current sprite panel**, you can move it around and co
 
 --- /collapse --- 
 
-If you want to see what a block does, you can double-click on it to make it run!
-
-+ Try double-clicking on some of the blocks to see what they do.
+If you want to see what a block does, you can double-click on it to make it run! Try double-clicking on some of the blocks to see what they do.
 
 --- collapse ---
 ---
@@ -52,32 +50,44 @@ Removing or deleting code blocks you don’t want in your program is easy! Just 
 
 ![](images/code6.png)
 
-+ Try adding, deleting, and undeleting some code blocks! 
+--- task ---
+Try adding, deleting, and undeleting some code blocks! 
+--- /task ---
 
 ### Putting it all together
 
-Now you know how to move code around and make things happen, time to try a simple program: making the Scratch Cat walk in a circle!
+Now you know how to move code around and make things happen, time to try a simple program: making the Scratch Cat walk in a circle.
 
-+ Make sure you have the cat selected in the sprite list and then drag the following blocks together. You’ll find them in the **Events** and **Motion** lists.
+--- task ---
+Make sure you have the cat selected in the sprite list and then drag the following blocks together. You’ll find them in the **Events** and **Motion** lists.
 
 ```blocks3
-    when green flag clicked
-    move [10] steps
++    when green flag clicked
++    move [10] steps
 ``` 
+--- /task ---
 
-+ Then, click on the green flag above the **Stage**. 
+--- task ---
+Then, click on the green flag above the **Stage** a few times. 
 
 ![](images/code7.png)
+--- /task ---
 
 Note: If you click too many times and the cat walks away, you can drag it back! 
 
 You should see the cat walking in a straight line...not exactly what you want, right? 
 
-+ Snap this block to the end to make it walk in a circle. It’s in the **Motion** list too. 
+--- task ---
+Snap a turn block to the end to make it walk in a circle. It’s in the **Motion** list too. 
 
 ```blocks3
-    turn cw (15) degrees
+    when green flag clicked
+    move [10] steps
++    turn cw (15) degrees
 ```
+--- /task ---
+
+Try clicking the green flag a few more times to see the cat turn in a circle.
 
 --- collapse ---
 ---
@@ -90,4 +100,7 @@ This block makes the cat turn 15 degrees of the full 360 degrees that make up a 
 
 --- /collapse ---
 
-+ Now save your work!
+--- task ---
+Now save your work!
+--- /task ---
+

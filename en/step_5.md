@@ -1,46 +1,54 @@
 ## Moving things around
 
-Right now your parrot moves in a circle, but wouldn’t it be more fun to control it with the arrow keys? On this card, you’re going learn how to do that!
+Right now your parrot moves in a circle, but wouldn’t it be more fun to control it with the arrow keys? In this step, you’re going learn how to do that!
 
-+ Start by deleting any code that you have for the parrot.
+--- task ---
+Start by deleting any code that you have for the parrot.
+--- /task ---
 
 As you’ve probably guessed, you’re going to need **event** and **motion** blocks again! 
 
-+ This time, look for this block and drag it onto the current sprite panel:
+
+This time, look for this block and drag it onto the current sprite panel:
 
 ```blocks3
     when [space v] key pressed
 ```
 
-+ Click the little arrow (▼) beside `space`. You will see a list of all the keys on your keyboard that you can pick from. 
+Click the little arrow (▼) beside `space`. You will see a list of all the keys on your keyboard that you can pick from. 
 
+--- task ---
 You’re going to need four of these blocks and you can connect them to **motion** blocks like this: 
 
 ```blocks3
-    when [left arrow v] key pressed
-    move (-10) steps
++    when [left arrow v] key pressed
++    move (-10) steps
 ```
 
 ```blocks3
-    when [right arrow v] key pressed
-    move (10) steps
++    when [right arrow v] key pressed
++    move (10) steps
 ```
 
 ```blocks3
-    when [up arrow v] key pressed
++    when [up arrow v] key pressed
 ```
 
 ```blocks3
-    when [down arrow v] key pressed
++    when [down arrow v] key pressed
 ```
+--- /task ---
 
 **Note**: `-10` means 'go back 10 steps'.
 
-+ Add the blocks above to your program and click the green flag to test out your code.
+--- task ---
+Now click the green flag and press the arrow keys to test your code.
+--- /task ---
 
 Your parrot moves back and forwards now, which is pretty cool, but it doesn’t move up or down. Also, if you look through the **motion** blocks, you’ll see there are no blocks for 'up' or 'down'. There are a whole bunch of them related to **x** and **y** though — let's try those!
 
-+ Grab two `change y by`{:class="block3motion"} blocks and update your code like this: 
+--- task ---
+Grab two `change y by`{:class="block3motion"} blocks and update your code like this: 
 
 ```blocks3
     when [left arrow v] key pressed
@@ -54,13 +62,14 @@ Your parrot moves back and forwards now, which is pretty cool, but it doesn’t 
 
 ```blocks3
     when [up arrow v] key pressed
-    change y by (10)
++    change y by (10)
 ```
 
 ```blocks3
     when [down arrow v] key pressed
-    change y by (-10)
++    change y by (-10)
 ```
+--- /task ---
 
 Now when the arrows are pressed, the parrot can move all over the stage!
 
@@ -91,19 +100,23 @@ That’s actually pretty easy! The centre of the stage is `(0,0)` in `x` and `y`
 
 So all you need is an **event** block for that green flag and the **go to** block from **motion**. 
 
-+ Drag the `when green flag clicked`{:class="blockevent"} **event** block onto the current sprite panel.
+--- task ---
+Drag the `when green flag clicked`{:class="blockevent"} **event** block onto the current sprite panel.
+
+```blocks3
++    when green flag clicked
+```
+
+Then find the `go to`{:class="block3motion"} **motion** block and snap it on to your flag event block.
 
 ```blocks3
     when green flag clicked
++    go to x: (0) y: (0)
 ```
 
-+ Then find the `go to`{:class="block3motion"} **motion** block and snap it on to your flag event block.
+Set both the `x` and the `y` to `0` in the `go to`{:class="block3motion"} block if they are not already `0`. 
+--- /task ---
 
-```blocks3
-    when green flag clicked
-    go to x: (0) y: (0)
-```
-
-+ Set the both the `x` and the `y` to `0` in the `go to`{:class="block3motion"} block if they are not already `0`. 
-
-+ Now click the green flag, and you should see the parrot return to the centre of the stage.
+--- task ---
+ Now click the green flag, and you should see the parrot return to the centre of the stage.
+--- /task ---
