@@ -6,7 +6,7 @@ This is the **Scratch 3** version of the project. There is also a [Scratch 2 ver
 
 ## Introduction
 
-These Sushi Cards are going to help you learn to create computer programs in Scratch!
+This project is going to help you learn to create computer programs in Scratch!
 
 ### What you will make
 

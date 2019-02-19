@@ -24,3 +24,5 @@ steps:
 - title: Remote-control mosquito
 - title: Let's catch some flies!
 - title: Keeping score
+- title: "Challenge: winning the game"
+  challenge: true

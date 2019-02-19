@@ -69,17 +69,32 @@ The **current sprite panel** is where you can see the code, costumes, and sounds
 
 --- /collapse ---
 
-+ Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.  
-   
-+ Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="block3events"} block and drag it onto the **current sprite panel**.  
+Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.  
 
-![blocks_1546561575_701653](images/blocks_1546561575_701653.png)
+--- task ---
+Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="block3events"} block and drag it onto the **current sprite panel**.  
 
-+ Then go to **Looks** in the **code blocks palette** and find the block
+```blocks3
++    when green flag clicked
+```
+--- /task ---
 
-![blocks_1546561578_970527](images/blocks_1546561578_970527.png)
-+ Drag it onto the **current sprite panel**, connecting it to the bottom of the other block, like this: 
+--- task ---
+Then go to **Looks** in the **code blocks palette** and find the block
 
-![](images/setup3.png)
+```blocks3
+    say [Hello!] for (2) secs
+```
 
-+ Now click the **Start Program** button and watch what happens!
+Drag it onto the **current sprite panel**, connecting it to the bottom of the other block, like this: 
+
+```blocks3
+    when green flag clicked
+    say [Hello!] for (2) secs
+```
+--- /task ---
+
+--- task ---
+Now click the **Start Program** button and watch what happens!
+--- /task ---
+
