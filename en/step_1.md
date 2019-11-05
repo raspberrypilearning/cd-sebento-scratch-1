@@ -45,3 +45,5 @@ You’re going to need **Scratch**! Do one of the following two and once you’r
 + Use Scratch in your web browser by going to [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_blank"}
 
 --- /collapse ---
+
+![](https://code.org/api/hour/begin_rpi_mosquito.png)
