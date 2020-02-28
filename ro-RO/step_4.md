@@ -2,7 +2,9 @@
 
 Scratch has a library of backgrounds and sprites for you to use to make your project look awesome.
 
---- task --- Select the stage.
+--- task ---
+
+Select the stage.
 
 ![Selecting the stage](images/looksSelectStage.png)
 
@@ -16,11 +18,15 @@ Click the icon to **Choose backdrop from library**.
 
 Then pick your favourite outdoor background!
 
-![A lake scene](images/looksLake.png) --- /task ---
+![A lake scene](images/looksLake.png)
+
+--- /task ---
 
 Great! Now let's turn the cat into a parrot!
 
---- task --- First, select the cat and click on the **Costumes** tab.
+--- task ---
+
+First, select the cat and click on the **Costumes** tab.
 
 ![](images/cool2.png)
 
