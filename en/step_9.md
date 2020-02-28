@@ -36,6 +36,7 @@ Now you need to update the variable whenever a mosquito is eaten, and to reset i
 From the **Variables** section, take the `set [my variable v] to [0]`{:class="block3variables"} and `change [my variable v] by [1]`{:class="block3variables"} blocks. In each of the blocks, click on the little arrow and then choose `score` from the list. Then put the blocks into your program: 
 
 --- task ---
+
 ### Code for the parrot
 
 ```blocks3
@@ -56,11 +57,13 @@ From the **Variables** section, take the `set [my variable v] to [0]`{:class="bl
         show
     end
 ```
+
 --- /task ---
 
 Cool! Now you’ve got a score and everything. 
 
 --- task ---
+
 Finally, add this code to make the parrot introduce the game:
 
 ```blocks3
@@ -73,4 +76,5 @@ Finally, add this code to make the parrot introduce the game:
     say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
     say [Please help me catch them and protect my friends!] for (3) secs
 ```
+
 --- /task ---

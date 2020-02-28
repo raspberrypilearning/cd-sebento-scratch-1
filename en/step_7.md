@@ -3,6 +3,7 @@
 Ok, now it's time to make the mosquito fly on its own. To do this, you’re going to need a new kind of block: a **control** block. 
 
 --- task ---
+
 Select your mosquito sprite and drag a `when green flag clicked`{:class="block3events"} **event** block, a `forever`{:class="block3control"} **control** block and a `move 10 steps`{:class="block3motion"} **motion** block into the **sprite panel** like this: 
 
 ```blocks3
@@ -11,6 +12,7 @@ Select your mosquito sprite and drag a `when green flag clicked`{:class="block3e
         move (10) steps
     end
 ```
+
 --- /task ---
 
 
@@ -26,7 +28,9 @@ The mosquito does whatever is in the `forever`{:class="block3control"} block ove
 --- /collapse ---
 
 --- task ---
+
 Now click the green flag and watch what happens!
+
 --- /task ---
 
 Well, that mosquito just crashed into the side of the Stage, and it was moving far too fast for your parrot to catch. 
@@ -38,6 +42,7 @@ First, you need to slow it down. That’s actually pretty easy, you just need it
 ```
 
 --- task ---
+
 Snap the `wait`{:class="block3control"} block into your code, and change the number to `0.5`, like this:
 
 
@@ -48,6 +53,7 @@ Snap the `wait`{:class="block3control"} block into your code, and change the num
 +        wait (0.5) secs
     end
 ```
+
 --- /task ---
 
 --- collapse ---
@@ -63,9 +69,10 @@ You can test out different values to see which is the best for the game. Remembe
 
 The mosquito moves now, but you need it to bounce off the edge too. Yet again, there’s a **motion** block for this! 
 
-
 --- task ---
+
 Find the `if on edge bounce`{:class="block3motion"} block, and add it in after the `wait`{:class="block3control"} block.
+
 --- /task ---
 
 --- collapse ---
@@ -80,6 +87,7 @@ The `if on edge bounce`{:class="block3motion"} block checks if the sprite is tou
 Of course, this will lead to an upside-down mosquito, so you need a `set rotation style`{:class="block3motion"} block again. 
 
 --- task ---
+
 Update your code to set the rotation style of the mosquito to `left-right`{:class="block3motion"}:
 
 ```blocks3
@@ -91,6 +99,7 @@ Update your code to set the rotation style of the mosquito to `left-right`{:clas
         if on edge, bounce
     end
 ```
+
 --- /task ---
 
 The mosquito moves back and forward now, but only in a straight line — a bit too easy for the player to catch with the parrot! You need to make the mosquito less predictable.
@@ -98,6 +107,7 @@ The mosquito moves back and forward now, but only in a straight line — a bit t
 You already know from a previous step how to make a sprite turn, so start there! 
 
 --- task ---
+
 Add a turn into the mosquito’s flying and click the green flag. 
 
 ```blocks3
@@ -110,6 +120,7 @@ Add a turn into the mosquito’s flying and click the green flag.
         if on edge, bounce
     end
 ```
+
 --- /task ---
 
 It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
@@ -132,6 +143,7 @@ title: What's an operator?
 --- /collapse ---
 
 --- task ---
+
 Find the `pick random`{:class="block3operators"} **operator** block, and plug it into the `turn degrees`{:class="block3motion"} **motion** block by clicking it and dragging it into the field where you set the number of degrees. 
 
 ```blocks3
@@ -144,10 +156,13 @@ Find the `pick random`{:class="block3operators"} **operator** block, and plug it
         if on edge, bounce
     end
 ```
+
 --- /task ---
 
 **Note**: you can change the minimum and maximum numbers it will pick, but the default values (`1` and `10`) are pretty good for this game, so you can just leave them.
 
 --- task ---
+
 Click the green flag to run the code!
+
 --- /task ---
