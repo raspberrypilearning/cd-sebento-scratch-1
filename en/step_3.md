@@ -51,7 +51,9 @@ Removing or deleting code blocks you don’t want in your program is easy! Just 
 ![](images/code6.png)
 
 --- task ---
+
 Try adding, deleting, and undeleting some code blocks! 
+
 --- /task ---
 
 ### Putting it all together
@@ -59,18 +61,22 @@ Try adding, deleting, and undeleting some code blocks!
 Now you know how to move code around and make things happen, time to try a simple program: making the Scratch Cat walk in a circle.
 
 --- task ---
+
 Make sure you have the cat selected in the sprite list and then drag the following blocks together. You’ll find them in the **Events** and **Motion** lists.
 
 ```blocks3
 +    when green flag clicked
 +    move [10] steps
 ``` 
+
 --- /task ---
 
 --- task ---
+
 Then, click on the green flag above the **Stage** a few times. 
 
 ![](images/code7.png)
+
 --- /task ---
 
 Note: If you click too many times and the cat walks away, you can drag it back! 
@@ -78,6 +84,7 @@ Note: If you click too many times and the cat walks away, you can drag it back!
 You should see the cat walking in a straight line...not exactly what you want, right? 
 
 --- task ---
+
 Snap a turn block to the end to make it walk in a circle. It’s in the **Motion** list too. 
 
 ```blocks3
@@ -85,6 +92,7 @@ Snap a turn block to the end to make it walk in a circle. It’s in the **Motion
     move [10] steps
 +    turn cw (15) degrees
 ```
+
 --- /task ---
 
 Try clicking the green flag a few more times to see the cat turn in a circle.
@@ -101,6 +109,8 @@ This block makes the cat turn 15 degrees of the full 360 degrees that make up a 
 --- /collapse ---
 
 --- task ---
+
 Now save your work!
+
 --- /task ---
 
