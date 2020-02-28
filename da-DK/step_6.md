@@ -2,8 +2,9 @@
 
 Now you have a parrot that you can move around using the arrow keys. Nice! Time to add some mosquitos for it to catch!
 
+--- task ---
 
---- task --- Click the **New sprite** button. Scratch doesn't have any ready-made mosquito costumes, so you are going to draw one!
+Click the **New sprite** button. Scratch doesn't have any ready-made mosquito costumes, so you are going to draw one!
 
 ![](images/spritesPaintNew.png)
 
@@ -11,7 +12,9 @@ If your mosquito is a bit big compared to your parrot, you can use the size cont
 
 ![](images/sprites2.png)
 
-Change the value in the size control to make the sprite bigger or smaller. --- /task ---
+Change the value in the size control to make the sprite bigger or smaller.
+
+--- /task ---
 
 Nice! Later, you're going to add some code to make the mosquito move around on its own, without help from the player. Your player will be the parrot, trying to catch the mosquito.
 
@@ -26,7 +29,9 @@ The `point in direction`{:class="block3motion"} block lets you pick the directio
 
 --- /collapse ---
 
---- task --- Grab a couple of `point in direction`{:class="block3motion"} block from the **Motion** list and connect them to your parrot’s code, like this:
+--- task ---
+
+Grab a couple of `point in direction`{:class="block3motion"} block from the **Motion** list and connect them to your parrot’s code, like this:
 
 ```blocks3
     when [left arrow v] key pressed
@@ -39,15 +44,19 @@ The `point in direction`{:class="block3motion"} block lets you pick the directio
 +    point in direction (90)
     move (10) steps
 ```
+
 --- /task ---
 
---- task --- Since the parrot has turned around, change the direction it flys in when the left arrow is pressed:
+--- task ---
+
+Since the parrot has turned around, change the direction it flys in when the left arrow is pressed:
 
 ```blocks3
     when [left arrow v] key pressed
     point in direction (-90)
 +    move (10) steps
 ```
+
 --- /task ---
 
 If you tried moving the parrot around after you added the `point in direction`{:class="block3motion"} blocks, you might have noticed something a little strange happening. The parrot may not be turning quite right!
@@ -65,7 +74,9 @@ As usual, there’s a block for that, and it’s in **Motion**!
 
 --- /collapse ---
 
---- task --- Look in the **Motion** category for the block `set rotation style`{:class="block3motion"}.
+--- task ---
+
+Look in the **Motion** category for the block `set rotation style`{:class="block3motion"}.
 
 Add the block to your reset code from earlier and set the rotation style to `left-right`{:class="block3motion"}, like this:
 
@@ -74,5 +85,6 @@ Add the block to your reset code from earlier and set the rotation style to `lef
 +    set rotation style [left-right v]
     go to x: (0) y: (0)
 ```
+
 --- /task ---
 
