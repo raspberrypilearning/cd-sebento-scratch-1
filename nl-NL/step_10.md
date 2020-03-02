@@ -1,3 +1,3 @@
-## Challenge: winning the game
+## Uitdaging: het spel winnen
 
-Pick a score at which the player wins, and make something cool happen. Maybe the parrot congratulates them, or a "You win!" sprite appears, or music plays, or...you get the idea!
+Kies een score waarmee de speler wint en laat iets cools gebeuren. Misschien feliciteert de papegaai hen, of een "Je wint!" sprite verschijnt, of muziek speelt, of...je snapt het idee!
