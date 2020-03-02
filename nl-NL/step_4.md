@@ -1,47 +1,47 @@
-## Setting the scene
+## Het instellen van de scène
 
-Scratch has a library of backgrounds and sprites for you to use to make your project look awesome.
+Scratch heeft een bibliotheek met achtergronden en sprites die je kunt gebruiken om je project er geweldig uit te laten zien.
 
 --- task ---
 
-Select the stage.
+Selecteer het speelveld.
 
-![Selecting the stage](images/looksSelectStage.png)
+![Het speelveld selecteren](images/looksSelectStage.png)
 
-Click on **Backdrops**.
+Klik op **Achtergronden**.
 
-![The Backdrops tab](images/looksBackdrops.png)
+![Het tabblad Achtergronden](images/looksBackdrops.png)
 
-Click the icon to **Choose backdrop from library**.
+Klik op het pictogram **Kies een achtergrond**.
 
-![The Choose backdrop icon](images/looksChooseBg.png)
+![Het pictogram Achtergrond kiezen](images/looksChooseBg.png)
 
-Then pick your favourite outdoor background!
+Kies dan je favoriete buiten achtergrond!
 
-![A lake scene](images/looksLake.png)
+![Een scène van een meer](images/looksLake.png)
 
 --- /task ---
 
-Great! Now let's turn the cat into a parrot!
+Supergoed! Laten we nu de kat in een papegaai veranderen!
 
 --- task ---
 
-First, select the cat and click on the **Costumes** tab.
+Selecteer eerst de kat en klik op het tabblad **Uiterlijken**.
 
 ![](images/cool2.png)
 
-Then, click on **Choose costume from Library**
+Klik vervolgens op **Kies een uiterlijk**
 
 ![](images/cool3.png)
 
-Select a parrot and click **OK**.
+Selecteer een papegaai en klik op **OK**.
 
-![The parrot costume](images/looksParrot.png)
+![Het papegaaienuiterlijk](images/looksParrot.png)
 
-Now remove the cat costumes by selecting each of them and clicking on the **x**.
+Verwijder nu de kattenuiterlijken door elk van hen te selecteren en op **x** te klikken.
 
 ![](images/coolDeleteCostumes.png)
 
 --- /task ---
 
-Great! You have a parrot!
+Supergoed! Je hebt een papegaai!
