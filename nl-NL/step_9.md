@@ -1,80 +1,80 @@
-## Keeping score
+## Score bijhouden
 
-To keep score, you’ll need somewhere to store the score, a way of adding to it, and a way of resetting it when the game is restarted.
+Om de score bij te houden, moet je ergens de score opslaan, een manier hebben om deze te verhogen en een manier om deze opnieuw in te stellen wanneer het spel opnieuw wordt gestart.
 
 --- task ---
 
-First: storing it! Go to the **Variables** blocks category and click **Make a Variable**.
+Ten eerste: opslaan! Ga naar de categorie **variabelen** blokken en klik op **Maak een variabele**.
 
 ![](images/catch5.png)
 
-Enter `score` as the name.
+Type `score` als de naam.
 
 ![](images/catch6.png)
 
-Check out your new variable and the blocks for it!
+Bekijk je nieuwe variabele en de blokken die erbij horen!
 
-![The score variable is displayed on the stage](images/scoreVariableStage.png)
+![De scorevariabele wordt op het speelveld weergegeven](images/scoreVariableStage.png)
 
 --- /task ---
 
 --- collapse ---
 ---
-title: What are variables?
+title: Wat zijn variabelen?
 ---
 
-When you want to store information in a program, you use something called a **variable**. Think of it like a box with a label on it: you can put something in it, check what’s in it, and change what’s in it. You’ll find variables under **Variables**, but you need to create them first!
+Als je informatie wilt opslaan in een programma, dan gebruik je iets dat **variabele** heet. Zie het als een doos met een label erop: je kunt er iets instoppen, controleren wat er in zit, en veranderen wat er in zit. Je vindt variabelen onder **Variabelen**, maar je moet ze eerst maken!
 
 --- /collapse ---
 
-Now you need to update the variable whenever a mosquito is eaten, and to reset it when the game is restarted:
+Nu moet je de variabele bijwerken wanneer een mug wordt opgegeten, en deze opnieuw instellen wanneer het spel opnieuw wordt gestart:
 
 --- task ---
 
 --- /task ---
 
-From the **Variables** section, take the `set [my variable v] to [0]`{:class="block3variables"} and `change [my variable v] by [1]`{:class="block3variables"} blocks. In each of the blocks, click on the little arrow and then choose `score` from the list. Then put the blocks into your program:
+Pak uit de **Variabelen** categorie de `maak [mijn variabele v] [0]`{:class="block3variables"} en `verander [mijn variabele v] met [1]`{:class="block3variables"} blokken. Klik in elk van de blokken op de kleine pijl en kies vervolgens `score` uit de lijst. Plaats vervolgens de blokken in je programma:
 
 --- task ---
 
-### Code for the parrot
+### Code voor de papegaai
 
 ```blocks3
-    when green flag clicked
-+    set [score v] to [0]
-    set rotation style [left-right v]
-    go to x: (0) y: (0)
+    wanneer op groene vlag wordt geklikt
++ maak [score v] [0]
+maak draaistijl [links-rechts v]
+ga naar x: (0) y: (0)
 ```
 
-### Code for the mosquito
+### Code voor de mug
 
 ```blocks3
-    if <touching [Sprite1 v] ?> then
-+        change [score v] by [1]
-        hide
-        wait (1) secs
-        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-        show
-    end
+    als <raak ik [Sprite1 v]> dan
++ verander [score v] met [1]
+verdwijn
+wacht (1) sec.
+ga naar x: (willekeurig getal tussen (-240) en (240)) y: (willekeurig getal tussen (-180) en (180))
+verschijn
+einde
 ```
 
 --- /task ---
 
-Cool! Now you’ve got a score and everything.
+Gaaf! Nu heb je zelfs een score.
 
 --- task ---
 
-Finally, add this code to make the parrot introduce the game:
+Voeg ten slotte deze code toe om de papegaai het spel te laten uitleggen:
 
 ```blocks3
-    when green flag clicked
-    set [score v] to [0]
-    set rotation style [left-right v]
-    go to x: (0) y: (0)
-    say [Hello! I need your help.] for (3) secs
-    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (4) secs
-    say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
-    say [Please help me catch them and protect my friends!] for (3) secs
+    wanneer op de groene vlag wordt geklikt
+    maak [score v] naar [0]
+    maak draaistijl [links-rechts v]
+    ga naar x: (0) y: (0)
+    zeg [Hallo! Ik heb je hulp nodig.] (3) sec.
+    zeg [Kun je me helpen met het vangen van alle muggen? Gebruik de pijltjestoetsen.] (4) sec.
+    zeg [Muggen zijn kleine vliegen die gevaarlijke ziekten verspreiden zoals malaria.] (5) sec.
+    zeg [Help me alsjeblieft om ze te vangen en mijn vrienden te beschermen!] (3) sec.
 ```
 
 --- /task ---
