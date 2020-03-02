@@ -1,18 +1,18 @@
 --- no-print ---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-sebento-scratch-1-scratch2).
+Dit is de **Scratch 3** versie van het project. Er is ook een [Scratch 2 versie van dit project](https://projects.raspberrypi.org/en/projects/cd-sebento-scratch-1-scratch2).
 
 --- /no-print ---
 
-## Introduction
+## Inleiding
 
-This project is going to help you learn to create computer programs in Scratch!
+Dit project gaat je helpen om computerprogramma's te leren maken in Scratch!
 
-### What you will make
+### Wat ga je maken
 
-You will make a game where you protect people from malaria by making a parrot catch mosquitoes.
+Je gaat een spel maken waarbij je mensen tegen malaria beschermt door een papegaai muggen te laten vangen.
 
-Below is an example of how the finished game might look. Press the green flag to run the project. Use the arrow keys to move the parrot around and try to catch the mosquitoes. If you catch ten mosquitoes, you can see what happens when you win!
+Hieronder zie je een voorbeeld van hoe het voltooide spel eruit zou kunnen zien. Druk op de groene vlag om het project uit te voeren. Gebruik de pijltjestoetsen om de papegaai te verplaatsen en probeer de muggen te vangen. Als je tien muggen vangt, kun je zien wat er gebeurt als je wint!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/215534725/?autostart=false" frameborder="0"></iframe>
@@ -20,29 +20,29 @@ Below is an example of how the finished game might look. Press the green flag to
 
 --- collapse ---
 ---
-title: What you will learn
+title: Wat ga je leren
 ---
 
-* Adding and deleting code blocks
-* Basic motion:  move in steps, and turn by degrees
-* Using keyboard controls
-* Using x/y coordinates to position sprites
-* Changing the look of the Stage and of sprites with costumes and show/hide
-* Multiple sprites on screen
-* Forever loops
-* Detecting when sprites are touching
+* Toevoegen en verwijderen van codeblokken
+* Basisbeweging: stapsgewijs bewegen en stapsgewijs draaien
+* Gebruik van toetsenbord knoppen
+* Gebruik x/y-coördinaten om sprites te positioneren
+* Het uiterlijk van het speelveld en sprites wijzigen met verschijn/verdwijn
+* Meerdere sprites op het scherm
+* Herhaal lussen
+* Merken wanneer sprites elkaar raken
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: Wat heb je nodig
 ---
 
-You’re going to need **Scratch**! Do one of the following two and once you’re set up, move on to the next step.
+Je hebt **Scratch** nodig! Voer één van de volgende twee uit en ga na de installatie verder met de volgende stap.
 
-+ Download Scratch and install it on your computer by going to [dojo.soy/downloadscratch](http://dojo.soy/downloadscratch){:target="_blank"}
-+ Use Scratch in your web browser by going to [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_blank"}
++ Download Scratch en installeer het op je computer door naar [dojo.soy/downloadscratch](http://dojo.soy/downloadscratch){:target="_blank"} te gaan
++ Gebruik Scratch in je webbrowser door naar [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_ blank"} te gaan
 
 --- /collapse ---
 
