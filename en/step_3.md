@@ -38,7 +38,7 @@ Normally, you want your blocks to run automatically whenever something specific 
 
 The code blocks connected to this block will run after the **green flag** is clicked.
 
-Code blocks run from top to bottom, so the order in which you snap your code together in matters. In this example, the sprite will `say`{:class="block3looks"} `Hello!` before it will `play`{:class="block3sound"} the `meow` sound. 
+Code blocks run from top to bottom, so the order in which you snap your code together in matters. In this example, the sprite will `say`{:class="block3looks"} `Hello!`{:class="block3looks"} before it will `play`{:class="block3sound"} the `meow`{:class="block3sound"} sound. 
 
 
 ```blocks3
