@@ -1,7 +1,7 @@
 ---
-title: Mosquito patrol
+title: Muggenpatrouille
 hero_image: images/banner.png
-description: Make your first Scratch program!
+description: Maak je eerste Scratch programma!
 theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -17,23 +17,23 @@ version: 3.0.0
 last_tested: 2018-05-01
 steps:
   - 
-    title: Introduction
+    title: Inleiding
   - 
-    title: Getting set up
+    title: Opstarten
   - 
-    title: Adding & removing code
+    title: Code toevoegen & verwijderen
   - 
-    title: Setting the scene
+    title: Het instellen van de scène
   - 
-    title: Moving things around
+    title: Laat dingen bewegen
   - 
-    title: All the sprites
+    title: Alle sprites
   - 
-    title: Remote-control mosquito
+    title: Op afstand bestuurbare mug
   - 
-    title: Let's catch some mosquitoes!
+    title: Laten we wat muggen vangen!
   - 
-    title: Keeping score
+    title: Score bijhouden
   - 
-    title: "Challenge: winning the game"
+    title: "Uitdaging: het spel winnen"
     challenge: true
