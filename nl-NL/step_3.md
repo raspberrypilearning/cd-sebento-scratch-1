@@ -1,46 +1,51 @@
-## Adding & removing code
+## Toevoegen & verwijdercode
 
-Great! You’ve written your first Scratch program. Time to learn a little more about getting code in and out of Scratch! Scratch code is made up of **blocks** that you snap together, such as these:
+Geweldig! Je hebt je eerste Scratch programma geschreven. Tijd om wat meer te leren over hoe je code in en uit Scratch kunt krijgen! Scratch code bestaat uit **blokken** die je samen klikt, zoals deze:
 
 ![](images/code1.png)
 
-You will find all blocks in the **code blocks palette**,where they are broken up into different categories.
+Je vind alle blokken in het gedeelte van **codeblokkenpalet**, waar ze zijn onderverdeeld in verschillende categorieën.
 
 --- collapse ---
 ---
-title: Using blocks from the different categories
+title: Gebruik blokken uit de verschillende categorieën
 ---
 
-Clicking on a category name to see the blocks in that category. Here, the **Motion** category is selected.
+Klik op een categorienaam om de blokken in die categorie te zien. Hier is de **Beweging** categorie geselecteerd.
 
 ![](images/code2a.png)
 
-All of the blocks in the selected category are shown in a list. You can pick the one you want, click on it, hold down the mouse button, and then just drag it onto the **current sprite panel** and let go.
+Alle blokken in de geselecteerde categorie worden in een lijst weergegeven. Kies het blok dat je wilt, klik er dan op, houdt de muisknop ingedrukt en sleep het naar het **huidige sprite paneel** en laat los.
 
-Once the block is in the **current sprite panel**, you can move it around and connect it to other blocks.
+Zodra het blok zich in het **huidige sprite paneel** bevind, kun je het verplaatsen en verbinden met andere blokken.
 
 ![](images/code2b.png)
 
 --- /collapse ---
 
-If you want to see what a block does, you can double-click on it to make it run! Try double-clicking on some of the blocks to see what they do.
+Als je wilt zien wat een blok doet, kun je erop dubbelklikken om het uit te laten voeren! Dubbelklik op een aantal blokken om te zien wat ze doen.
 
 --- collapse ---
 ---
-title: Running the code
+title: De code uitvoeren
 ---
 
-Normally, you want your blocks to run automatically whenever something specific happens. This is why most of your programs will start with a block from the **events** category. Most often, it will be this one:
+Normaal gesproken wil je dat je blokken automatisch worden uitgevoerd wanneer er iets specifieks gebeurt. Dit is de reden waarom de meeste van je programma's beginnen met een blok uit de categorie **gebeurtenissen**. Meestal zal dit deze zijn:
+
+```blocks3
+    wanneer op de groene vlag wordt geklikt
+```
+
+De codeblokken die zijn aangesloten op dit blok worden uitgevoerd nadat op de **groene vlag** is geklikt.
+
+Codeblokken lopen van boven naar beneden, dus de volgorde waarin je je code bij elkaar klikt. In this example, the sprite will `say`{:class="block3looks"} `Hello!`{:class="block3looks"} before it will `play`{:class="block3sound"} the `meow`{:class="block3sound"} sound.
+
 
 ```blocks3
     when green flag clicked
+    say [Hello!]
+    play sound [meow v]
 ```
-
-The code blocks connected to this block will run after the **green flag** is clicked.
-
-Code blocks run from top to bottom, so the order in which you snap your code together in matters. In this example, the sprite will `say`{:class="block3looks"} `Hello!` before it will `play`{:class="block3sound"} the `meow` sound.
-
-![](images/code4.png)
 
 --- /collapse ---
 
@@ -56,7 +61,7 @@ Try adding, deleting, and undeleting some code blocks!
 
 --- /task ---
 
-### Putting it all together
+### Alles bij elkaar brengen
 
 Now you know how to move code around and make things happen, time to try a simple program: making the Scratch Cat walk in a circle.
 
@@ -99,7 +104,7 @@ Try clicking the green flag a few more times to see the cat turn in a circle.
 
 --- collapse ---
 ---
-title: How does turning work?
+title: Hoe werkt draaien?
 ---
 
 This block makes the cat turn 15 degrees of the full 360 degrees that make up a circle. You can change that number, or the number of steps, by clicking on the number and typing in a new value.
