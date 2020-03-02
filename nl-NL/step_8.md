@@ -1,102 +1,102 @@
-## Let's catch some flies!
+## Laten we wat muggen vangen!
 
-The parrot moves, the mosquito flies, but they don’t interact: if the mosquito flies right into the parrot’s beak, nothing happens. Time to change that!
+De papegaai beweegt, de mug vliegt, maar ze werken niet samen: als de mug recht in de bek van de papegaai vliegt, gebeurt er niets. Hoog tijd om dat te veranderen!
 
-First, you need to know if the mosquito is touching the parrot. For this, you'll need a **control** block and a **sensing** block.
+Eerst moet je weten of de mug de papegaai raakt. Hiervoor heb je een **besturen** blok en een **waarnemen** blok nodig.
 
 --- task ---
 
-Add the `if...then`{:class="block3control"} **control** block into the `forever`{:class="block3control"} loop on the mosquito, below the `if on edge bounce`{:class="block3motion"} block.
+Voeg een `als...dan`{:class="block3control"} **besturen** blok in de `herhaal`{:class="block3control"} lus toe bij de mug, onder het `keer om aan de rand`{:class="block3motion"} blok.
 
 --- /task ---
 
 --- task ---
 
-Drag the `touching...`{:class="block3sensing"} block into the space at the top of the `if...then`{:class="block3control"} block, and click the little triangle to pick the parrot sprite's name. If you haven’t changed it, it'll be 'Sprite1'.
+Sleep het `raak ik...`{:class="block3sensing"} blok naar de ruimte bovenaan het `als...dan`{:class="block3control"} blok en klik op het driehoekje voor Parrot. Als je het niet hebt gewijzigd, is het 'Sprite1'.
 
 ```blocks3
-    if on edge, bounce
-+    if <touching [Sprite1 v] ?> then
-    end
+    keer om aan de rand
++ als <raak ik [Sprite1 v]> dan
+    einde
 ```
 
 --- /task ---
 
 --- collapse ---
 ---
-title: How does it work?
+title: Hoe werkt het?
 ---
 
-The `if...then`{:class="block3control"} **control** block needs to be given a `True/False` value.
+Het `als...dan`{:class="block3control"} **besturen** blok moet een `Waar/Niet waar` waarde krijgen.
 
-**Sensing** blocks collect information, like where the sprite is, what it’s touching, etc. You're using the block
+**Waarnemen** blokken verzamelen informatie, zoals waar de sprite is, wat het aanraakt, etc. Je gebruikt het blok
 
 ```blocks3
-    <touching [Sprite1 v] ?>
+    < raak ik [Sprite1 v]>
 ```
 
-From this block's pointy ends, you can tell it’s going to give you the `True/False` value that the `if...then`{:class="block3control"} block needs.
+Aan de puntige uiteinden van dit blok kun je zien dat het je de `Waar/Niet waar` waarde geeft die het `als...dan`{:class="block3control"} blok nodig heeft.
 
 --- /collapse ---
 
-Of course, you’ve just added an `if...then`{:class="block3control"} block with no 'then'.
+Natuurlijk heb je zojuist een `als...dan`{:class="block3control"} blok toegevoegd zonder 'dan'.
 
-You can make the mosquito disappear, as if the parrot ate it, by using the `hide`{:class="block3looks"} block.
+Je kunt de mug laten verdwijnen, alsof de papegaai hem heeft opgegeten, door het blok `verdwijn`{:class="block3looks"} te gebruiken.
 
 --- task ---
 
-Find the `hide`{:class="block3looks"} block in the **Looks** list, and put it inside `if...then`{:class="block3control"}.
+Zoek het blok `verdwijn`{:class="block3looks"} blok in de lijst **Uiterlijken** en plaats dit in `als...dan`{:class="block3control"}.
 
 ```blocks3
-    if <touching [Sprite1 v] ?> then
-+        hide
-    end
+    als <raak ik [Sprite1 v]> dan
++ verdwijn
+einde
 ```
 
 --- /task ---
 
-Now once the parrot catches the mosquito, it disappears for good. That’s not great.
+Zodra de papegaai de mug vangt, verdwijnt deze voorgoed. Dat is niet geweldig.
 
 --- task ---
 
-Put the `show`{:class="block3looks"} block from **Looks** in at the very start of the mosquito code, so you can reset the game.
+Zet het `verschijn`{:class="block3looks"} blok van **Uiterlijken** aan het begin van de mugcode, zodat je het spel kunt resetten.
 
 ```blocks3
-    when green flag clicked
-+    show
-    set rotation style [left-right v]
-    forever
+    wanneer op de groene vlag wordt geklikt
++ verschijn
+maak draaistijl [links-rechts v]
+herhaal
 ```
 
 --- /task ---
 
-Better, but you don’t want the player to have to restart the game every time they catch a single mosquito!
+Beter, maar je wilt niet dat de speler het spel opnieuw moet opstarten telkens wanneer hij een enkele mug vangt!
 
 --- task ---
 
-Update the code inside your `if...then`{:class="block3control"} block to look like this:
+Pas de code aan in `als...dan`{:class="block3control"} blok zodat het er zo uitziet:
 
 ```blocks3
-    if on edge, bounce
-    if <touching [Sprite1 v] ?> then
-        hide
-+        wait (1) secs
-+        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-+        show
-    end
+    keer om aan de rand
+als <raak ik [Sprite1 v]> dan
+verdwijn
++ wacht (1) sec.
++ ga naar x: (willekeurig getal tussen (-240) en (240)) y: (willekeurig getal tussen (-180) en (180))
++ verschijn
+einde
 ```
 
 --- /task ---
 
 --- collapse ---
 ---
-title: How does it work?
+title: Hoe werkt het?
 ---
 
-You are being clever here: when the mosquito is hidden, wait, move it, then show it again.
+Je bent hier slim: als de mug verdwenen is, wacht dan, verplaats hem en laat hem opnieuw verschijnen.
 
-It looks like lots of mosquitoes, but it’s that one sprite moving around!
+Het lijkt op veel muggen, maar het is die ene sprite die zich verplaatst!
 
 --- /collapse ---
 
-That’s a game! But there’s no way to keep score yet...or to win. You can fix that too — in the next step!
+Dat is een spel! Maar er is nog geen manier om de score bij te houden... of om te winnen. Ook dat kun je oplossen - in de volgende stap!
