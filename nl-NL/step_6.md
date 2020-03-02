@@ -1,89 +1,89 @@
-## All the sprites
+## Alle sprites
 
-Now you have a parrot that you can move around using the arrow keys. Nice! Time to add some mosquitos for it to catch!
+Nu heb je een papegaai die je kunt verplaatsen met behulp van de pijltjestoetsen. Gaaf! Tijd om wat muggen toe te voegen om te vangen!
 
 --- task ---
 
-Click the **New sprite** button. Scratch doesn't have any ready-made mosquito costumes, so you are going to draw one!
+Klik op de knop **Kies een sprite**. Scratch heeft geen kant-en-klare muggen sprites, dus je gaat er een tekenen!
 
 ![](images/spritesPaintNew.png)
 
-If your mosquito is a bit big compared to your parrot, you can use the size control to make both sprites the right size!
+Als je mug een beetje groot is in vergelijking met je papegaai, kun je grootte gebruiken om beide sprites de juiste grootte te maken!
 
 ![](images/sprites2.png)
 
-Change the value in the size control to make the sprite bigger or smaller.
+Wijzig de waarde in het grootte element om de sprite groter of kleiner te maken.
 
 --- /task ---
 
-Nice! Later, you're going to add some code to make the mosquito move around on its own, without help from the player. Your player will be the parrot, trying to catch the mosquito.
+Mooi hoor! Later ga je wat code toevoegen om de mug zelfstandig te laten bewegen, zonder hulp van de speler. Je speler zal de papegaai zijn die de mug probeert te vangen.
 
 --- collapse ---
 ---
-title: What about the backwards parrot?
+title: Hoe zit het met de achteruitgaande papegaai?
 ---
 
-It does look a little funny to have that parrot flying backwards. Just like you’d usually turn around rather than walking backwards, the parrot would turn around rather than flying backwards. Luckily for you, Scratch has a block for this!
+Het ziet er een beetje vreemd uit om die papegaai achteruit te laten vliegen. Net zoals je meestal zult omdraaien in plaats van achteruit te lopen, zal de papegaai zich omdraaien in plaats van achteruit te vliegen. Gelukkig voor jou heeft Scratch hier een blok voor!
 
-The `point in direction`{:class="block3motion"} block lets you pick the direction your sprite is pointing in. You’ll find it in the **Motion** blocks section. You can type in any number of degrees, to make the sprite point wherever you like.
+Met het `richt naar graden`{:class="block3motion"} kun je de richting kiezen waarin je sprite wijst. Je vindt het in het gedeelte **Beweging** blokken. Je kunt een willekeurig aantal graden typen om het sprite naar welke plek dan ook te laten wijzen.
 
 --- /collapse ---
 
 --- task ---
 
-Grab a couple of `point in direction`{:class="block3motion"} block from the **Motion** list and connect them to your parrot’s code, like this:
+Pak een paar `richt naar graden`{:class="block3motion"} blokken uit de **Beweging** lijst en verbind ze als volgt met de code van je papegaai:
 
 ```blocks3
-    when [left arrow v] key pressed
-+    point in direction (-90)
-    move (-10) steps
+    wanneer [pijltje links v] is ingedrukt
++ richt naar (-90) graden
+    neem (-10) stappen
 ```
 
 ```blocks3
-    when [right arrow v] key pressed
-+    point in direction (90)
-    move (10) steps
+    wanneer [pijltje rechts v] is ingedrukt
++ richt naar (90) graden
+    neem (10) stappen
 ```
 
 --- /task ---
 
 --- task ---
 
-Since the parrot has turned around, change the direction it flys in when the left arrow is pressed:
+Aangezien de papegaai is omgedraaid, wijzig je de richting waarin hij vliegt wanneer de linkerpijl wordt ingedrukt:
 
 ```blocks3
-    when [left arrow v] key pressed
-    point in direction (-90)
-+    move (10) steps
+    wanneer [pijltje links v] is ingedrukt
+    richt naar (-90) graden
++ neem (10) stappen
 ```
 
 --- /task ---
 
-If you tried moving the parrot around after you added the `point in direction`{:class="block3motion"} blocks, you might have noticed something a little strange happening. The parrot may not be turning quite right!
+Als je probeerde de papegaai te verplaatsen nadat je het `richt naar graden`{:class="block3motion"} blokken had toegevoegd, heb je misschien iets vreemds opgemerkt. De papegaai draait misschien niet helemaal goed!
 
-![Upside down parrot](images/spritesUpsideDown.png)
+![Ondersteboven papegaai](images/spritesUpsideDown.png)
 
 --- collapse ---
 ---
-title: Why does it go upside down?
+title: Waarom draait hij ondersteboven?
 ---
 
-The problem here is that the parrot sprite started, as all sprites do, with the 'all around' **rotation style**, and what you need it to have is the 'left-right' style.
+Het probleem hier is dat de papegaaien sprite, net als alle sprites, is begonnen met de 'helemaal rond' **draaistijl**, en wat je nodig hebt is de stijl 'links-rechts'.
 
-As usual, there’s a block for that, and it’s in **Motion**!
+Zoals gewoonlijk is daar een blok voor en het staat in **Beweging**!
 
 --- /collapse ---
 
 --- task ---
 
-Look in the **Motion** category for the block `set rotation style`{:class="block3motion"}.
+Kijk in de categorie **Beweging** voor het blok `maak draaistijl`{:class="block3motion"}.
 
-Add the block to your reset code from earlier and set the rotation style to `left-right`{:class="block3motion"}, like this:
+Voeg het blok toe aan je herstartcode van eerder en stel de draaistijl in op `links-rechts`{:class="block3motion"}, zoals dit:
 
 ```blocks3
-    when green flag clicked
-+    set rotation style [left-right v]
-    go to x: (0) y: (0)
+    wanneer op de groene vlag wordt geklikt
++ maak draaistijl [links-rechts v]
+    ga naar x: (0) y: (0)
 ```
 
 --- /task ---
