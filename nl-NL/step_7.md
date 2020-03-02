@@ -1,16 +1,16 @@
-## Remote-control mosquito
+## Op afstand bestuurbare mug
 
-Ok, now it's time to make the mosquito fly on its own. To do this, you’re going to need a new kind of block: a **control** block.
+Oké, nu is het tijd om de mug alleen te laten vliegen. Om dit te doen, heb je een nieuw soort blok nodig: een **besturen** blok.
 
 --- task ---
 
-Select your mosquito sprite and drag a `when green flag clicked`{:class="block3events"} **event** block, a `forever`{:class="block3control"} **control** block and a `move 10 steps`{:class="block3motion"} **motion** block into the **sprite panel** like this:
+Selecteer je mug sprite en sleep een `wanneer op de groene vlag wordt geklikt`{:class "block3events"} **gebeurtenissen** blok, een `herhaal`{:class="block3control"} **besturen** blok en een `neem 10 stappen`{:class="block3motion"} **beweging** blok in het **sprite paneel**:
 
 ```blocks3
-+    when green flag clicked
-+    forever
-        move (10) steps
-    end
++ wanneer op de groene vlag wordt geklikt
++ herhaal
+        neem (10) stappen
+    einde
 ```
 
 --- /task ---
@@ -18,151 +18,151 @@ Select your mosquito sprite and drag a `when green flag clicked`{:class="block3e
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: Wat doet dit nieuwe blok?
 ---
 
-**Control** blocks let you do things a certain number of times, or under certain conditions.
+**Besturen** blokken laten je dingen een bepaald aantal keren doen, of onder bepaalde omstandigheden.
 
-The mosquito does whatever is in the `forever`{:class="block3control"} block over and over again, forever. Once it has reached the end, it goes back to the top of the block and starts again.
+De mug doet alles in het `herhaal`{:class="block3control"} blok steeds opnieuw, voor altijd. Als het einde is bereikt, gaat het terug naar de bovenkant van het blok en begint het opnieuw.
 
 --- /collapse ---
 
 --- task ---
 
-Now click the green flag and watch what happens!
+Klik nu op de groene vlag en kijk wat er gebeurt!
 
 --- /task ---
 
-Well, that mosquito just crashed into the side of the Stage, and it was moving far too fast for your parrot to catch.
+Nou, die mug botste gewoon tegen de zijkant van het speelveld en hij bewoog veel te snel voor je papegaai om te vangen.
 
-First, you need to slow it down. That’s actually pretty easy, you just need it to wait for a little while after it moves those 10 steps. There’s a **control** block that will help you here:
+Eerst moet je het vertragen. Dat is eigenlijk vrij eenvoudig, je moet het even laten wachten nadat het 10 stappen heeft gezet. Er is een **besturen** blok dat je kan helpen:
 
 ```blocks3
-    wait (1) secs
+    wacht (1) sec.
 ```
 
 --- task ---
 
-Snap the `wait`{:class="block3control"} block into your code, and change the number to `0.5`, like this:
+Klik het `wacht sec.`{:class="block3control"} blok in je code en verander het nummer in `0.5`, als volgt:
 
 
 ```blocks3
-    when green flag clicked
-    forever
-        move (10) steps
-+        wait (0.5) secs
-    end
+    wanneer op de groene vlag wordt geklikt
+herhaal
+        neem (10) stappen
++ wacht (0.5) sec.
+    einde
 ```
 
 --- /task ---
 
 --- collapse ---
 ---
-title: Making adjustments
+title: Aanpassingen maken
 ---
 
-The number you set in the `wait`{:class="block3control"} block says how many **seconds** you want the mosquito to wait. `0.5` is half a second.
+Het getal dat je instelt in het blok `wacht sec.`{:class="block3control"} geeft aan hoeveel **seconden** je wilt dat de mug wacht. `0.5` is een halve seconde.
 
-You can test out different values to see which is the best for the game. Remember that you can change the number of steps too!
+Je kunt verschillende waarden testen om te zien welke de beste is voor de game. Vergeet niet dat je ook het aantal stappen kunt wijzigen!
 
 --- /collapse ---
 
-The mosquito moves now, but you need it to bounce off the edge too. Yet again, there’s a **motion** block for this!
+De mug beweegt nu, maar je wilt ook dat hij aan de rand omkeert. Nogmaals, er is een **beweging** blok hiervoor!
 
 --- task ---
 
-Find the `if on edge bounce`{:class="block3motion"} block, and add it in after the `wait`{:class="block3control"} block.
+Zoek het `keer om aan de rand`{:class="block3motion"} blok en voeg dit toe na het `wacht sec.`{:class="block3control"} blok.
 
 --- /task ---
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: Wat doet dit nieuwe blok?
 ---
 
-The `if on edge bounce`{:class="block3motion"} block checks if the sprite is touching the edge and, if it is, it turns left, right, up, or down as appropriate.
+Het blok `keer om aan de rand`{:class="block3motion"} controleert of de sprite de rand raakt en, als dit het geval is, naar links, rechts, omhoog of omlaag draait, al naar gelang.
 
 --- /collapse ---
 
-Of course, this will lead to an upside-down mosquito, so you need a `set rotation style`{:class="block3motion"} block again.
+Dit leidt natuurlijk tot een omgekeerde mug, dus je hebt weer een `maak draaistijl`{:class="block3motion"} blok nodig.
 
 --- task ---
 
-Update your code to set the rotation style of the mosquito to `left-right`{:class="block3motion"}:
+Werk je code bij om de draaistijl van de mug in te stellen op `links-rechts`{:class="block3motion"}:
 
 ```blocks3
-    when green flag clicked
-+    set rotation style [left-right v]
-    forever
-        move (10) steps
-        wait (0.5) secs
-        if on edge, bounce
-    end
+    wanneer op de groene vlag wordt geklikt
++ maak draaistijl [links-rechts v]
+herhaal
+neem (10) stappen
+wacht (0.5) sec.
+keer om aan de rand
+einde
 ```
 
 --- /task ---
 
-The mosquito moves back and forward now, but only in a straight line — a bit too easy for the player to catch with the parrot! You need to make the mosquito less predictable.
+De mug beweegt nu heen en weer, maar alleen in een rechte lijn - een beetje te gemakkelijk voor de speler om met de papegaai te vangen! Je moet de mug minder voorspelbaar maken.
 
-You already know from a previous step how to make a sprite turn, so start there!
+Je weet al uit een vorige stap hoe je een sprite kunt laten draaien, dus begin daar!
 
 --- task ---
 
-Add a turn into the mosquito’s flying and click the green flag.
+Voeg een draai toe aan de vliegende mug en klik op de groene vlag.
 
 ```blocks3
-    when green flag clicked
-    set rotation style [left-right v]
-    forever
-        move (10) steps
-+        turn cw (10) degrees
-        wait (0.5) secs
-        if on edge, bounce
-    end
+    wanneer op de groene vlag wordt geklikt
+maak draaistijl [links-rechts v]
+herhaal
+neem (10) stappen
++ draai (10) graden naar rechts
+wacht (0.5) sec.
+keer om aan de rand
+einde
 ```
 
 --- /task ---
 
-It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
+Het is beter, maar het is nog erg voorspelbaar. Het moet meer willekeurig zijn. Gelukkig kan Scratch willekeurig voor je doen! Je hebt gewoon een nieuw soort blok nodig, een **functies** blok genoemd.
 
 --- collapse ---
 ---
-title: What's an operator?
+title: Wat is een functie?
 ---
 
-**Operators** take in one or more values (like numbers, text, true/false values) and give back a single value. You can tell the kind of value it will give back by the shape of the block: round ends give numbers or text, pointy ends give true/false.
+**Functies** nemen een of meer waarden in (zoals getallen, tekst, waar niet waar) en geven een enkele waarde terug. Je kunt het soort waarde zien dat het teruggeeft door de vorm van het blok: ronde uiteinden geven cijfers of tekst, puntige uiteinden geven waar/onwaar.
 
 ```blocks3
     (() + ())
 
-    (join [hello ] [world])
+(voeg [hallo ] en [wereld] samen)
 
-    <[] = []>
+<[] = []>
 ```
 
 --- /collapse ---
 
 --- task ---
 
-Find the `pick random`{:class="block3operators"} **operator** block, and plug it into the `turn degrees`{:class="block3motion"} **motion** block by clicking it and dragging it into the field where you set the number of degrees.
+Zoek het `willekeurig getal tussen`{:class="block3operators"} **functie** blok en sluit het aan op het `draai graden`{:class="block3motion"} **beweging** blok door erop te klikken en naar het veld te slepen waar je het aantal graden instelt.
 
 ```blocks3
-    when green flag clicked
-    set rotation style [left-right v]
-    forever 
-        move (10) steps
-+        turn cw (pick random (1) to (10)) degrees
-        wait (0.5) secs
-        if on edge, bounce
-    end
+    wanneer op de groene vlag wordt geklikt
+maak draaistijl [links-rechts v]
+herhaal
+neem (10) stappen
++ draai (willekeurig getal tussen (1) en (10)) graden naar rechts
+wacht (0.5) sec.
+keer om aan de rand
+einde
 ```
 
 --- /task ---
 
-**Note**: you can change the minimum and maximum numbers it will pick, but the default values (`1` and `10`) are pretty good for this game, so you can just leave them.
+**Opmerking**: je kunt de minimum- en maximumaantallen die het kiest zelf bepalen, maar de standaardwaarden (`1` en `10`) zijn redelijk goed voor deze game, dus je kunt ze gewoon zo laten.
 
 --- task ---
 
-Click the green flag to run the code!
+Klik op de groene vlag om de code uit te voeren!
 
 --- /task ---
