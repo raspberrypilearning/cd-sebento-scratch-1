@@ -14,7 +14,7 @@ Zoals je waarschijnlijk al geraden hebt, heb je weer **gebeurtenissen** en **bew
 Zoek dit keer dit blok en sleep het naar het huidige sprite paneel:
 
 ```blocks3
-    wanneer [spatiebalk] is ingedrukt
+    wanneer [spatiebalk v] is ingedrukt
 ```
 
 Klik op het pijltje (▼) naast `spatiebalk`. Je ziet een lijst met alle toetsen op je toetsenbord waaruit je kunt kiezen.
@@ -63,7 +63,7 @@ neem (-10) stappen
 ```
 
 ```blocks3
-    wanneer [pijltje rechts] is ingedrukt
+    wanneer [pijltje rechts v] is ingedrukt
 neem (10) stappen
 ```
 
@@ -113,14 +113,14 @@ Dus alles wat je nodig hebt is een **gebeurtenissen** blok voor de groene vlag e
 Sleep het `wanneer op de groene vlag wordt geklikt`{:class="block3event"} **gebeurtenissen** blok naar het huidige sprite paneel.
 
 ```blocks3
-+ wanneer op de groene vlag wordt geklikt
++ when green flag clicked
 ```
 
 Zoek vervolgens het `ga naar`{:class="block3motion"} **beweging** blok en klik het vast aan je groene vlag blok.
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
-+ ga naar x: (0) y: (0)
+   when green flag clicked
++  ga naar x: (0) y: (0)
 ```
 
 Stel zowel de `x` als de `y` op `0` in in het `ga naar`{:class="block3motion"} blok als ze nog niet `0` zijn.

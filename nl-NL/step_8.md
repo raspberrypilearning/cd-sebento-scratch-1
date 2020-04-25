@@ -62,7 +62,7 @@ Zodra de papegaai de mug vangt, verdwijnt deze voorgoed. Dat is niet geweldig.
 Zet het `verschijn`{:class="block3looks"} blok van **Uiterlijken** aan het begin van de mugcode, zodat je het spel kunt resetten.
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 + verschijn
 maak draaistijl [links-rechts v]
 herhaal

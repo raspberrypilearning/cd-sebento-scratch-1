@@ -4,10 +4,10 @@ Oké, nu is het tijd om de mug alleen te laten vliegen. Om dit te doen, heb je e
 
 --- task ---
 
-Selecteer je mug sprite en sleep een `wanneer op de groene vlag wordt geklikt`{:class "block3events"} **gebeurtenissen** blok, een `herhaal`{:class="block3control"} **besturen** blok en een `neem 10 stappen`{:class="block3motion"} **beweging** blok in het **sprite paneel**:
+Selecteer je mug sprite en sleep een `wanneer op de groene vlag wordt geklikt`{:class="block3events"} **gebeurtenissen** blok, een `herhaal`{:class="block3control"} **besturen** blok en een `neem 10 stappen`{:class="block3motion"} **beweging** blok in het **sprite paneel**:
 
 ```blocks3
-+ wanneer op de groene vlag wordt geklikt
++ when green flag clicked
 + herhaal
         neem (10) stappen
     einde
@@ -47,7 +47,7 @@ Klik het `wacht sec.`{:class="block3control"} blok in je code en verander het nu
 
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 herhaal
         neem (10) stappen
 + wacht (0.5) sec.
@@ -91,7 +91,7 @@ Dit leidt natuurlijk tot een omgekeerde mug, dus je hebt weer een `maak draaisti
 Werk je code bij om de draaistijl van de mug in te stellen op `links-rechts`{:class="block3motion"}:
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 + maak draaistijl [links-rechts v]
 herhaal
 neem (10) stappen
@@ -111,7 +111,7 @@ Je weet al uit een vorige stap hoe je een sprite kunt laten draaien, dus begin d
 Voeg een draai toe aan de vliegende mug en klik op de groene vlag.
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 maak draaistijl [links-rechts v]
 herhaal
 neem (10) stappen
@@ -147,7 +147,7 @@ title: Wat is een functie?
 Zoek het `willekeurig getal tussen`{:class="block3operators"} **functie** blok en sluit het aan op het `draai graden`{:class="block3motion"} **beweging** blok door erop te klikken en naar het veld te slepen waar je het aantal graden instelt.
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 maak draaistijl [links-rechts v]
 herhaal
 neem (10) stappen
