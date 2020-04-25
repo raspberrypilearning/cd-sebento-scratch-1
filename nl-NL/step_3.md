@@ -38,36 +38,36 @@ Normaal gesproken wil je dat je blokken automatisch worden uitgevoerd wanneer er
 
 De codeblokken die zijn aangesloten op dit blok worden uitgevoerd nadat op de **groene vlag** is geklikt.
 
-Codeblokken lopen van boven naar beneden, dus de volgorde waarin je je code bij elkaar klikt. In this example, the sprite will `say`{:class="block3looks"} `Hello!`{:class="block3looks"} before it will `play`{:class="block3sound"} the `meow`{:class="block3sound"} sound.
+Codeblokken lopen van boven naar beneden, dus de volgorde waarin je je code bij elkaar klikt. In dit voorbeeld zal de sprite `Hallo!`{:class="block3looks"} `zeggen`{:class="block3looks"} voordat het het `meow`{:class="block3sound"} geluid `afspeelt`{:class="block3sound"}.
 
 
 ```blocks3
-    when green flag clicked
-    say [Hello!]
-    play sound [meow v]
+    wanneer op groene vlag wordt geklikt
+  zeg [Hallo!]
+  start geluid [meow v]
 ```
 
 --- /collapse ---
 
-Removing or deleting code blocks you don’t want in your program is easy! Just drag them back into the code blocks palette.
+Het verwijderen van codeblokken die je niet wilt gebruiken in je programma is eenvoudig! Sleep ze gewoon terug naar het palet met codeblokken.
 
-**Be careful:** when you drag a block into the code blocks palette, all the blocks connected to the block you drag will also be deleted, so make sure to separate code blocks you want to keep from those you want to remove. If you delete some code blocks by accident and want to get them back, you can right-click and then click on the **undo** option to get everything back.
+**Wees voorzichtig:** wanneer je een blok naar het codeblokkenpalet sleept, worden alle blokken die zijn verbonden met het blok dat je sleept ook verwijderd, dus zorg ervoor dat je de codeblokken die je wilt houden los maakt van de blokken die je wilt verwijderen. Als je per ongeluk enkele codeblokken verwijdert en ze wilt terughalen, kun je met de rechtermuisknop klikken en vervolgens op de optie **ongedaan maken** klikken om alles terug te krijgen.
 
 ![](images/code6.png)
 
 --- task ---
 
-Try adding, deleting, and undeleting some code blocks!
+Probeer enkele codeblokken toe te voegen, te verwijderen en terug te halen!
 
 --- /task ---
 
 ### Alles bij elkaar brengen
 
-Now you know how to move code around and make things happen, time to try a simple program: making the Scratch Cat walk in a circle.
+Nu weet je hoe je code kunt verplaatsen en dingen kunt laten gebeuren, tijd om een eenvoudig programma te proberen: de Scratch Cat in een cirkel laten lopen.
 
 --- task ---
 
-Make sure you have the cat selected in the sprite list and then drag the following blocks together. You’ll find them in the **Events** and **Motion** lists.
+Zorg ervoor dat je de kat in de sprite lijst hebt geselecteerd en sleep vervolgens de volgende blokken samen. Je vindt ze in de lijsten **Gebeurtenissen** en **Beweging**.
 
 ```blocks3
 +    when green flag clicked
@@ -78,19 +78,19 @@ Make sure you have the cat selected in the sprite list and then drag the followi
 
 --- task ---
 
-Then, click on the green flag above the **Stage** a few times.
+Klik vervolgens een paar keer op de groene vlag boven het **speelveld**.
 
 ![](images/code7.png)
 
---- /task ---
+---/task---
 
-Note: If you click too many times and the cat walks away, you can drag it back!
+Opmerking: als je te vaak klikt en de kat wegloopt, kun je hem terug slepen!
 
-You should see the cat walking in a straight line...not exactly what you want, right?
+Je zou de kat in een rechte lijn moeten zien lopen... niet precies wat je wilt, toch?
 
 --- task ---
 
-Snap a turn block to the end to make it walk in a circle. It’s in the **Motion** list too.
+Voeg een draaiblok toe aan het einde om de kat in een cirkel te laten lopen. Het staat ook in de lijst **Beweging**.
 
 ```blocks3
     when green flag clicked
@@ -100,14 +100,14 @@ Snap a turn block to the end to make it walk in a circle. It’s in the **Motion
 
 --- /task ---
 
-Try clicking the green flag a few more times to see the cat turn in a circle.
+Klik nog een paar keer op de groene vlag om de kat in een cirkel te zien draaien.
 
 --- collapse ---
 ---
 title: Hoe werkt draaien?
 ---
 
-This block makes the cat turn 15 degrees of the full 360 degrees that make up a circle. You can change that number, or the number of steps, by clicking on the number and typing in a new value.
+Dit blok laat de kat 15 graden draaien van de volledige 360 graden die een cirkel vormen. Je kunt dat aantal of het aantal stappen wijzigen door op het nummer te klikken en een nieuwe waarde in te voeren.
 
 ![](images/code9.png)
 
@@ -115,7 +115,7 @@ This block makes the cat turn 15 degrees of the full 360 degrees that make up a 
 
 --- task ---
 
-Now save your work!
+Bewaar nu je werk!
 
 --- /task ---
 
