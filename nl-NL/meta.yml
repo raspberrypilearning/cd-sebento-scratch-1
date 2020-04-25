@@ -1,0 +1,29 @@
+---
+title: Muggenpatrouille
+hero_image: images/banner.png
+description: Maak je eerste Scratch programma!
+theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: scratch
+site_areas: coderdojo, projects
+hardware: ''
+software: scratch
+version: 3.0.0
+last_tested: 2018-05-01
+steps:
+  - title: Inleiding
+  - title: Opstarten
+  - title: Code toevoegen & verwijderen
+  - title: Het instellen van de scène
+  - title: Laat dingen bewegen
+  - title: Alle sprites
+  - title: Op afstand bestuurbare mug
+  - title: Laten we wat muggen vangen!
+  - title: Score bijhouden
+  - title: "Uitdaging: het spel winnen"
+    challenge: true
