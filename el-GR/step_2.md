@@ -1,106 +1,106 @@
-## Getting set up
+## Ρύθμιση
 
-Once you open Scratch, you’ll see a screen like the one below.
+Μόλις ανοίξεις το Scratch, θα δεις ένα παράθυρο όπως το παρακάτω.
 
-+ Look for each of the following parts and remember them.
++ Δες καθεμία από τις παρακάτω περιοχές και να θυμάσαι πού βρίσκονται.
 
-### The Stage
+### Η σκηνή
 
- ![Scratch window with the stage highlighted](images/hlStage.png)
-
---- collapse ---
----
-title: What is the Stage?
----
-This is where your Scratch programs run. It has:
-
-* One or more **backgrounds** \(images on the background of the screen\)
-
-* Any **code blocks** associated with it \(we’ll get to this\)
-
---- /collapse ---
-
-### The sprite list
-
- ![Scratch window with the sprite list highlighted](images/hlSpriteList.png)
+ ![Παράθυρο Scratch με τη σκηνή τονισμένη](images/hlStage.png)
 
 --- collapse ---
 ---
-title: What is a sprite?
+title: Τι είναι η σκηνή;
 ---
+Εκεί εκτελούνται τα προγράμματα στο Scratch. Περιλαμβάνει:
 
-Any object that goes on the Stage is a **sprite**.
+* Ένα ή περισσότερα **υπόβαθρα** \(εικόνες φόντου στο πίσω μέρος της οθόνης\)
 
-The sprite includes:
-* The **image** on the stage
-* Any alternative **costumes** \(looks\) it has
-* Any **sounds** associated with it
-* Any **code blocks** associated with it ![](images/setup2.png)
+* Οποιοδήποτε **μπλοκ κώδικα** που σχετίζεται με αυτή \(θα το δούμε αργότερα\)
 
 --- /collapse ---
 
-### The code blocks palette
+### Η λίστα των αντικειμένων
 
- ![Scratch window with the blocks pallet highlighted](images/hlBlocksPalette.png)
+ ![Παράθυρο Scratch με τη λίστα αντικειμένων τονισμένη](images/hlSpriteList.png)
 
 --- collapse ---
 ---
-title: Code blocks
+title: Τι είναι ένα αντικείμενο;
 ---
 
-Code in Scratch comes as blocks that you connect together to make programs. You choose blocks from the **code blocks palette** and drag them into the **current sprite panel**, then connect them.
+Κάθε στοιχείο που υπάρχει στη σκηνή είναι ένα **αντικείμενο**.
 
-There are ten categories of blocks. They are colour coded, and you can select each category from the list at the top of the **code blocks palette**.
+Το αντικείμενο περιλαμβάνει:
+* Την **εικόνα** στη σκηνή
+* Τις επιπλέον **ενδυμασίες** \(εικόνες\) που μπορεί να έχει
+* **Ήχους** που μπορεί να συνδέονται με αυτό
+* Οποιαδήποτε **μπλοκ κώδικα** που συνδέονται με αυτό ![](images/setup2.png)
 
 --- /collapse ---
 
-### The current sprite panel
+### Η παλέτα εντολών
 
- ![Scratch window with the current sprite panel highlighted](images/hlCurrentSpritePanel.png)
+ ![Παράθυρο Scratch με τη παλέτα εντολών τονισμένη](images/hlBlocksPalette.png)
 
 --- collapse ---
 ---
-title: What is the current sprite?
+title: Μπλοκ κώδικα
 ---
 
-The **current sprite** is the one that's selected in the **sprite list**.
+Ο κώδικας στο Scratch έχει τη μορφή μπλοκ που συνδέονται μεταξύ τους και σχηματίζουν προγράμματα. Επιλέγεις μπλοκ από την **παλέτα εντολών**, τα σέρνεις στην **περιοχή του επιλεγμένου αντικειμένου** και, στη συνέχεια, τα ενώνεις μεταξύ τους.
 
-The **current sprite panel** is where you can see the code, costumes, and sounds for the selected sprite.
+Υπάρχουν δέκα κατηγορίες μπλοκ. Είναι χρωματικά κωδικοποιημένες και μπορείς να επιλέξεις ανάμεσά τους κάνοντας κλικ στα στοιχεία της λίστας στο επάνω μέρος της **παλέτας εντολών**.
 
 --- /collapse ---
 
-Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.
+### Η περιοχή του επιλεγμένου αντικειμένου
+
+ ![Παράθυρο Scratch με την περιοχή του επιλεγμένου αντικειμένου τονισμένη](images/hlCurrentSpritePanel.png)
+
+--- collapse ---
+---
+title: Τι είναι το επιλεγμένο αντικείμενο;
+---
+
+Το **επιλεγμένο αντικείμενο** είναι αυτό που έχει επιλεχθεί στη **λίστα αντικειμένων**.
+
+Η **περιοχή του επιλεγμένου αντικειμένου** είναι εκεί που μπορείς να δεις τον κώδικα, τις ενδυμασίες και τους ήχους του επιλεγμένου αντικειμένου.
+
+--- /collapse ---
+
+Ώρα για κώδικα! Πήγαινε πίσω στο Scratch και κάνε κλικ στη γάτα Scratch στη λίστα αντικειμένων. Η γάτα είναι τώρα το επιλεγμένο αντικείμενο.
 
 --- task ---
 
-Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="block3events"} block and drag it onto the **current sprite panel**.
+Πήγαινε στο μενού **Συμβάντα** της **παλέτας εντολών**, κάνε κλικ στην εντολή `όταν γίνει κλικ σε πράσινη σημαία`{:class="block3events"} και σύρε το στην **περιοχή του επιλεγμένου αντικειμένου**.
 
 ```blocks3
-+    when green flag clicked
++    όταν γίνει κλικ σε πράσινη σημαία
 ```
 
 --- /task ---
 
 --- task ---
 
-Then go to **Looks** in the **code blocks palette** and find the block
+Μετά πήγαινε στις **Όψεις** στην **παλέτα εντολών** και βρες αυτό το μπλοκ
 
 ```blocks3
-    say [Hello!] for (2) secs
+    πες [Γεια!] για (2) δευτερόλεπτα
 ```
 
-Drag it onto the **current sprite panel**, connecting it to the bottom of the other block, like this:
+Σύρε το στην **περιοχή του επιλεγμένου αντικειμένου**, συνδέοντάς το στο κάτω μέρος του άλλου μπλοκ, ως εξής:
 
 ```blocks3
-    when green flag clicked
-    say [Hello!] for (2) secs
+    όταν γίνει κλικ σε green flag
+    πες [Γεια!] για (2) δευτερόλεπτα
 ```
 
 --- /task ---
 
 --- task ---
 
-Now click the **Start Program** button and watch what happens!
+Τώρα κάνε κλικ στο κουμπί **Ξεκίνα** και δες τι συμβαίνει!
 
 --- /task ---
 
