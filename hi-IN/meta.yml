@@ -1,0 +1,39 @@
+---
+title: मच्छारों से पहरा
+hero_image: images/banner.png
+description: अपना पहला Scratch प्रोग्राम बनाएं!
+theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: scratch
+site_areas: coderdojo, projects
+hardware: ''
+software: scratch
+version: 3.0.0
+last_tested: 2018-05-01
+steps:
+  - 
+    title: परिचय
+  - 
+    title: शुरू करने के लिए
+  - 
+    title: कोड जोड़ना और निकालना
+  - 
+    title: दृश्य की स्थापना
+  - 
+    title: चीजों को इधर-उधर करना
+  - 
+    title: सभी स्प्राइट्स (sprites)
+  - 
+    title: रिमोट-कंट्रोल (remote-control) मच्छर
+  - 
+    title: चलिए कुछ मच्छर पकड़ते हैं!
+  - 
+    title: स्कोर (score) रखना
+  - 
+    title: "चुनौती: खेल जीतना"
+    challenge: true
