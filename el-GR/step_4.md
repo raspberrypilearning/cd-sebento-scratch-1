@@ -1,47 +1,47 @@
-## Setting the scene
+## Στήνοντας τη σκηνή
 
-Scratch has a library of backgrounds and sprites for you to use to make your project look awesome.
+Το Scratch διαθέτει μια βιβλιοθήκη από έτοιμα υπόβαθρα και αντικείμενα για να κάνεις να έργα σου να φαίνονται υπέροχα.
 
 --- task ---
 
-Select the stage.
+Επίλεξε τη Σκηνή.
 
-![Selecting the stage](images/looksSelectStage.png)
+![Επιλέγοντας τη σκηνή](images/looksSelectStage.png)
 
-Click on **Backdrops**.
+Κάνε κλικ στα **Υπόβαθρα**.
 
-![The Backdrops tab](images/looksBackdrops.png)
+![Η καρτέλα Υπόβαθρα](images/looksBackdrops.png)
 
-Click the icon to **Choose backdrop from library**.
+Κάνε κλικ στο **Διαλέξτε ένα υπόβαθρο από τη βιβλιοθήκη**.
 
-![The Choose backdrop icon](images/looksChooseBg.png)
+![Το εικονίδιο Επιλέξτε Υπόβαθρο](images/looksChooseBg.png)
 
-Then pick your favourite outdoor background!
+Στη συνέχεια, επίλεξε το αγαπημένο σου φόντο από τους Εξωτερικούς Χώρους!
 
-![A lake scene](images/looksLake.png)
+![Μια λίμνη για σκηνικό](images/looksLake.png)
 
 --- /task ---
 
-Great! Now let's turn the cat into a parrot!
+Εξαιρετικά! Τώρα ας μετατρέψουμε τη γάτα σε παπαγάλο!
 
 --- task ---
 
-First, select the cat and click on the **Costumes** tab.
+Αρχικά, επίλεξε το αντικείμενο της γάτας και κάνε κλικ στην καρτέλα **Ενδυμασίες**.
 
 ![](images/cool2.png)
 
-Then, click on **Choose costume from Library**
+Στη συνέχεια, κάνε κλικ στο **Επιλέξτε Ενδυμασία**
 
 ![](images/cool3.png)
 
-Select a parrot and click **OK**.
+Επίλεξε έναν παπαγάλο και κάνε κλικ **OK**.
 
-![The parrot costume](images/looksParrot.png)
+![Η ενδυμασία παπαγάλος](images/looksParrot.png)
 
-Now remove the cat costumes by selecting each of them and clicking on the **x**.
+Τώρα αφαίρεσε τις ενδυμασίες της γάτας επιλέγοντας καθεμία από αυτές και κάνοντας κλικ στο **x**.
 
 ![](images/coolDeleteCostumes.png)
 
 --- /task ---
 
-Great! You have a parrot!
+Εξαιρετικά! Τώρα έχεις έναν παπαγάλο!
