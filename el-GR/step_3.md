@@ -1,113 +1,113 @@
-## Adding & removing code
+## Προσθήκη & αφαίρεση κώδικα
 
-Great! You’ve written your first Scratch program. Time to learn a little more about getting code in and out of Scratch! Scratch code is made up of **blocks** that you snap together, such as these:
+Εξαιρετικά! Έχεις γράψει το πρώτο σου πρόγραμμα στο Scratch. Ώρα να μάθεις περισσότερα σχετικά με την προσθήκη ή αφαίρεση κώδικα στο Scratch! Ο κώδικας στο Scratch αποτελείται από **μπλοκ** που ενώνεις μαζί, όπως:
 
 ![](images/code1.png)
 
-You will find all blocks in the **code blocks palette**,where they are broken up into different categories.
+Θα βρεις όλα τα μπλοκ στην **παλέτα εντολών**, όπου χωρίζονται σε διαφορετικές κατηγορίες.
 
 --- collapse ---
 ---
-title: Using blocks from the different categories
+title: Χρησιμοποιώντας μπλοκ από διαφορετικές κατηγορίες
 ---
 
-Clicking on a category name to see the blocks in that category. Here, the **Motion** category is selected.
+Κάνοντας κλικ στο όνομα μιας κατηγορίας, θα δεις τα μπλοκ αυτής της κατηγορίας. Εδώ είναι επιλεγμένη η κατηγορία **Κίνηση**.
 
 ![](images/code2a.png)
 
-All of the blocks in the selected category are shown in a list. You can pick the one you want, click on it, hold down the mouse button, and then just drag it onto the **current sprite panel** and let go.
+Όλα τα μπλοκ στην κατηγορία που έχεις επιλέξει εμφανίζονται σε μια λίστα. Μπορείς να επιλέξεις αυτό που θέλεις, να κάνεις κλικ σε αυτό, να κρατήσεις πατημένο το κουμπί του ποντικιού και, στη συνέχεια, να το σύρεις στην **περιοχή του επιλεγμένου αντικειμένου** και να το αφήσεις.
 
-Once the block is in the **current sprite panel**, you can move it around and connect it to other blocks.
+Μόλις το μπλοκ βρεθεί στην **περιοχή του επιλεγμένου αντικειμένου**, μπορείς να το μετακινήσεις και να το ενώσεις με άλλα μπλοκ.
 
 ![](images/code2b.png)
 
 --- /collapse ---
 
-If you want to see what a block does, you can double-click on it to make it run! Try double-clicking on some of the blocks to see what they do.
+Εάν θέλεις να δεις τι κάνει ένα μπλοκ, μπορείς να κάνεις διπλό κλικ σε αυτό για να το κάνεις να τρέξει! Δοκίμασε να κάνεις διπλό κλικ σε μερικά από τα μπλοκ για να δεις τι κάνουν.
 
 --- collapse ---
 ---
-title: Running the code
+title: Εκτέλεση του κώδικα
 ---
 
-Normally, you want your blocks to run automatically whenever something specific happens. This is why most of your programs will start with a block from the **events** category. Most often, it will be this one:
+Συνήθως, θέλεις ο κώδικάς σου να εκτελείται αυτόματα κάθε φορά που συμβαίνει κάτι συγκεκριμένο. Γι' αυτό το λόγο πολλά από τα προγράμματά σου θα ξεκινούν με ένα μπλοκ από την κατηγορία **Συμβάντα**. Τις περισσότερες φορές, θα είναι αυτό:
 
 ```blocks3
-    when green flag clicked
+    όταν γίνει κλικ σε green flag
 ```
 
-The code blocks connected to this block will run after the **green flag** is clicked.
+Τα μπλοκ κώδικα που είναι συνδεδεμένα σε αυτό το μπλοκ θα εκτελεστούν αφού κάνεις κλικ στην **πράσινη σημαία**.
 
-Code blocks run from top to bottom, so the order in which you snap your code together in matters. In this example, the sprite will `say`{:class="block3looks"} `Hello!`{:class="block3looks"} before it will `play`{:class="block3sound"} the `meow`{:class="block3sound"} sound.
+Τα μπλοκ κώδικα τρέχουν από πάνω προς τα κάτω, οπότε έχει σημασία η σειρά με την οποία βάζεις τα μπλοκ σου. Σε αυτό το παράδειγμα, το αντικείμενο θα `πει`{:class="block3looks"}`Γεια!` πριν `παίξει`{:class="block3sound"} τον ήχο `Νιάου`.
 
 
 ```blocks3
-    when green flag clicked
-    say [Hello!]
-    play sound [meow v]
+    όταν γίνει κλικ σε green flag
+    πες [Γεια!]
+    παίξε τον ήχο [Νιάου v]
 ```
 
 --- /collapse ---
 
-Removing or deleting code blocks you don’t want in your program is easy! Just drag them back into the code blocks palette.
+Η αφαίρεση ή διαγραφή μπλοκ κώδικα που δε θέλεις στο πρόγραμμά σου είναι εύκολη! Απλώς σύρε τα πίσω στην παλέτα εντολών.
 
-**Be careful:** when you drag a block into the code blocks palette, all the blocks connected to the block you drag will also be deleted, so make sure to separate code blocks you want to keep from those you want to remove. If you delete some code blocks by accident and want to get them back, you can right-click and then click on the **undo** option to get everything back.
+** Πρόσεξε: ** σέρνοντας τα στην παλέτα εντολών θα διαγραφούν όλα τα μπλοκ που είναι ενωμένα στο μπλοκ που σέρνεις, οπότε φρόντισε να διαχωρίζεις τα μπλοκ κώδικα που θέλεις να διατηρήσεις από αυτά που θέλεις να διαγράψεις. Εάν διαγράψεις κάποια μπλοκ κώδικα κατά λάθος και θέλεις να τα επαναφέρεις, κάνε δεξί κλικ και στη συνέχεια επίλεξε την **Αναίρεση** για να τα επαναφέρεις πίσω.
 
 ![](images/code6.png)
 
 --- task ---
 
-Try adding, deleting, and undeleting some code blocks!
+Δοκίμασε να προσθέσεις, να διαγράψεις και να αναιρέσεις τη διαγραφή κάποιων μπλοκ κώδικα!
 
---- /task ---
+--- / task ---
 
-### Putting it all together
+### Συνδυάζοντάς τα όλα μαζί
 
-Now you know how to move code around and make things happen, time to try a simple program: making the Scratch Cat walk in a circle.
+Τώρα που ξέρεις πώς να μετακινείς κώδικα και να κάνεις πράγματα να συμβούν, ήρθε η ώρα να δημιουργήσεις ένα πρόγραμμα για να κάνεις τη γάτα Scratch να περπατάει σε κύκλο.
 
 --- task ---
 
-Make sure you have the cat selected in the sprite list and then drag the following blocks together. You’ll find them in the **Events** and **Motion** lists.
+Βεβαιώσου ότι έχεις επιλέξει το αντικείμενο της γάτας στη λίστα αντικειμένων και, στη συνέχεια, σύρε τα ακόλουθα μπλοκ στην περιοχή του αντικειμένου και ένωσέ τα. Θα τα βρεις στις κατηγορίες **Συμβάντα** και **Κίνηση**.
 
 ```blocks3
-+    when green flag clicked
-+    move [10] steps
++    όταν γίνει κλικ σε green flag
++    κινήσου [10] βήματα
 ```
 
 --- /task ---
 
 --- task ---
 
-Then, click on the green flag above the **Stage** a few times.
+Στη συνέχεια, κάνε κλικ στην πράσινη σημαία πάνω από τη **σκηνή** μερικές φορές.
 
 ![](images/code7.png)
 
 --- /task ---
 
-Note: If you click too many times and the cat walks away, you can drag it back!
+Σημείωση: Εάν κάνεις κλικ στη σημαία πάρα πολλές φορές και η γάτα απομακρυνθεί, μπορείς να τη σύρεις πίσω!
 
-You should see the cat walking in a straight line...not exactly what you want, right?
+Πρέπει να δεις τη γάτα να περπατάει σε ευθεία γραμμή... όχι ακριβώς αυτό που θέλεις, έτσι;
 
 --- task ---
 
-Snap a turn block to the end to make it walk in a circle. It’s in the **Motion** list too.
+Τοποθέτησε το μπλοκ στροφή στο τέλος για να κάνεις το αντικείμενο γάτα να περπατήσει σε κύκλο. Βρίσκεται κι αυτό στην κατηγορία **Κίνηση**.
 
 ```blocks3
-    when green flag clicked
-    move [10] steps
-+    turn cw (15) degrees
+    όταν γίνει κλικ σε green flag
+    κινήσου [10] βήματα
++    στρίψε cw (15) μοίρες
 ```
 
 --- /task ---
 
-Try clicking the green flag a few more times to see the cat turn in a circle.
+Δοκίμασε να κάνεις κλικ στην πράσινη σημαία μερικές ακόμη φορές για να δεις τη γάτα να κινείται σε κύκλο.
 
 --- collapse ---
 ---
-title: How does turning work?
+title: Πώς λειτουργεί η στροφή;
 ---
 
-This block makes the cat turn 15 degrees of the full 360 degrees that make up a circle. You can change that number, or the number of steps, by clicking on the number and typing in a new value.
+Αυτό το μπλοκ κάνει το αντικείμενο να γυρίσει 15 μοίρες από τις 360 μοίρες που αποτελούν έναν κύκλο. Μπορείς να αλλάξεις αυτόν τον αριθμό και τον αριθμό των βημάτων, κάνοντας κλικ στον αριθμό και πληκτρολογώντας μια νέα τιμή.
 
 ![](images/code9.png)
 
@@ -115,7 +115,7 @@ This block makes the cat turn 15 degrees of the full 360 degrees that make up a 
 
 --- task ---
 
-Now save your work!
+Αποθήκευσε τώρα τη δουλειά σου!
 
 --- /task ---
 
