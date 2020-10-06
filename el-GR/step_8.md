@@ -1,22 +1,22 @@
-## Let's catch some flies!
+## Ας πιάσουμε μερικά κουνούπια!
 
-The parrot moves, the mosquito flies, but they don’t interact: if the mosquito flies right into the parrot’s beak, nothing happens. Time to change that!
+Ο παπαγάλος κινείται, το κουνούπι πετάει, αλλά δεν αλληλεπιδρούν: εάν το κουνούπι κινηθεί κατευθείαν στο στόμα του παπαγάλου, δεν συμβαίνει τίποτα. Ώρα να το αλλάξεις!
 
-First, you need to know if the mosquito is touching the parrot. For this, you'll need a **control** block and a **sensing** block.
+Κατ ' αρχάς, πρέπει να ξέρεις εάν το κουνούπι αγγίζει τον παπαγάλο. Για αυτό, θα χρειαστείς ένα μπλοκ από τον **Έλεγχο** κι ένα μπλοκ από τους **Αισθητήρες**.
 
 --- task ---
 
-Add the `if...then`{:class="block3control"} **control** block into the `forever`{:class="block3control"} loop on the mosquito, below the `if on edge bounce`{:class="block3motion"} block.
+Πρόσθεσε το μπλοκ `εάν...τότε`{:class="block3control"} από τον **Έλεγχο** μέσα στο βρόχο `για πάντα`{:class="block3control"} του κουνουπιού, κάτω από το μπλοκ `εάν σε όριο, αναπήδησε`{:class="block3motion"}.
 
 --- /task ---
 
 --- task ---
 
-Drag the `touching...`{:class="block3sensing"} block into the space at the top of the `if...then`{:class="block3control"} block, and click the little triangle to pick the parrot sprite's name. If you haven’t changed it, it'll be 'Sprite1'.
+Σύρε το μπλοκ `αγγίζει...`{:class="block3sensing"} στο πεδίο στο επάνω μέρος του μπλοκ `εάν...τότε`{:class="block3control"} και κάνε κλικ στο βελάκι για να επιλέξεις το αντικείμενο του παπαγάλου. Εάν δεν το έχεις αλλάξει, θα είναι το "Sprite1" ή 'Αντικείμενο1'.
 
 ```blocks3
-    if on edge, bounce
-+    if <touching [Sprite1 v] ?> then
+    εάν σε όριο, αναπήδησε
++    εάν <touching [Sprite1 v] ?> τότε
     end
 ```
 
@@ -24,65 +24,65 @@ Drag the `touching...`{:class="block3sensing"} block into the space at the top o
 
 --- collapse ---
 ---
-title: How does it work?
+title: Πώς λειτουργεί;
 ---
 
-The `if...then`{:class="block3control"} **control** block needs to be given a `True/False` value.
+Στο μπλοκ `αν...τότε`{:class="block3control"} από τον **Έλεγχο** πρέπει να δοθεί μια τιμή `True/False`.
 
-**Sensing** blocks collect information, like where the sprite is, what it’s touching, etc. You're using the block
+Τα μπλοκ στους **Αισθητήρες** δίνουν πληροφορίες, όπως πού είναι το αντικείμενο, τι αγγίζει κλπ. Χρησιμοποιείς αυτό το μπλοκ
 
 ```blocks3
     <touching [Sprite1 v] ?>
 ```
 
-From this block's pointy ends, you can tell it’s going to give you the `True/False` value that the `if...then`{:class="block3control"} block needs.
+Από τα μυτερά άκρα αυτού του μπλοκ, μπορείς να καταλάβεις ότι θα σου δώσει τιμές `True/False` που χρειάζεται το μπλοκ `αν...τότε`{:class="block3control"}.
 
 --- /collapse ---
 
-Of course, you’ve just added an `if...then`{:class="block3control"} block with no 'then'.
+Φυσικά, μόλις προσέθεσες ένα μπλοκ `εάν...τότε`{:class="block3control"} χωρίς να προσθέσεις τίποτα στο τμήμα 'τότε'.
 
-You can make the mosquito disappear, as if the parrot ate it, by using the `hide`{:class="block3looks"} block.
+Μπορείς να κάνεις το κουνούπι να εξαφανιστεί, σαν να το έφαγε ο παπαγάλος, χρησιμοποιώντας το μπλοκ `εξαφανίσου`{:class="block3looks"}.
 
 --- task ---
 
-Find the `hide`{:class="block3looks"} block in the **Looks** list, and put it inside `if...then`{:class="block3control"}.
+Βρες το μπλοκ `εξαφανίσου`{:class="block3looks"} στις **Όψεις** και βάλε το στο μπλοκ `εάν...τότε`{:class="block3control"}.
 
 ```blocks3
-    if <touching [Sprite1 v] ?> then
-+        hide
+    εάν <touching [Sprite1 v] ?> τότε
++        εξαφανίσου
     end
 ```
 
 --- /task ---
 
-Now once the parrot catches the mosquito, it disappears for good. That’s not great.
+Τώρα μόλις ο παπαγάλος πιάσει το κουνούπι, αυτό εξαφανίζεται για πάντα. Αυτό δεν είναι τόσο καλό.
 
 --- task ---
 
-Put the `show`{:class="block3looks"} block from **Looks** in at the very start of the mosquito code, so you can reset the game.
+Βάλε το μπλοκ `εμφανίσου`{:class="block3looks"} από τις **Όψεις** στην αρχή του κώδικα του κουνουπιού, ώστε να μπορείς να επαναφέρεις το παιχνίδι.
 
 ```blocks3
-    when green flag clicked
-+    show
-    set rotation style [left-right v]
-    forever
+    όταν γίνει κλικ σε green flag
++    εμφανίσου
+    όρισε τρόπο περιστροφής [αριστερά-δεξιά v]
+    για πάντα
 ```
 
 --- /task ---
 
-Better, but you don’t want the player to have to restart the game every time they catch a single mosquito!
+Αυτό είναι ήδη καλύτερο, αλλά δεν θέλεις ο παίκτης να πρέπει να ξαναρχίζει το παιχνίδι κάθε φορά που πιάνει ένα κουνούπι!
 
 --- task ---
 
-Update the code inside your `if...then`{:class="block3control"} block to look like this:
+Ενημέρωσε τον κώδικα μέσα στο μπλοκ `εάν...τότε`{:class="block3control"} για να μοιάζει με αυτό:
 
 ```blocks3
-    if on edge, bounce
-    if <touching [Sprite1 v] ?> then
-        hide
-+        wait (1) secs
-+        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-+        show
+    εάν σε όριο, αναπήδησε
+    ένα <touching [Sprite1 v] ?> τότε
+        εξαφανίσου
++        περίμενε (1) δευτερόλεπτα
++        πήγαινε σε θέση x: (επίλεξε τυχαίο (-240) έως (240)) y: (επίλεξε τυχαίο (-180) έως (180))
++        εμφανίσου
     end
 ```
 
@@ -90,13 +90,13 @@ Update the code inside your `if...then`{:class="block3control"} block to look li
 
 --- collapse ---
 ---
-title: How does it work?
+title: Πώς λειτουργεί;
 ---
 
-You are being clever here: when the mosquito is hidden, wait, move it, then show it again.
+Είσαι έξυπνος εδώ: όταν το κουνούπι εξαφανίζεται, περιμένει, κινείται και στη συνέχεια εμφανίζεται ξανά.
 
-It looks like lots of mosquitoes, but it’s that one sprite moving around!
+Φαίνεται σαν πολλά κουνούπια να συνεχίζουν να εμφανίζονται, αλλά είναι μόνο ένα το αντικείμενο κουνούπι που κινείται στη σκηνή!
 
 --- /collapse ---
 
-That’s a game! But there’s no way to keep score yet...or to win. You can fix that too — in the next step!
+Αυτό είναι παιχνίδι! Αλλά δεν υπάρχει τρόπος να μετράς τη βαθμολογία ακόμα ή να κερδίζεις. Μπορείς να το διορθώσεις αυτό στην επόμενη καρτέλα!
