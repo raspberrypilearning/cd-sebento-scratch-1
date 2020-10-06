@@ -1,15 +1,15 @@
-## Remote-control mosquito
+## Αυτοκινούμενο κουνούπι
 
-Ok, now it's time to make the mosquito fly on its own. To do this, you’re going to need a new kind of block: a **control** block.
+Εντάξει, τώρα ήρθε η ώρα να κάνεις τα κουνούπια να πετούν μόνα τους. Για να το κάνεις αυτό, θα χρειαστείς ένα νέο είδος μπλοκ από την κατηγορία **Έλεγχος**.
 
 --- task ---
 
-Select your mosquito sprite and drag a `when green flag clicked`{:class="block3events"} **event** block, a `forever`{:class="block3control"} **control** block and a `move 10 steps`{:class="block3motion"} **motion** block into the **sprite panel** like this:
+Επίλεξε το αντικείμενο κουνούπι και σύρε ένα μπλοκ `όταν γίνει κλικ σε πράσινη σημαία`{:class="block3events"} από τα **Συμβάντα**, ένα μπλοκ `για πάντα`{:class="block3control"} από τον **Έλεγχο**, και ένα μπλοκ `κινήσου 10 βήματα`{:class="block3motion"} από την **Κίνηση** στην **περιοχή του επιλεγμένου αντικειμένου**, ως εξής:
 
 ```blocks3
-+    when green flag clicked
-+    forever
-        move (10) steps
++    όταν γίνει κλικ σε green flag
++    για πάντα
+        κινήσου (10) βήματα
     end
 ```
 
@@ -18,39 +18,39 @@ Select your mosquito sprite and drag a `when green flag clicked`{:class="block3e
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: Τι κάνει το νέο μπλοκ;
 ---
 
-**Control** blocks let you do things a certain number of times, or under certain conditions.
+Τα μπλοκ **Ελέγχου** επιτρέπουν στο πρόγραμμά σας να κάνει πράγματα ορισμένες φορές ή υπό ορισμένες συνθήκες.
 
-The mosquito does whatever is in the `forever`{:class="block3control"} block over and over again, forever. Once it has reached the end, it goes back to the top of the block and starts again.
+Εδώ, το κουνούπι εκτελεί όποια εντολή βρίσκεται μέσα στο μπλοκ `για πάντα`{:class="block3control"} ξανά και ξανά σε ένα βρόχο, για πάντα. Μόλις φτάσει στο τέλος, επιστρέφει στην κορυφή του μπλοκ και ξεκινά ξανά.
 
 --- /collapse ---
 
 --- task ---
 
-Now click the green flag and watch what happens!
+Τώρα κάνε κλικ στην πράσινη σημαία και δες τι συμβαίνει!
 
 --- /task ---
 
-Well, that mosquito just crashed into the side of the Stage, and it was moving far too fast for your parrot to catch.
+Λοιπόν, εκείνο το κουνούπι μόλις κουτούλησε στο πλάι της σκηνής και κινούνταν πολύ γρήγορα για να το πιάσει ο παπαγάλος.
 
-First, you need to slow it down. That’s actually pretty easy, you just need it to wait for a little while after it moves those 10 steps. There’s a **control** block that will help you here:
+Πρώτον, πρέπει να κάνεις το κουνούπι πιο αργό. Αυτό είναι πραγματικά πολύ εύκολο, απλά χρειάζεται να περιμένει λίγο αφού μετακινηθεί για 10 βήματα. Υπάρχει ένα μπλοκ στον **Έλεγχο** που θα σε βοηθήσει εδώ:
 
 ```blocks3
-    wait (1) secs
+    περίμενε (1) δευτερόλεπτα
 ```
 
 --- task ---
 
-Snap the `wait`{:class="block3control"} block into your code, and change the number to `0.5`, like this:
+Βάλε το μπλοκ `περίμενε`{:class="block3control"} στον κώδικά σου, και άλλαξε το νούμερο σε `0.5`, όπως:
 
 
 ```blocks3
-    when green flag clicked
-    forever
-        move (10) steps
-+        wait (0.5) secs
+    όταν γίνει κλικ σε green flag
++    για πάντα
+        κινήσου (10) βήματα
++        περίμενε (0.5) δευτερόλεπτα
     end
 ```
 
@@ -58,84 +58,84 @@ Snap the `wait`{:class="block3control"} block into your code, and change the num
 
 --- collapse ---
 ---
-title: Making adjustments
+τίτλος: Κάνοντας προσαρμογές
 ---
 
-The number you set in the `wait`{:class="block3control"} block says how many **seconds** you want the mosquito to wait. `0.5` is half a second.
+Ο αριθμός που όρισες στο μπλοκ `περίμενε`{:class="block3control"} λέει πόσα **δευτερόλεπτα** θες να περιμένει το κουνούπι. Το `0.5` είναι μισό δευτερόλεπτο.
 
-You can test out different values to see which is the best for the game. Remember that you can change the number of steps too!
+Μπορείς να δοκιμάσεις διαφορετικές τιμές για να δεις ποια είναι η καλύτερη για το παιχνίδι σου. Να θυμάσαι ότι μπορείς επίσης να αλλάξεις τον αριθμό των βημάτων!
 
 --- /collapse ---
 
-The mosquito moves now, but you need it to bounce off the edge too. Yet again, there’s a **motion** block for this!
+Το κουνούπι κινείται τώρα, αλλά πρέπει να αναπηδάει και από την άκρη της σκηνής. Και πάλι, υπάρχει ένα μπλοκ στην **Κίνηση ** γι' αυτό!
 
 --- task ---
 
-Find the `if on edge bounce`{:class="block3motion"} block, and add it in after the `wait`{:class="block3control"} block.
+Βρες το μπλοκ `εάν σε όριο, αναπήδησε`{:class="block3motion"} και βάλε το μετά το μπλοκ `περίμενε`{:class="block3control"}.
 
 --- /task ---
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: Τι κάνει το νέο μπλοκ;
 ---
 
-The `if on edge bounce`{:class="block3motion"} block checks if the sprite is touching the edge and, if it is, it turns left, right, up, or down as appropriate.
+Το μπλοκ `εάν σε όριο, αναπήδησε`{:class="block3motion"} ελέγχει εάν το αντικείμενο αγγίζει την άκρη της σκηνής και, εάν αγγίζει, στρίβει αριστερά, δεξιά, πάνω ή κάτω, ανάλογα με την περίπτωση.
 
 --- /collapse ---
 
-Of course, this will lead to an upside-down mosquito, so you need a `set rotation style`{:class="block3motion"} block again.
+Φυσικά, αυτό θα οδηγήσει σε κουνούπι που κινείται ανάποδα, οπότε χρειάζεσαι πάλι ένα μπλοκ `όρισε τρόπο περιστροφής`{:class="block3motion"}.
 
 --- task ---
 
-Update your code to set the rotation style of the mosquito to `left-right`{:class="block3motion"}:
+Ενημέρωσε τον κώδικά σου για να ορίσεις τον τρόπο περιστροφής του κουνουπιού `αριστερά-δεξιά`{:class="block3motion"}:
 
 ```blocks3
-    when green flag clicked
-+    set rotation style [left-right v]
-    forever
-        move (10) steps
-        wait (0.5) secs
-        if on edge, bounce
+    όταν γίνει κλικ σε green flag
++    όρισε τρόπο περιστροφής [αριστερά-δεξιά v]
+    για πάντα
+        κινήσου (10) βήματα
+        περίμενε (0.5) δευτερόλεπτα
+        εάν σε όριο, αναπήδησε
     end
 ```
 
 --- /task ---
 
-The mosquito moves back and forward now, but only in a straight line — a bit too easy for the player to catch with the parrot! You need to make the mosquito less predictable.
+Το κουνούπι κινείται προς τα πίσω και προς τα εμπρός τώρα, αλλά μόνο σε ευθεία γραμμή - αρκετά εύκολο για να το πιάσει ο παίκτης με τον παπαγάλο! Πρέπει να κάνεις το κουνούπι λιγότερο προβλέψιμο.
 
-You already know from a previous step how to make a sprite turn, so start there!
+Γνωρίζεις ήδη από ένα προηγούμενο βήμα πώς να κάνεις μια στροφή του αντικειμένου, οπότε ξεκίνα από εκεί!
 
 --- task ---
 
-Add a turn into the mosquito’s flying and click the green flag.
+Πρόσθεσε μια στροφή στο κουνούπι και κάνε κλικ στην πράσινη σημαία.
 
 ```blocks3
-    when green flag clicked
-    set rotation style [left-right v]
-    forever
-        move (10) steps
-+        turn cw (10) degrees
-        wait (0.5) secs
-        if on edge, bounce
+    όταν γίνει κλικ σε green flag
+    όρισε τρόπο περιστροφής [αριστερά-δεξιά v]
+    για πάντα
+        κινήσου (10) βήματα
++        στρίψε cw (10) μοίρες
+        περίμενε (0.5) δευτερόλεπτα
+        εάν σε όριο, αναπήδησε
     end
 ```
 
 --- /task ---
 
-It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
+Είναι καλύτερα τώρα, αλλά ακόμα είναι προβλέψιμη η κατεύθυνση του κουνουπιού. Πρέπει να είναι πιο τυχαία η κίνηση. Ευτυχώς, το Scratch μπορεί να κάνει τυχαία πράγματα για σένα! Θα χρειαστείς απλώς μια νέα κατηγορία μπλοκ, που ονομάζονται **Τελεστές**.
 
 --- collapse ---
 ---
-title: What's an operator?
+title: Τι είναι ένας τελεστής;
 ---
 
-**Operators** take in one or more values (like numbers, text, true/false values) and give back a single value. You can tell the kind of value it will give back by the shape of the block: round ends give numbers or text, pointy ends give true/false.
+Οι **Τελεστές** λαμβάνουν μία ή περισσότερες τιμές (όπως αριθμούς, κείμενο ή τιμές True - αληθές / False - ψευδές) και επιστρέφουν πίσω μία μόνο τιμή. Μπορείς να καταλάβεις τι είδους τιμή θα επιστρέψει βλέποντας το σχήμα του μπλοκ: τα στρογγυλά άκρα επιστρέφουν αριθμούς ή κείμενο, τα μυτερά άκρα επιστρέφουν True/False.
 
 ```blocks3
     (() + ())
 
-    (join [hello ] [world])
+    (ένωσε [γεια ] [κόσμε])
 
     <[] = []>
 ```
@@ -144,25 +144,25 @@ title: What's an operator?
 
 --- task ---
 
-Find the `pick random`{:class="block3operators"} **operator** block, and plug it into the `turn degrees`{:class="block3motion"} **motion** block by clicking it and dragging it into the field where you set the number of degrees.
+Βρες το μπλοκ `επίλεξε τυχαίο`{:class="block3operators"} στους **Τελεστές** και βάλε το μέσα στο μπλοκ `στρίψε μοίρες`{:class="block3motion"} στην **Κίνηση**, κάνοντας κλικ και σύροντάς το στο αριθμητικό πεδίο όπου κανονικά ορίζεις τις μοίρες.
 
 ```blocks3
-    when green flag clicked
-    set rotation style [left-right v]
-    forever 
-        move (10) steps
-+        turn cw (pick random (1) to (10)) degrees
-        wait (0.5) secs
-        if on edge, bounce
+    όταν γίνει κλικ σε green flag
+    όρισε τρόπο περιστροφής [αριστερά-δεξιά v]
+    για πάντα
+        κινήσου (10) βήματα
++        στρίψε cw (επίλεξε τυχαίο (1) έως (10)) μοίρες
+        περίμενε (0.5) δευτερόλεπτα
+        εάν σε όριο, αναπήδησε
     end
 ```
 
 --- /task ---
 
-**Note**: you can change the minimum and maximum numbers it will pick, but the default values (`1` and `10`) are pretty good for this game, so you can just leave them.
+**Σημείωση**: μπορείς να αλλάξεις τους ελάχιστους και μέγιστους αριθμούς που θα επιστρέψει, αλλά οι προεπιλεγμένες τιμές (`1` και `10`) είναι αρκετά καλές για αυτό το παιχνίδι, οπότε μπορείς να τις κρατήσεις.
 
 --- task ---
 
-Click the green flag to run the code!
+Κάνε κλικ στην πράσινη σημαία για να δοκιμάσεις το παιχνίδι σου!
 
 --- /task ---
