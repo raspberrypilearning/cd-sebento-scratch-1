@@ -1,3 +1,3 @@
-## Challenge: winning the game
+## Πρόκληση: κερδίζοντας το παιχνίδι
 
-Pick a score at which the player wins, and make something cool happen. Maybe the parrot congratulates them, or a "You win!" sprite appears, or music plays, or...you get the idea!
+Επίλεξε μια βαθμολογία στην οποία κερδίζει ο παίκτης και κάνε κάτι φοβερό. Ίσως ο παπαγάλος να λέει συγχαρητήρια, να εμφανίζεται ένα αντικείμενο "Κέρδισες!" ή να ακούγεται μουσική, ή... έπιασες το νόημα!
