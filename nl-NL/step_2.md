@@ -33,7 +33,7 @@ Elk object dat in het speelveld komt, is een **sprite**.
 
 De sprite omvat:
 * De **afbeelding** op het speelveld
-* Elk alternatief **uiterlijk** \(hoe het eruit ziet\) het heeft
+* Elk alternatief **uiterlijk** \(hoe het eruit ziet\) dat het heeft
 * Alle **geluiden** die bij de sprite horen
 * Alle **codeblokken** die bij de sprite horen ![](images/setup2.png)
 
@@ -89,7 +89,7 @@ Ga dan naar **Uiterlijken** in het **codeblokkenpalet** en zoek het blok
     zeg [Hallo!] (2) sec.
 ```
 
-Sleep het naar het **huidige sprite paneel**en verbind het als volgt met de onderkant van het andere blok:
+Sleep het naar het **huidige sprite paneel** en verbind het als volgt met de onderkant van het andere blok:
 
 ```blocks3
     wanneer op de groene vlag wordt geklikt
