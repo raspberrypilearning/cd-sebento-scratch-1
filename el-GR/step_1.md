@@ -1,18 +1,18 @@
 --- no-print ---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-sebento-scratch-1-scratch2).
+Αυτή είναι η **Scratch 3** έκδοση του έργου. Υπάρχει επίσης η [έκδοση Scratch 2 του έργου](https://projects.raspberrypi.org/en/projects/cd-sebento-scratch-1-scratch2).
 
 --- /no-print ---
 
-## Introduction
+## Εισαγωγή
 
-This project is going to help you learn to create computer programs in Scratch!
+Αυτό το έργο θα σε βοηθήσει να μάθεις να δημιουργείς τα δικά σου προγράμματα στο Scratch!
 
-### What you will make
+### Τι θα φτιάξεις
 
-You will make a game where you protect people from malaria by making a parrot catch mosquitoes.
+Θα κάνεις ένα παιχνίδι όπου προστατεύεις τους ανθρώπους από την ελονοσία κάνοντας έναν παπαγάλο να πιάνει κουνούπια.
 
-Below is an example of how the finished game might look. Press the green flag to run the project. Use the arrow keys to move the parrot around and try to catch the mosquitoes. If you catch ten mosquitoes, you can see what happens when you win!
+Ακολουθεί ένα παράδειγμα πώς μπορεί να είναι το ολοκληρωμένο παιχνίδι σου. Κάνε κλικ στην πράσινη σημαία για να δοκιμάσεις το παιχνίδι. Χρησιμοποίησε τα βελάκια του πληκτρολογίου για να μετακινήσεις τον παπαγάλο και να πιάσεις τα κουνούπια. Εάν πιάσεις δέκα κουνούπια, μπορείς να δεις τι συμβαίνει όταν κερδίσεις!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/215534725/?autostart=false" frameborder="0"></iframe>
@@ -20,29 +20,29 @@ Below is an example of how the finished game might look. Press the green flag to
 
 --- collapse ---
 ---
-title: What you will learn
+title: Τι θα μάθεις
 ---
 
-* Adding and deleting code blocks
-* Basic motion:  move in steps, and turn by degrees
-* Using keyboard controls
-* Using x/y coordinates to position sprites
-* Changing the look of the Stage and of sprites with costumes and show/hide
-* Multiple sprites on screen
-* Forever loops
-* Detecting when sprites are touching
+* Προσθήκη και διαγραφή μπλοκ κώδικα
+* Βασικές κινήσεις: κίνηση σε βήματα και περιστροφή σε μοίρες
+* Χρήση ελέγχου πληκτρολογίου
+* Χρήση συντεταγμένων x/y για την τοποθέτηση των αντικειμένων
+* Αλλαγή της εικόνας της σκηνής και των αντικειμένων με ενδυμασίες και εντολές εμφάνισης / απόκρυψης
+* Συνύπαρξη πολλών αντικειμένων στην οθόνη
+* Βρόχοι "για πάντα"
+* Εντοπισμός πότε τα αντικείμενα αγγίζουν το ένα το άλλο
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: Τι θα χρειαστείς
 ---
 
-You’re going to need **Scratch**! Do one of the following two and once you’re set up, move on to the next step.
+Θα χρειαστείς το **Scratch**! Κάνε ένα από τα ακόλουθα δύο και μόλις είσαι έτοιμος, προχώρα στο επόμενο βήμα.
 
-+ Download Scratch and install it on your computer by going to [dojo.soy/downloadscratch](http://dojo.soy/downloadscratch){:target="_blank"}
-+ Use Scratch in your web browser by going to [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_blank"}
++ Κατέβασε το Scratch από το [dojo.soy/downloadscratch](http://dojo.soy/downloadscratch){:target="_ blank"}και εγκατέστησέ το στον υπολογιστή σου
++ Χρησιμοποίησε το Scratch στο πρόγραμμα περιήγησης ανοίγοντας το [dojo.soy/usescratch](http://dojo.soy/usescratch)"}
 
 --- /collapse ---
 
