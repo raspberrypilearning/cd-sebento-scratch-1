@@ -130,7 +130,7 @@ Het is beter, maar het is nog erg voorspelbaar. Het moet meer willekeurig zijn. 
 title: Wat is een functie?
 ---
 
-**Functies** nemen een of meer waarden in (zoals getallen, tekst, waar niet waar) en geven een enkele waarde terug. Je kunt het soort waarde zien dat het teruggeeft door de vorm van het blok: ronde uiteinden geven cijfers of tekst, puntige uiteinden geven waar/onwaar.
+**Functies** nemen een of meer waarden in (zoals getallen, tekst, waar/ niet waar) en geven een enkele waarde terug. Je kunt het soort waarde zien dat het teruggeeft door de vorm van het blok: ronde uiteinden geven cijfers of tekst, puntige uiteinden geven waar/niet waar.
 
 ```blocks3
     (() + ())
