@@ -1,15 +1,39 @@
 ---
-title: Creating and calling functions in Python
+title: Mosquito patrol
 hero_image: images/banner.png
-description: Learn how to create and call a function
-original_url:
-theme: cc-prototype
-listed: false
-duration: 1
-ingredient: true
+description: Make your first Scratch program!
+theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
 copyedit: true
-interests:
-technologies: "python"
+curriculum: ''
+interests: ''
+technologies: scratch
+site_areas: coderdojo, projects
+hardware: ''
+software: scratch
+version: 3.0.0
+last_tested: 2018-05-01
 steps:
   - 
-    title: Simple funtions
+    title: Introduction
+  - 
+    title: Getting set up
+  - 
+    title: Adding & removing code
+  - 
+    title: Setting the scene
+  - 
+    title: Moving things around
+  - 
+    title: All the sprites
+  - 
+    title: Remote-control mosquito
+  - 
+    title: Let's catch some mosquitoes!
+  - 
+    title: Keeping score
+  - 
+    title: "Challenge: winning the game"
+    challenge: true
