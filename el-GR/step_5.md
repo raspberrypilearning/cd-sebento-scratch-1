@@ -1,134 +1,134 @@
-## Moving things around
+## Κίνηση αντικειμένων
 
-Right now your parrot moves in a circle, but wouldn’t it be more fun to control it with the arrow keys? In this step, you’re going learn how to do that!
+Τώρα ο παπαγάλος σου κινείται σε κύκλο και θα ήταν πολύ πιο διασκεδαστικό να τον ελέγχεις με τα βελάκια του πληκτρολογίου; Σε αυτό το βήμα, θα μάθεις πώς να το κάνεις αυτό!
 
 --- task ---
 
-Start by deleting any code that you have for the parrot.
+Ξεκίνησε διαγράφοντας όλο τον κώδικα που έχεις για τον παπαγάλο.
 
 --- /task ---
 
-As you’ve probably guessed, you’re going to need **event** and **motion** blocks again!
+Όπως μάλλον μάντεψες, πάλι θα χρειαστείς μπλοκ από τις κατηγορίες **Συμβάντα** και **Κίνηση**!
 
 
-This time, look for this block and drag it onto the current sprite panel:
+Αυτή τη φορά, βρες αυτό το μπλοκ και σύρε το στην περιοχή του επιλεγμένου αντικειμένου:
 
 ```blocks3
-    when [space v] key pressed
+    όταν πατηθεί πλήκτρο [διάστημα]
 ```
 
-Click the little arrow (▼) beside `space`. You will see a list of all the keys on your keyboard that you can pick from.
+Κάνε κλικ στο βελάκι (▼) δίπλα στο `διάστημα`. Θα δεις μια λίστα με όλα τα κουμπιά του πληκτρολογίου σου, τα οποία μπορείς να επιλέξεις.
 
 --- task ---
 
-You’re going to need four of these blocks and you can connect them to **motion** blocks like this:
+Θα χρειαστείς τέσσερα από αυτά τα μπλοκ και μπορείς να τα συνδέσεις στα μπλοκ **Κίνησης** όπως:
 
 ```blocks3
-+    when [left arrow v] key pressed
-+    move (-10) steps
++    όταν πατηθεί πλήκτρο [αριστερό βέλος v]
++    κινήσου (-10) βήματα
 ```
 
 ```blocks3
-+    when [right arrow v] key pressed
-+    move (10) steps
++    όταν πατηθεί πλήκτρο [δεξί βέλος v]
++    κινήσου (10) βήματα
 ```
 
 ```blocks3
-+    when [up arrow v] key pressed
++    όταν πατηθεί πλήκτρο [πάνω βέλος v]
 ```
 
 ```blocks3
-+    when [down arrow v] key pressed
-```
-
---- /task ---
-
-**Note**: `-10` means 'go back 10 steps'.
-
---- task ---
-
-Now click the green flag and press the arrow keys to test your code.
-
---- /task ---
-
-Your parrot moves back and forwards now, which is pretty cool, but it doesn’t move up or down. Also, if you look through the **motion** blocks, you’ll see there are no blocks for 'up' or 'down'. There are a whole bunch of them related to **x** and **y** though — let's try those!
-
---- task ---
-
-Grab two `change y by`{:class="block3motion"} blocks and update your code like this:
-
-```blocks3
-    when [left arrow v] key pressed
-    move (-10) steps
-```
-
-```blocks3
-    when [right arrow v] key pressed
-    move (10) steps
-```
-
-```blocks3
-    when [up arrow v] key pressed
-+    change y by (10)
-```
-
-```blocks3
-    when [down arrow v] key pressed
-+    change y by (-10)
++    όταν πατηθεί πλήκτρο [κάτω βέλος v]
 ```
 
 --- /task ---
 
-Now when the arrows are pressed, the parrot can move all over the stage!
+**Σημείωση**: `-10` σημαίνει 'πήγαινε πίσω 10 βήματα'.
+
+--- task ---
+
+Τώρα κάνε κλικ στην πράσινη σημαία και πάτησε τα βελάκια του πληκτρολογίου σου για να ελέγξεις τον κώδικα.
+
+--- /task ---
+
+Τώρα ο παπαγάλος σου κινείται πίσω και μπροστά, κάτι που είναι αρκετά εντυπωσιακό, αλλά δεν κινείται πάνω (και) κάτω. Επίσης, αν κοιτάξεις το μπλοκ **Κίνηση**, θα δεις ότι δεν υπάρχουν μπλοκ για 'πάνω' ή 'κάτω'. Υπάρχουν όμως πολλά μπλοκ που σχετίζονται με συντεταγμένες **x** και **y** - ας δοκιμάσουμε αυτά τότε!
+
+--- task ---
+
+Σύρε δύο μπλοκ `άλλαξε y κατά`{:class="block3motion"} και άλλαξε τον κώδικα ως εξής:
+
+```blocks3
+    όταν πατηθεί πλήκτρο [αριστερό βέλος v]
++    κινήσου (-10) βήματα
+```
+
+```blocks3
+    όταν πατηθεί πλήκτρο [δεξί βέλος v]
++    κινήσου (10) βήματα
+```
+
+```blocks3
+    όταν πατηθεί πλήκτρο [πάνω βέλος v]
++    άλλαξε y κατά (10)
+```
+
+```blocks3
+    όταν πατηθεί πλήκτρο [κάτω βέλος v]
++    άλλαξε y κατά (-10)
+```
+
+--- /task ---
+
+Τώρα όταν πατηθούν τα βελάκια, ο παπαγάλος μπορεί να κινηθεί σε όλη τη σκηνή!
 
 --- collapse ---
 ---
-title: How do x- and y-coordinates work?
+title: Πώς λειτουργούν οι συντεταγμένες x και y;
 ---
 
-When programmers need to talk about the positions of objects, like sprites, we often use **x** and **y** coordinates to describe them. The **x-axis** runs from left to right, while the **y-axis** runs from bottom to top.
+Όταν οι προγραμματιστές θέλουμε να μιλήσουμε για τις θέσεις των αντικειμένων, όπως η γάτα ή ο παπαγάλος σου, χρησιμοποιούμε συχνά τις συντεταγμένες **x** και **y** για να τις περιγράψουμε. Ο **άξονας x** τρέχει από αριστερά προς τα δεξιά, ενώ ο **άξονας y** τρέχει από κάτω προς τα πάνω.
 
 ![](images/moving3.png)
 
-A sprite can be located by the coordinates of its centre, written for example like `(15, -27)`, where `15` is the position along the x-axis position, and `-27` the position along the y-axis.
+Ένα αντικείμενο μπορεί να εντοπιστεί από τις συντεταγμένες του κέντρου του, για παράδειγμα `(15, -27)`, όπου `15` είναι η θέση του κατά μήκος του άξονα x και `-27` η θέση του κατά μήκος του άξονα y.
 
-+ To try out how this works, select a sprite and set different values for its `x` and `y` coordinates to move the sprite around the Stage.
++ Για να δοκιμάσεις πώς λειτουργεί αυτό, επίλεξε αντικείμενο και όρισε διαφορετικές τιμές για τις συντεταγμένες `x` και `y` για να μετακινηθεί το αντικείμενο γύρω από τη σκηνή.
 
 ![](images/xycoords.png)
 
-+  Try different pairs values to see where the sprite goes! In Scratch, the x-axis goes from `-240` to `240`, and the y-axis goes from `-180` to `180`.
++  Δοκίμασε διαφορετικά ζευγάρια τιμών για να δεις πού πηγαίνει το αντικείμενο! Στο Scratch, ο άξονας x ξεκινά από `-240` και φτάνει ως το `240`, ενώ ο άξονας y ξεκινά από `-180` και φτάνει έως το `180`.
 
 --- /collapse ---
 
-### Restarting the game
+### Επανεκκίνηση του παιχνιδιού
 
-The parrot moves all over the screen, but imagine this is a game: how do you restart it? You need to get the parrot back to its original location when the player starts the game. They'll start this game by clicking on the green flag, so you need to change the parrot’s `x` and `y` coordinates when that happens.
+Ο παπαγάλος κινείται σε όλη την οθόνη, αλλά φαντάσου ότι είναι ένα παιχνίδι: πώς το επανεκκινείς; Πρέπει να μεταφέρεις τον παπαγάλο στην αρχική του θέση, όταν ξεκινήσει το παιχνίδι. Το παιχνίδι ξεκινάει κάνοντας κλικ στην πράσινη σημαία, οπότε πρέπει να αλλάξεις τις συντεταγμένες `x` και `y` του παπαγάλου όταν συμβεί αυτό.
 
-That’s actually pretty easy! The centre of the stage is `(0,0)` in `x` and `y` coordinates.
+Αυτό είναι πολύ εύκολο! Το κέντρο της σκηνής είναι `(0, 0)` σε συντεταγμένες `x` και `y`.
 
-So all you need is an **event** block for that green flag and the **go to** block from **motion**.
+Έτσι, το μόνο που χρειάζεσαι είναι το μπλοκ με την πράσινη σημαία από τα **Συμβάντα** και το μπλοκ **πήγαινε σε θέση x και y** από την **Κίνηση**.
 
 --- task ---
 
-Drag the `when green flag clicked`{:class="blockevent"} **event** block onto the current sprite panel.
+Σύρε ένα μπλοκ `όταν γίνει κλικ σε πράσινη σημαία`{:class="block3events"} από τα **Συμβάντα** στην περιοχή του επιλεγμένου αντικειμένου.
 
 ```blocks3
-+    when green flag clicked
++    όταν γίνει κλικ σε green flag
 ```
 
-Then find the `go to`{:class="block3motion"} **motion** block and snap it on to your flag event block.
+Στη συνέχεια βρες το μπλοκ `πήγαινε σε θέση`{:class="block3motion"} από την καρτέλα **Κίνηση** και ένωσε το με το μπλοκ της πράσινης σημαίας.
 
 ```blocks3
-    when green flag clicked
-+    go to x: (0) y: (0)
+    όταν γίνει κλικ σε green flag
++    πήγαινε σε θέση x: (0) y: (0)
 ```
 
-Set both the `x` and the `y` to `0` in the `go to`{:class="block3motion"} block if they are not already `0`.
+Βάλε και στις δύο συντεταγμένες `x` και `y` τιμή `0` στο μπλοκ `πήγαινε στη θέση`{:class="block3motion"}, εάν δεν είναι ήδη `0`.
 
 --- /task ---
 
 --- task ---
 
- Now click the green flag, and you should see the parrot return to the centre of the stage.
+ Τώρα κάνε κλικ στην πράσινη σημαία: θα πρέπει να δεις τον παπαγάλο να επιστρέφει στο κέντρο της σκηνής.
 
 --- /task ---
