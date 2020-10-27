@@ -15,8 +15,8 @@
 Σύρε το μπλοκ `αγγίζει...`{:class="block3sensing"} στο πεδίο στο επάνω μέρος του μπλοκ `εάν...τότε`{:class="block3control"} και κάνε κλικ στο βελάκι για να επιλέξεις το αντικείμενο του παπαγάλου. Εάν δεν το έχεις αλλάξει, θα είναι το "Sprite1" ή 'Αντικείμενο1'.
 
 ```blocks3
-    εάν σε όριο, αναπήδησε
-+    εάν <touching [Sprite1 v] ?> τότε
+    if on edge, bounce
++    if <touching [Sprite1 v] ?> then
     end
 ```
 
@@ -48,8 +48,8 @@ title: Πώς λειτουργεί;
 Βρες το μπλοκ `εξαφανίσου`{:class="block3looks"} στις **Όψεις** και βάλε το στο μπλοκ `εάν...τότε`{:class="block3control"}.
 
 ```blocks3
-    εάν <touching [Sprite1 v] ?> τότε
-+        εξαφανίσου
+    if <touching [Sprite1 v] ?> then
++        hide
     end
 ```
 
@@ -62,10 +62,10 @@ title: Πώς λειτουργεί;
 Βάλε το μπλοκ `εμφανίσου`{:class="block3looks"} από τις **Όψεις** στην αρχή του κώδικα του κουνουπιού, ώστε να μπορείς να επαναφέρεις το παιχνίδι.
 
 ```blocks3
-    όταν γίνει κλικ σε green flag
-+    εμφανίσου
-    όρισε τρόπο περιστροφής [αριστερά-δεξιά v]
-    για πάντα
+    when green flag clicked
++    show
+    set rotation style [left-right v]
+    forever
 ```
 
 --- /task ---
@@ -77,12 +77,12 @@ title: Πώς λειτουργεί;
 Ενημέρωσε τον κώδικα μέσα στο μπλοκ `εάν...τότε`{:class="block3control"} για να μοιάζει με αυτό:
 
 ```blocks3
-    εάν σε όριο, αναπήδησε
-    ένα <touching [Sprite1 v] ?> τότε
-        εξαφανίσου
-+        περίμενε (1) δευτερόλεπτα
-+        πήγαινε σε θέση x: (επίλεξε τυχαίο (-240) έως (240)) y: (επίλεξε τυχαίο (-180) έως (180))
-+        εμφανίσου
+    if on edge, bounce
+    if <touching [Sprite1 v] ?> then
+        hide
++        wait (1) secs
++        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
++        show
     end
 ```
 
