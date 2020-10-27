@@ -40,21 +40,21 @@ title: Τι είναι οι μεταβλητές;
 ### Κώδικας για τον παπαγάλο
 
 ```blocks3
-    όταν γίνει κλικ σε green flag
-+    όρισε [βαθμολογία v] σε [0]
-    όρισε τρόπο περιστροφής [αριστερά-δεξιά v]
-    πήγαινε σε θέση x: (0) y: (0)
+    when green flag clicked
++    set [score v] to [0]
+    set rotation style [left-right v]
+    go to x: (0) y: (0)
 ```
 
 ### Κώδικας για το κουνούπι
 
 ```blocks3
-    εάν <touching [Sprite1 v] ?> τότε
-+        άλλαξε [βαθμολογία v] κατά [1]
-        εξαφανίσου
-        περίμενε (1) δευτερόλεπτα
-        πήγαινε σε θέση x: (επίλεξε τυχαίο (-240) έως (240)) y: (επίλεξε τυχαίο (-180) έως (180))
-        εμφανίσου
+    if <touching [Sprite1 v] ?> then
++        change [score v] by [1]
+        hide
+        wait (1) secs
+        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
+        show
     end
 ```
 
