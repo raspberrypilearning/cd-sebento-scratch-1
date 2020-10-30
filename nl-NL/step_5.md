@@ -63,7 +63,7 @@ neem (-10) stappen
 ```
 
 ```blocks3
-    wanneer [pijltje rechts] is ingedrukt
+    wanneer [pijltje rechts v] is ingedrukt
 neem (10) stappen
 ```
 

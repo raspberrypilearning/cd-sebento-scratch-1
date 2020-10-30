@@ -68,7 +68,7 @@ Voeg ten slotte deze code toe om de papegaai het spel te laten uitleggen:
 
 ```blocks3
     when green flag clicked
-    maak [score v] naar [0]
+    set [score v] to [0]
     maak draaistijl [links-rechts v]
     ga naar x: (0) y: (0)
     zeg [Hallo! Ik heb je hulp nodig.] (3) sec.
