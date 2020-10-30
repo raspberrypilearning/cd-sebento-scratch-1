@@ -42,7 +42,7 @@ title: Wat heb je nodig
 Je hebt **Scratch** nodig! Voer één van de volgende twee uit en ga na de installatie verder met de volgende stap.
 
 + Download Scratch en installeer het op je computer door naar [dojo.soy/downloadscratch](http://dojo.soy/downloadscratch){:target="_blank"} te gaan
-+ Gebruik Scratch in je webbrowser door naar [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_blank"} te gaan
++ Gebruik Scratch in je webbrowser door naar [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_ blank"} te gaan
 
 --- /collapse ---
 

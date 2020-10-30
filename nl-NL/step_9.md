@@ -50,7 +50,7 @@ ga naar x: (0) y: (0)
 
 ```blocks3
     als <raak ik [Sprite1 v]> dan
-+ verander [score v] met [1]
++ change [score v] by [1]
 verdwijn
 wacht (1) sec.
 ga naar x: (willekeurig getal tussen (-240) en (240)) y: (willekeurig getal tussen (-180) en (180))

@@ -42,7 +42,7 @@ Codeblokken lopen van boven naar beneden, dus de volgorde waarin je je code bij 
 
 
 ```blocks3
-  when green flag clicked
+    when green flag clicked
   zeg [Hallo!]
   start geluid [meow v]
 ```

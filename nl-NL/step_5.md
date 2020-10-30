@@ -102,7 +102,7 @@ Een sprite kan worden gevonden door de coördinaten van zijn middelpunt, bijvoor
 
 ### Het spel herstarten
 
-De papegaai beweegt over het scherm, maar stel je voor dat dit een spel is: hoe herstart je het? Je moet de papegaai terugbrengen naar zijn oorspronkelijke plek zodra de speler het spel start. Ze zullen dit spel starten door op de groene vlag te klikken, dus je moet de coördinaten van de papegaai wijzigen `x` en `y` wanneer dat gebeurt.
+De papegaai beweegt over het scherm, maar stel je voor dat dit een spel is: hoe herstart je het? Je moet de papegaai terugbrengen naar zijn oorspronkelijke plek zodra de speler het spel start. Ze zullen dit spel starten door op de groene vlag te klikken, dus je moet de `x` en `y` coördinaten van de papegaai wijzigen wanneer dat gebeurt.
 
 Dat is eigenlijk vrij eenvoudig! Het midden van het speelveld is `(0,0)` op `x` en `y` coördinaten.
 
@@ -119,8 +119,8 @@ Sleep het `wanneer op de groene vlag wordt geklikt`{:class="block3event"} **gebe
 Zoek vervolgens het `ga naar`{:class="block3motion"} **beweging** blok en klik het vast aan je groene vlag blok.
 
 ```blocks3
-   when green flag clicked
-+  ga naar x: (0) y: (0)
+    when green flag clicked
++ ga naar x: (0) y: (0)
 ```
 
 Stel zowel de `x` als de `y` op `0` in in het `ga naar`{:class="block3motion"} blok als ze nog niet `0` zijn.
