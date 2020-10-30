@@ -14,7 +14,7 @@ Zoals je waarschijnlijk al geraden hebt, heb je weer **gebeurtenissen** en **bew
 Zoek dit keer dit blok en sleep het naar het huidige sprite paneel:
 
 ```blocks3
-    wanneer [spatiebalk] is ingedrukt
+    wanneer [spatiebalk v] is ingedrukt
 ```
 
 Klik op het pijltje (▼) naast `spatiebalk`. Je ziet een lijst met alle toetsen op je toetsenbord waaruit je kunt kiezen.
