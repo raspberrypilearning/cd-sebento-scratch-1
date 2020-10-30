@@ -40,7 +40,7 @@ Pak uit de **Variabelen** categorie de `maak [mijn variabele v] [0]`{:class="blo
 ### Code voor de papegaai
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    when green flag clicked
 + maak [score v] [0]
 maak draaistijl [links-rechts v]
 ga naar x: (0) y: (0)
@@ -50,7 +50,7 @@ ga naar x: (0) y: (0)
 
 ```blocks3
     als <raak ik [Sprite1 v]> dan
-+ verander [score v] met [1]
++ change [score v] by [1]
 verdwijn
 wacht (1) sec.
 ga naar x: (willekeurig getal tussen (-240) en (240)) y: (willekeurig getal tussen (-180) en (180))
@@ -67,7 +67,7 @@ Gaaf! Nu heb je zelfs een score.
 Voeg ten slotte deze code toe om de papegaai het spel te laten uitleggen:
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
     maak [score v] naar [0]
     maak draaistijl [links-rechts v]
     ga naar x: (0) y: (0)

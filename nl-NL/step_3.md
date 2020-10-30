@@ -1,4 +1,4 @@
-## Toevoegen & verwijdercode
+## Code toevoegen & verwijderen
 
 Geweldig! Je hebt je eerste Scratch programma geschreven. Tijd om wat meer te leren over hoe je code in en uit Scratch kunt krijgen! Scratch code bestaat uit **blokken** die je samen klikt, zoals deze:
 
@@ -33,7 +33,7 @@ title: De code uitvoeren
 Normaal gesproken wil je dat je blokken automatisch worden uitgevoerd wanneer er iets specifieks gebeurt. Dit is de reden waarom de meeste van je programma's beginnen met een blok uit de categorie **gebeurtenissen**. Meestal zal dit deze zijn:
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 ```
 
 De codeblokken die zijn aangesloten op dit blok worden uitgevoerd nadat op de **groene vlag** is geklikt.
@@ -42,7 +42,7 @@ Codeblokken lopen van boven naar beneden, dus de volgorde waarin je je code bij 
 
 
 ```blocks3
-    wanneer op groene vlag wordt geklikt
+    when green flag clicked
   zeg [Hallo!]
   start geluid [meow v]
 ```

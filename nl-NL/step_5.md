@@ -1,4 +1,4 @@
-## Dingen verplaatsen
+## Laat dingen bewegen
 
 Op dit moment beweegt je papegaai in een cirkel, maar zou het niet leuker zijn om hem te besturen met de pijltjestoetsen? In deze stap leer je hoe je dat kunt doen!
 
@@ -113,13 +113,13 @@ Dus alles wat je nodig hebt is een **gebeurtenissen** blok voor de groene vlag e
 Sleep het `wanneer op de groene vlag wordt geklikt`{:class="block3event"} **gebeurtenissen** blok naar het huidige sprite paneel.
 
 ```blocks3
-+ wanneer op de groene vlag wordt geklikt
++ when green flag clicked
 ```
 
 Zoek vervolgens het `ga naar`{:class="block3motion"} **beweging** blok en klik het vast aan je groene vlag blok.
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 + ga naar x: (0) y: (0)
 ```
 

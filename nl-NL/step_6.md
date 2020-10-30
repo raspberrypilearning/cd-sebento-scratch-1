@@ -81,7 +81,7 @@ Kijk in de categorie **Beweging** voor het blok `maak draaistijl`{:class="block3
 Voeg het blok toe aan je herstartcode van eerder en stel de draaistijl in op `links-rechts`{:class="block3motion"}, zoals dit:
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
 + maak draaistijl [links-rechts v]
     ga naar x: (0) y: (0)
 ```

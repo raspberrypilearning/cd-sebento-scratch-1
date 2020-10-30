@@ -76,7 +76,7 @@ Tijd om te gaan programmeren! Ga terug naar Scratch en klik op de Scratch Cat in
 Ga naar de categorie **Gebeurtenissen** in het **codeblokkenpalet**, klik op het `wanneer op de groene vlag wordt geklikt`{:class="block3events"} blok en sleep het naar het **huidige sprite paneel**.
 
 ```blocks3
-+ wanneer op de groene vlag wordt geklikt
++ when green flag clicked
 ```
 
 --- /task ---
@@ -92,7 +92,7 @@ Ga dan naar **Uiterlijken** in het **codeblokkenpalet** en zoek het blok
 Sleep het naar het **huidige sprite paneel** en verbind het als volgt met de onderkant van het andere blok:
 
 ```blocks3
-    wanneer op de groene vlag wordt geklikt
+    when green flag clicked
     zeg [Hallo!] (2) sec.
 ```
 
