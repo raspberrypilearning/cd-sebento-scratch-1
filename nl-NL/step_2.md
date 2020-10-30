@@ -33,7 +33,7 @@ Elk object dat in het speelveld komt, is een **sprite**.
 
 De sprite omvat:
 * De **afbeelding** op het speelveld
-* Elk alternatief **uiterlijk** \(hoe het eruit ziet\) het heeft
+* Elk alternatief **uiterlijk** \(hoe het eruit ziet\) dat het heeft
 * Alle **geluiden** die bij de sprite horen
 * Alle **codeblokken** die bij de sprite horen ![](images/setup2.png)
 
@@ -76,7 +76,7 @@ Tijd om te gaan programmeren! Ga terug naar Scratch en klik op de Scratch Cat in
 Ga naar de categorie **Gebeurtenissen** in het **codeblokkenpalet**, klik op het `wanneer op de groene vlag wordt geklikt`{:class="block3events"} blok en sleep het naar het **huidige sprite paneel**.
 
 ```blocks3
-+    when green flag clicked
++ wanneer op de groene vlag wordt geklikt
 ```
 
 --- /task ---
@@ -89,10 +89,10 @@ Ga dan naar **Uiterlijken** in het **codeblokkenpalet** en zoek het blok
     zeg [Hallo!] (2) sec.
 ```
 
-Sleep het naar het **huidige sprite paneel**en verbind het als volgt met de onderkant van het andere blok:
+Sleep het naar het **huidige sprite paneel** en verbind het als volgt met de onderkant van het andere blok:
 
 ```blocks3
-    when green flag clicked
+    wanneer op de groene vlag wordt geklikt
     zeg [Hallo!] (2) sec.
 ```
 

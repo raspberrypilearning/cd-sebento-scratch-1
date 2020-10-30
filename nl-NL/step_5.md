@@ -1,4 +1,4 @@
-## Laat dingen bewegen
+## Dingen verplaatsen
 
 Op dit moment beweegt je papegaai in een cirkel, maar zou het niet leuker zijn om hem te besturen met de pijltjestoetsen? In deze stap leer je hoe je dat kunt doen!
 
@@ -14,7 +14,7 @@ Zoals je waarschijnlijk al geraden hebt, heb je weer **gebeurtenissen** en **bew
 Zoek dit keer dit blok en sleep het naar het huidige sprite paneel:
 
 ```blocks3
-    wanneer [spatiebalk v] is ingedrukt
+    wanneer [spatiebalk] is ingedrukt
 ```
 
 Klik op het pijltje (▼) naast `spatiebalk`. Je ziet een lijst met alle toetsen op je toetsenbord waaruit je kunt kiezen.
@@ -63,7 +63,7 @@ neem (-10) stappen
 ```
 
 ```blocks3
-    wanneer [pijltje rechts v] is ingedrukt
+    wanneer [pijltje rechts] is ingedrukt
 neem (10) stappen
 ```
 
@@ -102,7 +102,7 @@ Een sprite kan worden gevonden door de coördinaten van zijn middelpunt, bijvoor
 
 ### Het spel herstarten
 
-De papegaai beweegt over het scherm, maar stel je voor dat dit een spel is: hoe herstart je het? Je moet de papegaai terugbrengen naar zijn oorspronkelijke plek zodra de speler het spel start. Ze zullen dit spel starten door op de groene vlag te klikken, dus je moet de coördinaten van de papegaai wijzigen `x` en `y` wanneer dat gebeurt.
+De papegaai beweegt over het scherm, maar stel je voor dat dit een spel is: hoe herstart je het? Je moet de papegaai terugbrengen naar zijn oorspronkelijke plek zodra de speler het spel start. Ze zullen dit spel starten door op de groene vlag te klikken, dus je moet de `x` en `y` coördinaten van de papegaai wijzigen wanneer dat gebeurt.
 
 Dat is eigenlijk vrij eenvoudig! Het midden van het speelveld is `(0,0)` op `x` en `y` coördinaten.
 
@@ -113,14 +113,14 @@ Dus alles wat je nodig hebt is een **gebeurtenissen** blok voor de groene vlag e
 Sleep het `wanneer op de groene vlag wordt geklikt`{:class="block3event"} **gebeurtenissen** blok naar het huidige sprite paneel.
 
 ```blocks3
-+ when green flag clicked
++ wanneer op de groene vlag wordt geklikt
 ```
 
 Zoek vervolgens het `ga naar`{:class="block3motion"} **beweging** blok en klik het vast aan je groene vlag blok.
 
 ```blocks3
-   when green flag clicked
-+  ga naar x: (0) y: (0)
+    wanneer op de groene vlag wordt geklikt
++ ga naar x: (0) y: (0)
 ```
 
 Stel zowel de `x` als de `y` op `0` in in het `ga naar`{:class="block3motion"} blok als ze nog niet `0` zijn.
