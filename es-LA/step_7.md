@@ -1,10 +1,10 @@
-## Remote-control mosquito
+## Mosquito a control remoto
 
-Ok, now it's time to make the mosquito fly on its own. To do this, you’re going to need a new kind of block: a **control** block.
+Bien, ahora es el momento de hacer que el mosquito vuele solo. Para ello, necesitarás un nuevo tipo de bloque: un bloque **Control**.
 
 --- task ---
 
-Select your mosquito sprite and drag a `when green flag clicked`{:class="block3events"} **event** block, a `forever`{:class="block3control"} **control** block and a `move 10 steps`{:class="block3motion"} **motion** block into the **sprite panel** like this:
+Selecciona tu mosquito y arrastra un **bloque de evento** `al presionar bandera verde`{: class = "block3events"}, un bloque `para siempre`{: class = "block3control"} **control** 7 y un movimiento de ``{: class = "block3motion"} **movimiento** bloque en el panel</strong> **sprites 13 así: </p>
 
 ```blocks3
 +    when green flag clicked
@@ -18,32 +18,32 @@ Select your mosquito sprite and drag a `when green flag clicked`{:class="block3e
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: ¿Qué hace el nuevo bloque?
 ---
 
-**Control** blocks let you do things a certain number of times, or under certain conditions.
+Los bloques de **Control** hacen que tu programa haga cosas un cierto número de veces, o bajo ciertas condiciones.
 
-The mosquito does whatever is in the `forever`{:class="block3control"} block over and over again, forever. Once it has reached the end, it goes back to the top of the block and starts again.
+El mosquito hace lo que esté en el bloque `para siempre`{:class="block3control"} una y otra vez, para siempre. Una vez que ha llegado al final, vuelve al bloque superior y comienza de nuevo.
 
 --- /collapse ---
 
 --- task ---
 
-Now click the green flag and watch what happens!
+Ahora haz clic en la bandera verde y ¡observa lo que sucede!
 
 --- /task ---
 
-Well, that mosquito just crashed into the side of the Stage, and it was moving far too fast for your parrot to catch.
+Bueno, ese mosquito se estrelló contra el costado del escenario y se movía demasiado rápido para que tu loro lo atrapara.
 
-First, you need to slow it down. That’s actually pretty easy, you just need it to wait for a little while after it moves those 10 steps. There’s a **control** block that will help you here:
+Primero, necesitas ralentizarlo. En realidad es bastante fácil, solo necesitas esperar un poco después de que se mueva esos 10 pasos. Hay un bloque de **control** que te ayudará aquí:
 
 ```blocks3
-    wait (1) secs
+    esperar (1) segundos
 ```
 
 --- task ---
 
-Snap the `wait`{:class="block3control"} block into your code, and change the number to `0.5`, like this:
+Encaja el bloque `esperar`{:class="block3control"} en tu código, y cambia el número a `0.5`, así:
 
 
 ```blocks3
@@ -58,37 +58,37 @@ Snap the `wait`{:class="block3control"} block into your code, and change the num
 
 --- collapse ---
 ---
-title: Making adjustments
+title: Haciendo ajustes
 ---
 
-The number you set in the `wait`{:class="block3control"} block says how many **seconds** you want the mosquito to wait. `0.5` is half a second.
+El número que has establecido en el bloque `esperar`{:class="block3control"} dice cuántos **segundos** quieres que el mosquito espere. `0.5` es la mitad de un segundo.
 
-You can test out different values to see which is the best for the game. Remember that you can change the number of steps too!
+Puedes probar diferentes valores para ver cuál es el mejor para el juego. ¡Recuerda que también puedes cambiar el número de pasos!
 
 --- /collapse ---
 
-The mosquito moves now, but you need it to bounce off the edge too. Yet again, there’s a **motion** block for this!
+El mosquito se mueve ahora, pero también necesitas que rebote en el borde. ¡Una vez más, hay un bloque **Movimiento** para esto!
 
 --- task ---
 
-Find the `if on edge bounce`{:class="block3motion"} block, and add it in after the `wait`{:class="block3control"} block.
+Encuentra el bloque `si toca un borde, rebotar`{:class="block3motion"} y agrégalo después del bloque `esperar`{:class="block3control"}.
 
 --- /task ---
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: ¿Qué hace el nuevo bloque?
 ---
 
-The `if on edge bounce`{:class="block3motion"} block checks if the sprite is touching the edge and, if it is, it turns left, right, up, or down as appropriate.
+El bloque `si toca un borde, rebotar`{:class="block3motion"} comprueba si el objeto está tocando el borde del Escenario y, si es así, lo hace girar a la izquierda, derecha, arriba o abajo como corresponda.
 
 --- /collapse ---
 
-Of course, this will lead to an upside-down mosquito, so you need a `set rotation style`{:class="block3motion"} block again.
+Por supuesto, esto conducirá a un mosquito al revés, así que necesitas un bloque de `fijar estilo de rotación `{:class="block3motion"} de nuevo.
 
 --- task ---
 
-Update your code to set the rotation style of the mosquito to `left-right`{:class="block3motion"}:
+Actualiza tu código para establecer el estilo de rotación del mosquito a `izquierda-derecha`{:class="block3motion"}:
 
 ```blocks3
     when green flag clicked
@@ -102,13 +102,13 @@ Update your code to set the rotation style of the mosquito to `left-right`{:clas
 
 --- /task ---
 
-The mosquito moves back and forward now, but only in a straight line — a bit too easy for the player to catch with the parrot! You need to make the mosquito less predictable.
+El mosquito se mueve hacia atrás y hacia adelante ahora, pero solo en línea recta, ¡es demasiado fácil que el jugador lo atrape con el loro! Necesitas hacer que el mosquito sea menos predecible.
 
-You already know from a previous step how to make a sprite turn, so start there!
+Ya sabes por un paso anterior cómo hacer que un objeto gire, así que empieza por aquí!
 
 --- task ---
 
-Add a turn into the mosquito’s flying and click the green flag.
+Agrega un giro en el vuelo del mosquito y haz clic en la bandera verde.
 
 ```blocks3
     when green flag clicked
@@ -123,19 +123,19 @@ Add a turn into the mosquito’s flying and click the green flag.
 
 --- /task ---
 
-It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
+Es mejor, pero todavía es demasiado predecible. Necesita ser más aleatorio. Afortunadamente, ¡Scratch puede aleatorizar por ti! Sólo necesitarás un nuevo tipo de bloque, llamado bloque **operador**.
 
 --- collapse ---
 ---
-title: What's an operator?
+title: ¿Qué es un operador?
 ---
 
-**Operators** take in one or more values (like numbers, text, true/false values) and give back a single value. You can tell the kind of value it will give back by the shape of the block: round ends give numbers or text, pointy ends give true/false.
+Los **Operadores** toman uno o más valores (como números, texto, o Verdadero/Falso) y devuelven un valor único. Puedes saber el tipo de valor que devolverá por la forma del bloque: los extremos redondos dan números o texto, los extremos puntiagudos dan verdad/falso.
 
 ```blocks3
     (() + ())
 
-    (join [hello ] [world])
+    (unir [hola ] [mundo])
 
     <[] = []>
 ```
@@ -144,7 +144,7 @@ title: What's an operator?
 
 --- task ---
 
-Find the `pick random`{:class="block3operators"} **operator** block, and plug it into the `turn degrees`{:class="block3motion"} **motion** block by clicking it and dragging it into the field where you set the number of degrees.
+Encuentra el bloque **operador** `número aleatorio`{:class="block3operators"}, y conéctalo al bloque **movimiento** `girar grados`{:class="block3motion"} haciendo clic en él y arrastrándolo al campo donde estableces el número de grados.
 
 ```blocks3
     when green flag clicked
@@ -159,10 +159,10 @@ Find the `pick random`{:class="block3operators"} **operator** block, and plug it
 
 --- /task ---
 
-**Note**: you can change the minimum and maximum numbers it will pick, but the default values (`1` and `10`) are pretty good for this game, so you can just leave them.
+**Nota**: puedes cambiar los números mínimos y máximos, pero los valores por defecto (`1` y `10`) son bastante buenos para este juego, así que puedes dejarlos.
 
 --- task ---
 
-Click the green flag to run the code!
+¡Ahora haz clic en la bandera verde para probar tu código!
 
 --- /task ---
