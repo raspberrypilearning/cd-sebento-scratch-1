@@ -1,18 +1,18 @@
 --- no-print ---
 
-This is the **Scratch 3** version of the project. There is also a [Scratch 2 version of the project](https://projects.raspberrypi.org/en/projects/cd-sebento-scratch-1-scratch2).
+Esta es la versión **Scratch 3** del proyecto. También hay una [versión del proyecto en Scratch 2](https://projects.raspberrypi.org/en/projects/cd-sebento-scratch-1-scratch2).
 
 --- /no-print ---
 
-## Introduction
+## Introducción
 
-This project is going to help you learn to create computer programs in Scratch!
+¡Este proyecto te ayudará a aprender a crear programas en Scratch!
 
-### What you will make
+### Lo que harás
 
-You will make a game where you protect people from malaria by making a parrot catch mosquitoes.
+Harás un juego en el que protegerás a las personas de la malaria haciendo que un loro atrape mosquitos.
 
-Below is an example of how the finished game might look. Press the green flag to run the project. Use the arrow keys to move the parrot around and try to catch the mosquitoes. If you catch ten mosquitoes, you can see what happens when you win!
+A continuación hay un ejemplo de cómo podría verse el juego terminado. Haz clic en la bandera verde para ejecutar el proyecto. Usa las teclas de flecha para mover el loro e intenta atrapar los mosquitos. Si atrapas diez mosquitos, ¡puedes ver lo que sucede cuando ganas!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/215534725/?autostart=false" frameborder="0"></iframe>
@@ -20,29 +20,29 @@ Below is an example of how the finished game might look. Press the green flag to
 
 --- collapse ---
 ---
-title: What you will learn
+title: Lo que vas a aprender
 ---
 
-* Adding and deleting code blocks
-* Basic motion:  move in steps, and turn by degrees
-* Using keyboard controls
-* Using x/y coordinates to position sprites
-* Changing the look of the Stage and of sprites with costumes and show/hide
-* Multiple sprites on screen
-* Forever loops
-* Detecting when sprites are touching
+* Agregar y eliminar bloques de código
+* Movimiento básico: moverte en pasos y girar en grados
+* Usar los controles del teclado
+* Usar coordenadas x/y para ubicar los objetos
+* Cambiar la apariencia del escenario y de los objetos con disfraces y mostrar/ocultar
+* Múltiples objetos en pantalla
+* Bucles infinitos
+* Detectar cuando los objetos se están tocando
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: Lo que necesitarás
 ---
 
-You’re going to need **Scratch**! Do one of the following two and once you’re set up, move on to the next step.
+¡Vas a necesitar **Scratch**! Haz una de las dos cosas que siguen y una vez que estés listo, pasa al siguiente paso.
 
-+ Download Scratch and install it on your computer by going to [dojo.soy/downloadscratch](http://dojo.soy/downloadscratch){:target="_blank"}
-+ Use Scratch in your web browser by going to [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_blank"}
++ Descarga Scratch e instálalo en tu computadora yendo a [dojo.soy/downloadscratch](http://dojo.soy/downloadscratch){:target="_blank"}
++ Usa Scratch en tu navegador web yendo a [dojo.soy/usescratch](http://dojo.soy/usescratch){:target="_blank"}
 
 --- /collapse ---
 
