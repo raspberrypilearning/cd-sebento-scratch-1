@@ -1,18 +1,18 @@
-## Let's catch some flies!
+## ¡Atrapemos algunos mosquitos!
 
-The parrot moves, the mosquito flies, but they don’t interact: if the mosquito flies right into the parrot’s beak, nothing happens. Time to change that!
+El loro se mueve, el mosquito vuela, pero no interactúan: si el mosquito vuela directo al pico del loro, no pasa nada. ¡Es hora de cambiar eso!
 
-First, you need to know if the mosquito is touching the parrot. For this, you'll need a **control** block and a **sensing** block.
+Primero, necesita saber si el mosquito está tocando al loro. Para esto, necesitarás un bloque **Control** y un bloque **Sensor**.
 
 --- task ---
 
-Add the `if...then`{:class="block3control"} **control** block into the `forever`{:class="block3control"} loop on the mosquito, below the `if on edge bounce`{:class="block3motion"} block.
+Agrega el bloque **Control** `si...entonces`{:class="block3control"} dentro del bucle `por siempre`{:class="block3control"} del objeto mosquito, debajo del bloque `si toca un borde, rebotar`{:class="block3motion"}.
 
 --- /task ---
 
 --- task ---
 
-Drag the `touching...`{:class="block3sensing"} block into the space at the top of the `if...then`{:class="block3control"} block, and click the little triangle to pick the parrot sprite's name. If you haven’t changed it, it'll be 'Sprite1'.
+Arrastra el bloque `tocando...`{:class="block3sensing"} al espacio en la parte superior del bloque `si...entonces`{:class="block3control"} y haz clic en el pequeño triángulo para seleccionar el nombre del objeto loro. Si no lo has cambiado, será 'Sprite1'.
 
 ```blocks3
     if on edge, bounce
@@ -24,28 +24,28 @@ Drag the `touching...`{:class="block3sensing"} block into the space at the top o
 
 --- collapse ---
 ---
-title: How does it work?
+title: ¿Cómo funciona?
 ---
 
-The `if...then`{:class="block3control"} **control** block needs to be given a `True/False` value.
+El bloque **Control** `si...entonces`{:class="block3control"} debe recibir un valor `Verdadero/Falso`.
 
-**Sensing** blocks collect information, like where the sprite is, what it’s touching, etc. You're using the block
+Los bloques **Sensores** recopilan información, como dónde está el objeto, qué está tocando, etc. Estás usando el bloque
 
 ```blocks3
     <touching [Sprite1 v] ?>
 ```
 
-From this block's pointy ends, you can tell it’s going to give you the `True/False` value that the `if...then`{:class="block3control"} block needs.
+Por los bordes puntiagudos de este bloque, puedes saber que va a darte el valor `Verdadero/Falso` que el bloque `si...entonces`{:class="block3control"} necesita.
 
 --- /collapse ---
 
-Of course, you’ve just added an `if...then`{:class="block3control"} block with no 'then'.
+Por supuesto, acabas de añadir un bloque `si...entonces`{:class="block3control"} sin añadir nada para la parte 'entonces'.
 
-You can make the mosquito disappear, as if the parrot ate it, by using the `hide`{:class="block3looks"} block.
+Puedes hacer que el mosquito desaparezca, como si el loro se lo comiera, usando el bloque `esconder`{:class="block3looks"}.
 
 --- task ---
 
-Find the `hide`{:class="block3looks"} block in the **Looks** list, and put it inside `if...then`{:class="block3control"}.
+Encuentra el bloque `esconder`{:class="block3looks"} en la lista **Apariencia**, y ponlo dentro del bloque `si...entonces`{:class="block3control"}, así.
 
 ```blocks3
     if <touching [Sprite1 v] ?> then
@@ -55,11 +55,11 @@ Find the `hide`{:class="block3looks"} block in the **Looks** list, and put it in
 
 --- /task ---
 
-Now once the parrot catches the mosquito, it disappears for good. That’s not great.
+Ahora, una vez que el loro atrapa al mosquito, desaparece para siempre. Esto no está bien.
 
 --- task ---
 
-Put the `show`{:class="block3looks"} block from **Looks** in at the very start of the mosquito code, so you can reset the game.
+Arrastra el bloque `mostrar`{:class="block3looks"} desde la lista **Apariecia** al inicio del código del mosquito, para que puedas reiniciar el juego.
 
 ```blocks3
     when green flag clicked
@@ -70,11 +70,11 @@ Put the `show`{:class="block3looks"} block from **Looks** in at the very start o
 
 --- /task ---
 
-Better, but you don’t want the player to have to restart the game every time they catch a single mosquito!
+Mejor, ¡pero no querrás que el jugador tenga que reiniciar el juego cada vez que atrapa un solo mosquito!
 
 --- task ---
 
-Update the code inside your `if...then`{:class="block3control"} block to look like this:
+Actualiza el código dentro de tu bloque `si...entonces`{:class="block3control"} para que quede así:
 
 ```blocks3
     if on edge, bounce
@@ -90,13 +90,13 @@ Update the code inside your `if...then`{:class="block3control"} block to look li
 
 --- collapse ---
 ---
-title: How does it work?
+title: ¿Cómo funciona?
 ---
 
-You are being clever here: when the mosquito is hidden, wait, move it, then show it again.
+Aquí estás siendo inteligente: cuando el mosquito está oculto, espera, muévelo, y luego muéstralo de nuevo.
 
-It looks like lots of mosquitoes, but it’s that one sprite moving around!
+Parece que hay muchos mosquitos, ¡pero es un solo objeto moviéndose!
 
 --- /collapse ---
 
-That’s a game! But there’s no way to keep score yet...or to win. You can fix that too — in the next step!
+¡Eso es un juego! Pero todavía no hay forma de mantener la puntuación...o de ganar. También puedes arreglar eso: ¡en el paso siguiente!
