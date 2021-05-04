@@ -24,6 +24,6 @@ steps:
   - title: Todos los objetos
   - title: Mosquito a control remoto
   - title: '¡Atrapemos algunos mosquitos!'
-  - title: Manteniendo la puntuación
+  - title: Guardando la puntuación
   - title: "Desafío: Ganar el juego"
     challenge: true

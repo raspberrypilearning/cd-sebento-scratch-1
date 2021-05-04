@@ -33,7 +33,7 @@ Cualquier objeto que vaya en el Escenario es un **objeto**.
 
 El objeto incluye:
 * La **imagen** en la escenario
-* Cualquier **disfraz** \(looks\) alternativo que tenga
+* Cualquier **disfraz** \(apariencia\) alternativo que tenga
 * Cualquier **sonido** asociado con él
 * Cualquier **bloque de código** asociado a él ![](images/setup2.png)
 
@@ -92,8 +92,8 @@ Luego ve a **Apariencia** en la **paleta de bloques de código** y encuentra el 
 Arrastralo el **panel actual de objetos**, conectándolo a la parte inferior del otro bloque, así:
 
 ```blocks3
-    al hacer clic en bandera verde
-    decir [¡Hola!] durante (2) seg
+    when green flag clicked
+    decir [¡Hola!] durante (2) segundos
 ```
 
 --- /task ---

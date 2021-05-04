@@ -33,7 +33,7 @@ Ahora necesitas actualizar la variable cada vez que el loro se come un mosquito 
 
 --- /task ---
 
-De la sección **variables**, pon `conjunto [mi variable v] a [0]` {: class = "block3variables"} y `cambia [mi variable v] por [1]` {: class = "block3variables"} bloques. En cada uno de los bloques, haz clic en la flecha pequeña y luego elige `puntos` de la lista. Luego pon los bloques en tu programa:
+De la sección **variables**, pon `conjunto [mi variable v] a [0]`{:class "block3variables"} y `cambia [mi variable v] por [1]`{:class="block3variables"} bloques. En cada uno de los bloques, haz clic en la flecha pequeña y luego elige `puntos` de la lista. Luego pon los bloques en tu programa:
 
 --- task ---
 
@@ -41,7 +41,7 @@ De la sección **variables**, pon `conjunto [mi variable v] a [0]` {: class = "b
 
 ```blocks3
     when green flag clicked
-+    set [score v] to [0]
++    set [puntos v] to [0]
     set rotation style [left-right v]
     go to x: (0) y: (0)
 ```
@@ -49,13 +49,13 @@ De la sección **variables**, pon `conjunto [mi variable v] a [0]` {: class = "b
 ### Código para el mosquito
 
 ```blocks3
-    si <touching [Sprite1 v] ?> entonces
-+ cambiar [puntos v] por [1]
-        ocultar
-        esperar (1) segundos
-        ir a x: (número aleatorio (-240) a (240)) y: (número aleatorio (-180) a (180))
-        mostrar
-    final
+    if <touching [Sprite1 v] ?> then
++        change [puntos v] by [1]
+        hide
+        wait (1) secs
+        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
+        show
+    end
 ```
 
 --- /task ---
@@ -67,14 +67,24 @@ De la sección **variables**, pon `conjunto [mi variable v] a [0]` {: class = "b
 Finalmente, añade este código para hacer que el loro introduzca el juego:
 
 ```blocks3
+when green flag clicked
+    set [score v] to [0]
+    set rotation style [left-right v]
+    go to x: (0) y: (0)
+    say [Hello! I need your help.] for (3) secs
+    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (4) secs
+    say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
+    say [Please help me catch them and protect my friends!] for (3) secs
+
+
     al hacer clic en bandera verde
-    fijar [puntos v] a [0]
-    fijar estilo de rotación [izquierda-derecha v]
-    ir a x: (0) y: (0)
-    decir [¡Hola! Necesito tu ayuda.] Durante (3) segundos
-    di [¿Puedes ayudarme a atrapar todos los mosquitos? Usa las teclas de flecha.] durante (4) seg
-    decir[Los mosquitos son insectos pequeñas que propagan enfermedades peligrosas como la malaria. durante (5) segundos
-    decir [¡Por favor ayúdame a atraparlos y proteger a mis amigos!] por (3) segundos
+    set [puntos v] to [0]
+    set rotation style [left-right v]
+    go to x: (0) y: (0)
+    say [¡Hola! Necesito tu ayuda.] for (3) secs
+    say [¿Puedes ayudarme a atrapar todos los mosquitos? Usa las teclas de flecha.] for (4) secs
+    say [Los mosquitos son insectos pequeñas que propagan enfermedades peligrosas como la malaria.] for (5) secs
+    say [¡Por favor ayúdame a atraparlos y proteger a mis amigos!] for (3) secs
 ```
 
 --- /task ---

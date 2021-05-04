@@ -20,7 +20,7 @@ Cambia el número en el control de tamaño para hacer que el objeto sea mayor o 
 
 --- collapse ---
 ---
-título: ¿Qué pasa con el loro al revés?
+title: ¿Qué pasa con el loro al revés?
 ---
 
 Parece un poco extraño tener a ese loro volando hacia atrás. Al igual que normalmente se da la vuelta en lugar de caminar hacia atrás, el loro se da la vuelta en lugar de volar hacia atrás. Por suerte, ¡Scratch tiene un bloque para hacer esto!
@@ -76,7 +76,7 @@ Como de costumbre, hay un bloque para eso, ¡y está en la categoría **Movimien
 
 --- task ---
 
-Busca en la categoría **Movimiento** el bloque `fijar estilo de rotación a` {:class="block3motion"}.
+Busca en la categoría **Movimiento** el bloque `fijar estilo de rotación a`{:class="block3motion"}.
 
 Añade el bloque a tu código de inicio del loro, y establece el estilo de rotación a `izquierda-derecha`{:class="block3motion"}, así:
 

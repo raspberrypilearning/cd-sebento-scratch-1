@@ -55,7 +55,7 @@ Tu loro se mueve hacia adelante y hacia atrás ahora, lo cual es muy bueno, pero
 
 --- task ---
 
-Toma dos bloques `cambiar y en` {:class="block3motion"}, y actualiza tu código así:
+Toma dos bloques `cambiar y en`{:class="block3motion"}, y actualiza tu código así:
 
 ```blocks3
     when [left arrow v] key pressed
@@ -116,7 +116,7 @@ Arrastra un bloque `al hacer clic en bandera verde`{:class="block3events"} de la
 +    when green flag clicked
 ```
 
-Luego encuentra el bloque `ir a` {: class = "block3motion"} en la categoría **Movimiento**, y arrástralo debajo del bloque de la bandera de la categoría Eventos.
+Luego encuentra el bloque `ir a`{:class="block3motion"} en la categoría **Movimiento**, y arrástralo debajo del bloque de la bandera de la categoría Eventos.
 
 ```blocks3
     when green flag clicked

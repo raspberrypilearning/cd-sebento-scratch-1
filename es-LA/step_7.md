@@ -4,7 +4,7 @@ Bien, ahora es el momento de hacer que el mosquito vuele solo. Para ello, necesi
 
 --- task ---
 
-Selecciona tu mosquito y arrastra un **bloque de evento** `al presionar bandera verde`{: class = "block3events"}, un bloque `para siempre`{:class="block3control"} **control** 7 y un movimiento de ``{: class = "block3motion"} **movimiento** bloque en el panel</strong> **sprites 13 así:
+Selecciona tu mosquito y arrastra un **bloque de evento** `al presionar bandera verde`{:class="block3events"}, un bloque `para siempre`{:class="block3control"} **control** 7 y un movimiento de ``{: class = "block3motion"} **movimiento** bloque en el panel</strong> **sprites 13 así:
 
 ```blocks3
 +    when green flag clicked
