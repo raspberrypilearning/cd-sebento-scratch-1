@@ -1,47 +1,47 @@
-## Setting the scene
+## Configurando al escena
 
-Scratch has a library of backgrounds and sprites for you to use to make your project look awesome.
+Scratch tiene una biblioteca de fondos y objetos que puedes usar para hacer que tu proyecto se vea genial.
 
 --- task ---
 
-Select the stage.
+Selecciona el escenario.
 
-![Selecting the stage](images/looksSelectStage.png)
+![Seleccionando el escenario](images/looksSelectStage.png)
 
-Click on **Backdrops**.
+Haz clic en **Fondos**.
 
-![The Backdrops tab](images/looksBackdrops.png)
+![La pestaña Fondos](images/looksBackdrops.png)
 
-Click the icon to **Choose backdrop from library**.
+Haz clic en **Selecciona un fondo de la biblioteca**.
 
-![The Choose backdrop icon](images/looksChooseBg.png)
+![El icono Elige un fondo](images/looksChooseBg.png)
 
-Then pick your favourite outdoor background!
+¡Luego elige tu fondo favorito al aire libre!
 
-![A lake scene](images/looksLake.png)
+![Una escena del lago](images/looksLake.png)
 
 --- /task ---
 
-Great! Now let's turn the cat into a parrot!
+¡Genial! ¡Ahora vamos a convertir al gato en un loro!
 
 --- task ---
 
-First, select the cat and click on the **Costumes** tab.
+Primero, selecciona al gato y haz clic en la pestaña **Disfraces**.
 
 ![](images/cool2.png)
 
-Then, click on **Choose costume from Library**
+Despues, haz clic en **Elegir un disfraz**
 
 ![](images/cool3.png)
 
-Select a parrot and click **OK**.
+Selecciona un loro y haz clic en **Aceptar**.
 
-![The parrot costume](images/looksParrot.png)
+![El disfraz de loro](images/looksParrot.png)
 
-Now remove the cat costumes by selecting each of them and clicking on the **x**.
+Ahora elimina los disfraces del gato seleccionando cada uno de ellos y haciendo clic en la **x**.
 
 ![](images/coolDeleteCostumes.png)
 
 --- /task ---
 
-Great! You have a parrot!
+¡Genial! ¡Tienes un loro!
