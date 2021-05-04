@@ -1,3 +1,3 @@
-## Challenge: winning the game
+## Desafío: Ganar el juego
 
-Pick a score at which the player wins, and make something cool happen. Maybe the parrot congratulates them, or a "You win!" sprite appears, or music plays, or...you get the idea!
+Elije una puntuación en la que el jugador gane y haz que suceda algo genial. ¡Tal vez el loro te felicite, o aparezca un objeto '¡Tú ganas!', o suene música!
