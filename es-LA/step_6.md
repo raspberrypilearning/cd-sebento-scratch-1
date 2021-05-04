@@ -20,7 +20,7 @@ Cambia el número en el control de tamaño para hacer que el objeto sea mayor o 
 
 --- collapse ---
 ---
-título: ¿Qué pasa con el loro al revés?
+title: ¿Qué pasa con el loro al revés?
 ---
 
 Parece un poco extraño tener a ese loro volando hacia atrás. Al igual que normalmente se da la vuelta en lugar de caminar hacia atrás, el loro se da la vuelta en lugar de volar hacia atrás. Por suerte, ¡Scratch tiene un bloque para hacer esto!
