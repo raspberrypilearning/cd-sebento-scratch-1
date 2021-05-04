@@ -1,43 +1,43 @@
-## Keeping score
+## Guardando la puntuación
 
-To keep score, you’ll need somewhere to store the score, a way of adding to it, and a way of resetting it when the game is restarted.
+Para llevar la puntuación, necesitarás un lugar para almacenar la puntuación, una forma de agregarla y una forma de restablecerla cuando se reinicia el juego.
 
 --- task ---
 
-First: storing it! Go to the **Variables** blocks category and click **Make a Variable**.
+Primero: ¡almacenarlo! Ve a la categoría de bloques **Variables** y haz clic en **Crear una variable**.
 
 ![](images/catch5.png)
 
-Enter `score` as the name.
+Introduce `puntos` como nombre.
 
 ![](images/catch6.png)
 
-Check out your new variable and the blocks for it!
+¡Mira tu nueva variable y los bloques que tiene!
 
-![The score variable is displayed on the stage](images/scoreVariableStage.png)
+![La variable Puntos se muestra en el escenario](images/scoreVariableStage.png)
 
 --- /task ---
 
 --- collapse ---
 ---
-title: What are variables?
+title: ¿Qué son las variables?
 ---
 
-When you want to store information in a program, you use something called a **variable**. Think of it like a box with a label on it: you can put something in it, check what’s in it, and change what’s in it. You’ll find variables under **Variables**, but you need to create them first!
+Cuando quieres almacenar información en un programa, se usa algo llamado **variable**. Piensa en ello como una caja con una etiqueta: puedes poner algo en ella, comprobar qué hay en ella y cambiar lo que hay en ella. Encontrarás variables en **Variables**, ¡pero necesitas crearlas primero!
 
 --- /collapse ---
 
-Now you need to update the variable whenever a mosquito is eaten, and to reset it when the game is restarted:
+Ahora necesitas actualizar la variable cada vez que el loro se come un mosquito y restablecerla cuando se reinicia el juego:
 
 --- task ---
 
 --- /task ---
 
-From the **Variables** section, take the `set [my variable v] to [0]`{:class="block3variables"} and `change [my variable v] by [1]`{:class="block3variables"} blocks. In each of the blocks, click on the little arrow and then choose `score` from the list. Then put the blocks into your program:
+De la sección ** variables **, pon ` conjunto [mi variable v] a [0]` {: class = "block3variables"} y ` cambia [mi variable v] por [1]` {: class = "block3variables"} bloques. En cada uno de los bloques, haz clic en la flecha pequeña y luego elige `puntos` de la lista. Luego pon los bloques en tu programa:
 
 --- task ---
 
-### Code for the parrot
+### Código para el loro
 
 ```blocks3
     when green flag clicked
@@ -46,35 +46,35 @@ From the **Variables** section, take the `set [my variable v] to [0]`{:class="bl
     go to x: (0) y: (0)
 ```
 
-### Code for the mosquito
+### Código para el mosquito
 
 ```blocks3
-    if <touching [Sprite1 v] ?> then
-+        change [score v] by [1]
-        hide
-        wait (1) secs
-        go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
-        show
-    end
+    si <touching [Sprite1 v] ?> entonces
++ cambiar [puntos v] por [1]
+        ocultar
+        esperar (1) segundos
+        ir a x: (número aleatorio (-240) a (240)) y: (número aleatorio (-180) a (180))
+        mostrar
+    final
 ```
 
 --- /task ---
 
-Cool! Now you’ve got a score and everything.
+¡Genial! Ahora tienes puntuación y todo.
 
 --- task ---
 
-Finally, add this code to make the parrot introduce the game:
+Finalmente, añade este código para hacer que el loro introduzca el juego:
 
 ```blocks3
-    when green flag clicked
-    set [score v] to [0]
-    set rotation style [left-right v]
-    go to x: (0) y: (0)
-    say [Hello! I need your help.] for (3) secs
-    say [Can you help me catch of all the mosquitos? Use the arrow keys.] for (4) secs
-    say [Mosquitos are small flies that spread dangerous diseases like malaria.] for (5) secs
-    say [Please help me catch them and protect my friends!] for (3) secs
+    al hacer clic en bandera verde
+    fijar [puntos v] a [0]
+    fijar estilo de rotación [izquierda-derecha v]
+    ir a x: (0) y: (0)
+    decir [¡Hola! Necesito tu ayuda.] Durante (3) segundos
+    di [¿Puedes ayudarme a atrapar todos los mosquitos? Usa las teclas de flecha.] durante (4) seg
+    decir[Los mosquitos son insectos pequeñas que propagan enfermedades peligrosas como la malaria. durante (5) segundos
+    decir [¡Por favor ayúdame a atraparlos y proteger a mis amigos!] por (3) segundos
 ```
 
 --- /task ---
