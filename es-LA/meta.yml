@@ -1,7 +1,7 @@
 ---
-title: Mosquito patrol
+title: Patrulla de mosquitos
 hero_image: images/banner.png
-description: Make your first Scratch program!
+description: '¡Crea tu primer programa de Scratch!'
 theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -17,23 +17,23 @@ version: 3.0.0
 last_tested: 2018-05-01
 steps:
   - 
-    title: Introduction
+    title: Introducción
   - 
-    title: Getting set up
+    title: Preparación
   - 
-    title: Adding & removing code
+    title: Agregar y quital el código
   - 
-    title: Setting the scene
+    title: Configurando el escenario
   - 
-    title: Moving things around
+    title: Moviendo las cosas
   - 
-    title: All the sprites
+    title: Todos los objetos
   - 
-    title: Remote-control mosquito
+    title: Mosquito a control remoto
   - 
-    title: Let's catch some mosquitoes!
+    title: '¡Atrapemos algunos mosquitos!'
   - 
-    title: Keeping score
+    title: Manteniendo la puntuación
   - 
-    title: "Challenge: winning the game"
+    title: "Desafío: Ganar el juego"
     challenge: true
