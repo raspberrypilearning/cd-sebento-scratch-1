@@ -38,7 +38,7 @@ Por lo general, quieres que tu código se ejecute automáticamente cada vez que 
 
 Los bloques de código conectados a este bloque se ejecutarán después de hacer clic en la **bandera verde**.
 
-Los bloques de código se ejecutan de arriba hacia abajo, por lo que el orden en el cual conectas los bloques es importante. En este ejemplo, el objeto va a `decir`{:class="block3looks"} `¡Hola!` antes que `iniciar`{:class="block3sound"} el sonido `meow`.
+Los bloques de código se ejecutan de arriba hacia abajo, por lo que el orden en el cual conectas los bloques es importante. En este ejemplo, el objeto va a `decir`{:class="block3looks"} `¡Hola!`{:class="block3looks"} antes que `iniciar`{:class="block3sound"} el sonido `meow`{:class="block3sound"}.
 
 
 ```blocks3
