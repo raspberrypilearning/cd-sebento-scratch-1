@@ -123,7 +123,7 @@ Luego encuentra el bloque `ir a`{:class="block3motion"} en la categoría **Movim
 +    go to x: (0) y: (0)
 ```
 
-Establece las coordenadas `x` e `y` en `0` en el bloque `ir a` {: class = "block3motion"} si su valor actual no es `0`.
+Establece las coordenadas `x` e `y` en `0` en el bloque `ir a`{:class="block3motion"} si su valor actual no es `0`.
 
 --- /task ---
 
