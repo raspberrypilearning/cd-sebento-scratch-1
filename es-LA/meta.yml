@@ -1,0 +1,29 @@
+---
+title: Patrulla de mosquitos
+hero_image: images/banner.png
+description: '¡Crea tu primer programa de Scratch!'
+theme: orange #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 2
+listed: true
+ingredient: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: scratch
+site_areas: coderdojo, projects
+hardware: ''
+software: scratch
+version: 3.0.0
+last_tested: 2018-05-01
+steps:
+  - title: Introducción
+  - title: Preparación
+  - title: Agregar y quital el código
+  - title: Configurando el escenario
+  - title: Moviendo las cosas
+  - title: Todos los objetos
+  - title: Mosquito a control remoto
+  - title: '¡Atrapemos algunos mosquitos!'
+  - title: Guardando la puntuación
+  - title: "Desafío: Ganar el juego"
+    challenge: true
