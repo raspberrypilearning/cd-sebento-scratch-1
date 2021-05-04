@@ -1,4 +1,4 @@
-## Configurando al escena
+## Configurando el escenario
 
 Scratch tiene una biblioteca de fondos y objetos que puedes usar para hacer que tu proyecto se vea genial.
 
