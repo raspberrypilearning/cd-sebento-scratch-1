@@ -1,27 +1,27 @@
-## Moving things around
+## Déplacer des objets
 
-Right now your parrot moves in a circle, but wouldn’t it be more fun to control it with the arrow keys? In this step, you’re going learn how to do that!
+En ce moment, ton perroquet se déplace en cercle, mais ne serait-il pas plus amusant de le contrôler avec les touches fléchées ? Dans cette étape, tu vas apprendre comment faire cela !
 
 --- task ---
 
-Start by deleting any code that you have for the parrot.
+Commence par supprimer tout le code que tu as pour le perroquet.
 
 --- /task ---
 
-As you’ve probably guessed, you’re going to need **event** and **motion** blocks again!
+Comme tu l'as probablement deviné, tu auras besoin de blocs **événement** et **mouvement** à nouveau !
 
 
-This time, look for this block and drag it onto the current sprite panel:
+Cette fois-ci, cherche ce bloc et fais-le glisser sur le panneau de sprite actuel :
 
 ```blocks3
     when [space v] key pressed
 ```
 
-Click the little arrow (▼) beside `space`. You will see a list of all the keys on your keyboard that you can pick from.
+Clique sur la petite flèche (▼) à côté de `espace`. Tu verras une liste de toutes les touches de ton clavier que tu peux choisir.
 
 --- task ---
 
-You’re going to need four of these blocks and you can connect them to **motion** blocks like this:
+Tu auras besoin de quatre de ces blocs et tu peux les connecter à des blocs de **mouvement** comme ceci :
 
 ```blocks3
 +    when [left arrow v] key pressed
@@ -43,19 +43,19 @@ You’re going to need four of these blocks and you can connect them to **motion
 
 --- /task ---
 
-**Note**: `-10` means 'go back 10 steps'.
+**Remarque** : `-10` signifie « reculer de 10 pas ».
 
 --- task ---
 
-Now click the green flag and press the arrow keys to test your code.
+Maintenant, clique sur le drapeau vert et appuie sur les touches fléchées pour tester ton code.
 
 --- /task ---
 
-Your parrot moves back and forwards now, which is pretty cool, but it doesn’t move up or down. Also, if you look through the **motion** blocks, you’ll see there are no blocks for 'up' or 'down'. There are a whole bunch of them related to **x** and **y** though — let's try those!
+Ton perroquet recule en arrière et avance maintenant, ce qui est plutôt cool, mais il ne bouge pas vers le haut ou vers le bas. Aussi, si tu regardes les blocs **mouvement** , tu verras qu'il n'y a pas de blocs pour « haut » ou « bas ». Il y a tout un tas de choses liées à **x** et **y** — essayons-les !
 
 --- task ---
 
-Grab two `change y by`{:class="block3motion"} blocks and update your code like this:
+Récupère deux blocs `ajouter ... à y`{:class="block3motion"} et mets à jour ton code comme ceci :
 
 ```blocks3
     when [left arrow v] key pressed
@@ -79,56 +79,56 @@ Grab two `change y by`{:class="block3motion"} blocks and update your code like t
 
 --- /task ---
 
-Now when the arrows are pressed, the parrot can move all over the stage!
+Maintenant lorsque les flèches sont enfoncées, le perroquet peut se déplacer sur toute la scène !
 
 --- collapse ---
 ---
-title: How do x- and y-coordinates work?
+title: Comment fonctionnent les coordonnées x et y ?
 ---
 
-When programmers need to talk about the positions of objects, like sprites, we often use **x** and **y** coordinates to describe them. The **x-axis** runs from left to right, while the **y-axis** runs from bottom to top.
+Lorsque les programmeurs ont besoin de parler des positions des objets, comme les sprites, nous utilisons souvent les coordonnées **x** et **y** pour les décrire. L' **axe x** va de gauche à droite, tandis que l'axe **y** va de bas en haut.
 
 ![](images/moving3.png)
 
-A sprite can be located by the coordinates of its centre, written for example like `(15, -27)`, where `15` is the position along the x-axis position, and `-27` the position along the y-axis.
+Un sprite peut être localisé par les coordonnées de son centre, écrit par exemple `(15, -27)`, où `15` est la position le long de la position de l'axe X, et `-27` la position le long de l'axe y.
 
-+ To try out how this works, select a sprite and set different values for its `x` and `y` coordinates to move the sprite around the Stage.
++ Pour essayer comment cela fonctionne, sélectionne un sprite et définis des valeurs différentes pour ses coordonnées `x` et `y` pour déplacer le sprite sur la scène.
 
 ![](images/xycoords.png)
 
-+  Try different pairs values to see where the sprite goes! In Scratch, the x-axis goes from `-240` to `240`, and the y-axis goes from `-180` to `180`.
++  Essaie différentes paires de valeurs pour voir où va le sprite ! Dans Scratch, l'axe x va de `-240` à `240`, et l'axe y va de `-180` à `180`.
 
 --- /collapse ---
 
-### Restarting the game
+### Redémarrer le jeu
 
-The parrot moves all over the screen, but imagine this is a game: how do you restart it? You need to get the parrot back to its original location when the player starts the game. They'll start this game by clicking on the green flag, so you need to change the parrot’s `x` and `y` coordinates when that happens.
+Le perroquet se déplace sur l'écran, mais imagine que c'est un jeu : comment le redémarrer ? Tu devras récupérer le perroquet à son emplacement d'origine lorsque le joueur commence la partie. Ils commenceront ce jeu en cliquant sur le drapeau vert, donc tu dois modifier les coordonnées `x` et `y` du perroquet lorsque cela se produit.
 
-That’s actually pretty easy! The centre of the stage is `(0,0)` in `x` and `y` coordinates.
+C'est en fait assez facile ! Le centre de la scène est `(0,0)` en coordonnées `x` et `y`.
 
-So all you need is an **event** block for that green flag and the **go to** block from **motion**.
+Donc tout ce dont tu as besoin est d'un bloc **événement** pour ce drapeau vert et le bloc **aller à** de **mouvement**.
 
 --- task ---
 
-Drag the `when green flag clicked`{:class="blockevent"} **event** block onto the current sprite panel.
+Fais glisser le bloc `quand le drapeau vert est cliqué`{:class="blockevent"} de **événement** sur le panneau de sprite actuel.
 
 ```blocks3
 +    when green flag clicked
 ```
 
-Then find the `go to`{:class="block3motion"} **motion** block and snap it on to your flag event block.
+Puis trouve le bloc `aller à`{:class="block3motion"} de **mouvement** et assemble-le au bloc événement de ton drapeau.
 
 ```blocks3
     when green flag clicked
 +    go to x: (0) y: (0)
 ```
 
-Set both the `x` and the `y` to `0` in the `go to`{:class="block3motion"} block if they are not already `0`.
+Mets `x` et `y` à `0` dans le bloc `aller à`{:class="block3motion"} s'ils ne sont pas déjà à `0`.
 
 --- /task ---
 
 --- task ---
 
- Now click the green flag, and you should see the parrot return to the centre of the stage.
+ Clique maintenant sur le drapeau vert, et tu devrais voir le perroquet revenir au centre de la scène.
 
 --- /task ---
