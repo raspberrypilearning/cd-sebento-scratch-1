@@ -1,10 +1,10 @@
-## Remote-control mosquito
+## Moustique contrôlé à distance
 
-Ok, now it's time to make the mosquito fly on its own. To do this, you’re going to need a new kind of block: a **control** block.
+Ok, maintenant il est temps de faire voler le moustique seul. Pour cela, tu auras besoin d'un nouveau type de bloc : un bloc **contrôle**.
 
 --- task ---
 
-Select your mosquito sprite and drag a `when green flag clicked`{:class="block3events"} **event** block, a `forever`{:class="block3control"} **control** block and a `move 10 steps`{:class="block3motion"} **motion** block into the **sprite panel** like this:
+Sélectionne ton sprite moustique et fais glisser un bloc `quand le drapeau vert est cliqué`{:class="block3events"} d'**événement**, un bloc `répéter indéfiniment`{:class="block3control"} de **contrôle** et un bloc `avancer de 10 pas`{:class="block3motion"} de **mouvement** dans le **panneau sprite** comme ceci :
 
 ```blocks3
 +    when green flag clicked
@@ -18,24 +18,24 @@ Select your mosquito sprite and drag a `when green flag clicked`{:class="block3e
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: Que fait le nouveau bloc ?
 ---
 
-**Control** blocks let you do things a certain number of times, or under certain conditions.
+Les blocs **contrôle** obligent ton programme à effectuer des tâches un certain nombre de fois ou dans certaines conditions.
 
-The mosquito does whatever is in the `forever`{:class="block3control"} block over and over again, forever. Once it has reached the end, it goes back to the top of the block and starts again.
+Le moustique fait tout ce qui se trouve dans le bloc `répéter indéfiniment`{:class="block3control"} encore et encore. Une fois qu'il a atteint la fin, il retourne en haut du bloc et recommence.
 
 --- /collapse ---
 
 --- task ---
 
-Now click the green flag and watch what happens!
+Maintenant, clique sur le drapeau vert et regarde ce qui se passe !
 
 --- /task ---
 
-Well, that mosquito just crashed into the side of the Stage, and it was moving far too fast for your parrot to catch.
+Eh bien, ce moustique vient de tomber dans le côté de la scène, et il se déplaçait beaucoup trop vite pour que ton perroquet puisse l'attraper.
 
-First, you need to slow it down. That’s actually pretty easy, you just need it to wait for a little while after it moves those 10 steps. There’s a **control** block that will help you here:
+En premier, tu dois le ralentir. C’est en fait assez facile, il suffit d’attendre un peu de temps après avoir bougé ces 10 pas. Il y a un bloc **contrôle** qui t'aidera ici :
 
 ```blocks3
     wait (1) secs
@@ -43,7 +43,7 @@ First, you need to slow it down. That’s actually pretty easy, you just need it
 
 --- task ---
 
-Snap the `wait`{:class="block3control"} block into your code, and change the number to `0.5`, like this:
+Assemble le bloc `attendre`{:class="block3control"} dans ton code et modifie le nombre sur `0.5`, comme ceci :
 
 
 ```blocks3
@@ -58,37 +58,37 @@ Snap the `wait`{:class="block3control"} block into your code, and change the num
 
 --- collapse ---
 ---
-title: Making adjustments
+title: Faire des ajustements
 ---
 
-The number you set in the `wait`{:class="block3control"} block says how many **seconds** you want the mosquito to wait. `0.5` is half a second.
+Le nombre que tu as défini dans le bloc `attendre`{:class="block3control"} dit combien de **secondes** tu veux que le moustique attende. `0.5` est une demi-seconde.
 
-You can test out different values to see which is the best for the game. Remember that you can change the number of steps too!
+Tu peux tester différentes valeurs pour déterminer laquelle est la meilleure pour le jeu. N'oublie pas que tu peux également changer le nombre de pas !
 
 --- /collapse ---
 
-The mosquito moves now, but you need it to bounce off the edge too. Yet again, there’s a **motion** block for this!
+Le moustique bouge maintenant, mais tu en as aussi besoin pour rebondir sur le bord de la scène. Encore une fois, il y a un bloc **mouvement** pour cela !
 
 --- task ---
 
-Find the `if on edge bounce`{:class="block3motion"} block, and add it in after the `wait`{:class="block3control"} block.
+Trouve le bloc `rebondir si le bord est atteint`{:class="block3motion"}, et ajoute-le après le bloc `attendre`{:class="block3control"}.
 
 --- /task ---
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: Que fait le nouveau bloc ?
 ---
 
-The `if on edge bounce`{:class="block3motion"} block checks if the sprite is touching the edge and, if it is, it turns left, right, up, or down as appropriate.
+Le bloc `rebondir si le bord est atteint`{:class="block3motion"} vérifie si le sprite touche le bord et, si c'est le cas, il tourne à gauche, à droite, vers le haut ou vers le bas, selon le cas.
 
 --- /collapse ---
 
-Of course, this will lead to an upside-down mosquito, so you need a `set rotation style`{:class="block3motion"} block again.
+Bien sûr, cela mènera à un moustique à l'envers. Tu as donc besoin d'un bloc `fixer le sens de rotation`{:class="block3motion"} à nouveau.
 
 --- task ---
 
-Update your code to set the rotation style of the mosquito to `left-right`{:class="block3motion"}:
+Mets à jour ton code pour définir le sens de rotation du moustique sur `gauche-droite`{:class="block3motion"} :
 
 ```blocks3
     when green flag clicked
@@ -102,13 +102,13 @@ Update your code to set the rotation style of the mosquito to `left-right`{:clas
 
 --- /task ---
 
-The mosquito moves back and forward now, but only in a straight line — a bit too easy for the player to catch with the parrot! You need to make the mosquito less predictable.
+Le moustique se déplace maintenant en avant et en arrière, mais uniquement en ligne droite - un peu trop facile à attraper pour le joueur avec le perroquet ! Tu dois rendre le moustique moins prévisible.
 
-You already know from a previous step how to make a sprite turn, so start there!
+Tu sais déjà, par une étape précédente, comment faire tourner un sprite alors commence par çà !
 
 --- task ---
 
-Add a turn into the mosquito’s flying and click the green flag.
+Ajoute un bloc tourner dans le moustique et clique sur le drapeau vert.
 
 ```blocks3
     when green flag clicked
@@ -123,19 +123,19 @@ Add a turn into the mosquito’s flying and click the green flag.
 
 --- /task ---
 
-It’s better, but there’s still too much of a pattern. It needs to be more random. Luckily, Scratch can do random for you! You’ll just need a new kind of block, called an **operator** block.
+C'est mieux, mais c'est encore trop prévisible. Cela doit être plus aléatoire. Heureusement, Scratch peut ajouter du hasard pour toi ! Tu as juste besoin d'un nouveau type de bloc, appelé bloc **opérateur**.
 
 --- collapse ---
 ---
-title: What's an operator?
+title: Qu'est-ce qu'un opérateur ?
 ---
 
-**Operators** take in one or more values (like numbers, text, true/false values) and give back a single value. You can tell the kind of value it will give back by the shape of the block: round ends give numbers or text, pointy ends give true/false.
+Les **opérateurs** prennent une ou plusieurs valeurs (comme des nombres, du texte, des valeurs vraies/fausses) et donnent une seule valeur. Tu peux indiquer le type de valeur qu'il renverra par la forme du bloc : les extrémités de l'arrondi donnent des nombres ou du texte, les extrémités pointues donnent vrai/faux.
 
 ```blocks3
     (() + ())
 
-    (join [hello ] [world])
+    (rejoindre [bonjour] [world])
 
     <[] = []>
 ```
@@ -144,7 +144,7 @@ title: What's an operator?
 
 --- task ---
 
-Find the `pick random`{:class="block3operators"} **operator** block, and plug it into the `turn degrees`{:class="block3motion"} **motion** block by clicking it and dragging it into the field where you set the number of degrees.
+Trouve le bloc `nombre aléatoire`{:class="block3operators"} dans **opérateur** , et assemble-le dans le bloc `tourner degrés`{:class="block3motion"} dans **mouvement** en cliquant dessus et en le faisant glisser dans le champ où tu définis le nombre de degrés.
 
 ```blocks3
     when green flag clicked
@@ -159,10 +159,10 @@ Find the `pick random`{:class="block3operators"} **operator** block, and plug it
 
 --- /task ---
 
-**Note**: you can change the minimum and maximum numbers it will pick, but the default values (`1` and `10`) are pretty good for this game, so you can just leave them.
+**Remarque** : tu peux modifier les nombres minimum et maximum qu’il choisira, mais les valeurs par défaut (`1` et `10`) sont plutôt bonnes pour ce jeu, tu peux donc les laisser.
 
 --- task ---
 
-Click the green flag to run the code!
+Clique sur le drapeau vert pour exécuter le code !
 
 --- /task ---
