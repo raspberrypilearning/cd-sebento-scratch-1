@@ -1,79 +1,79 @@
-## Getting set up
+## Mise en place
 
-Once you open Scratch, you’ll see a screen like the one below.
+Une fois que tu as ouvert Scratch, tu verras un écran comme celui ci-dessous.
 
-+ Look for each of the following parts and remember them.
++ Recherche chacune des parties suivantes et rappelle-toi où elles se trouvent.
 
-### The Stage
+### La scène
 
- ![Scratch window with the stage highlighted](images/hlStage.png)
-
---- collapse ---
----
-title: What is the Stage?
----
-This is where your Scratch programs run. It has:
-
-* One or more **backgrounds** \(images on the background of the screen\)
-
-* Any **code blocks** associated with it \(we’ll get to this\)
-
---- /collapse ---
-
-### The sprite list
-
- ![Scratch window with the sprite list highlighted](images/hlSpriteList.png)
+ ![La fenêtre Scratch avec la scène en surbrillance](images/hlStage.png)
 
 --- collapse ---
 ---
-title: What is a sprite?
+title: Qu'est-ce que la scène ?
 ---
+C’est là que tes programmes Scratch sont exécutés. Il y a :
 
-Any object that goes on the Stage is a **sprite**.
+* Un ou plusieurs **arrière-plans** (images sur l'arrière-plan de l'écran)
 
-The sprite includes:
-* The **image** on the stage
-* Any alternative **costumes** \(looks\) it has
-* Any **sounds** associated with it
-* Any **code blocks** associated with it ![](images/setup2.png)
+* Tous les **blocs de code** qui y sont associés (nous y reviendrons)
 
 --- /collapse ---
 
-### The code blocks palette
+### La liste des sprites
 
- ![Scratch window with the blocks pallet highlighted](images/hlBlocksPalette.png)
+ ![La fenêtre Scratch avec la liste des sprites en surbrillance](images/hlSpriteList.png)
 
 --- collapse ---
 ---
-title: Code blocks
+title: Qu'est-ce qu'un sprite ?
 ---
 
-Code in Scratch comes as blocks that you connect together to make programs. You choose blocks from the **code blocks palette** and drag them into the **current sprite panel**, then connect them.
+Tout objet qui va sur la scène est un **sprite**.
 
-There are ten categories of blocks. They are colour coded, and you can select each category from the list at the top of the **code blocks palette**.
+Le sprite comprend :
+* L' **image** sur la scène
+* Tout **costume** (apparence) supplémentaire qu'il possède
+* Tous les **sons** qui y sont associés
+* Tous les **blocs de code** qui y sont associés ![](images/setup2.png)
 
 --- /collapse ---
 
-### The current sprite panel
+### La palette des blocs de code
 
- ![Scratch window with the current sprite panel highlighted](images/hlCurrentSpritePanel.png)
+ ![La fenêtre Scratch avec la palette de blocs en surbrillance](images/hlBlocksPalette.png)
 
 --- collapse ---
 ---
-title: What is the current sprite?
+title: Blocs de code
 ---
 
-The **current sprite** is the one that's selected in the **sprite list**.
+Le code dans Scratch se présente sous la forme de blocs que tu relies pour créer des programmes. Tu choisis des blocs dans la palette **blocs de code**, fais-les glisser dans le panneau **sprite actuel**, puis connecte-les.
 
-The **current sprite panel** is where you can see the code, costumes, and sounds for the selected sprite.
+Il existe neuf catégories de blocs. Ils sont codés par couleur, et tu peux sélectionner chaque catégorie dans la liste en haut de la **palette de blocs de code**.
 
 --- /collapse ---
 
-Time to get coding! Go back to Scratch and click on the Scratch Cat in the sprite list. The cat is now the current sprite.
+### Le panneau du sprite actuel
+
+ ![La fenêtre Scratch avec le panneau du sprite actuel en surbrillance](images/hlCurrentSpritePanel.png)
+
+--- collapse ---
+---
+title: Qu'est-ce que le sprite actuel ?
+---
+
+Le **sprite actuel** est celui qui est sélectionné dans la **liste des sprites**.
+
+Le **panneau du sprite actuel** te permet de voir le code, les costumes, et les sons du sprite sélectionné.
+
+--- /collapse ---
+
+Il est temps de coder ! Retourne sur Scratch et clique sur le chat Scratch dans la liste des sprites. Le chat est maintenant le sprite actuel.
 
 --- task ---
 
-Go to the **Events** category in the **code blocks palette**, click the `when flag clicked`{:class="block3events"} block and drag it onto the **current sprite panel**.
+Va à la catégorie **Évènements** dans la palette **blocs de code**, clique sur le bloc `quand le drapeau vert est cliqué`{:class="block3events"} et glisse-le sur le **panneau de sprite actuel**.
 
 ```blocks3
 +    when green flag clicked
@@ -83,24 +83,24 @@ Go to the **Events** category in the **code blocks palette**, click the `when fl
 
 --- task ---
 
-Then go to **Looks** in the **code blocks palette** and find the block
+Puis va dans **Apparence** dans la palette **de blocs de code** et trouve le bloc
 
 ```blocks3
-    say [Hello!] for (2) secs
+    dire [Bonjour !] pendant (2) secondes
 ```
 
-Drag it onto the **current sprite panel**, connecting it to the bottom of the other block, like this:
+Glisse-le sur le **panneau de sprite actuel**, en le connectant en bas de l'autre bloc, comme ceci :
 
 ```blocks3
-    when green flag clicked
-    say [Hello!] for (2) secs
+    quand le drapeau vert est cliqué
+    dire [Bonjour !] pendant (2) secondes
 ```
 
 --- /task ---
 
 --- task ---
 
-Now click the **Start Program** button and watch what happens!
+Maintenant, clique sur le bouton **Commencer** et regarde ce qu'il se passe !
 
 --- /task ---
 
