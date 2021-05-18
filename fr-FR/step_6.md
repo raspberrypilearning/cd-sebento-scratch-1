@@ -1,37 +1,37 @@
-## All the sprites
+## Tous les sprites
 
-Now you have a parrot that you can move around using the arrow keys. Nice! Time to add some mosquitos for it to catch!
+Maintenant tu as un perroquet que tu peux déplacer en utilisant les touches fléchées. Super ! Il est temps d'ajouter quelques moustiques à attraper !
 
 --- task ---
 
-Click the **New sprite** button. Scratch doesn't have any ready-made mosquito costumes, so you are going to draw one!
+Clique sur le bouton **Nouveau sprite**. Scratch n'a pas de costume de moustique tout prêt, donc tu vas en dessiner un !
 
 ![](images/spritesPaintNew.png)
 
-If your mosquito is a bit big compared to your parrot, you can use the size control to make both sprites the right size!
+Si ton moustique est un peu gros par rapport à ton perroquet, tu peux utiliser le contrôle de taille pour que les deux sprites aient la bonne taille !
 
 ![](images/sprites2.png)
 
-Change the value in the size control to make the sprite bigger or smaller.
+Modifie la valeur dans le contrôle de taille pour rendre le sprite plus grand ou plus petit.
 
 --- /task ---
 
-Nice! Later, you're going to add some code to make the mosquito move around on its own, without help from the player. Your player will be the parrot, trying to catch the mosquito.
+Super ! Plus tard, tu vas ajouter du code pour faire bouger le moustique tout seul, sans l'aide du joueur. Ton joueur sera le perroquet, essayant d'attraper le moustique.
 
 --- collapse ---
 ---
-title: What about the backwards parrot?
+title: Et le perroquet à l'envers ?
 ---
 
-It does look a little funny to have that parrot flying backwards. Just like you’d usually turn around rather than walking backwards, the parrot would turn around rather than flying backwards. Luckily for you, Scratch has a block for this!
+Ça fait bizarre de voir ce perroquet voler en arrière. Comme tu le ferais en général plutôt que de marcher en arrière, le perroquet se retournerait plutôt que de voler en arrière. Heureusement pour toi, Scratch a un bloc pour cela !
 
-The `point in direction`{:class="block3motion"} block lets you pick the direction your sprite is pointing in. You’ll find it in the **Motion** blocks section. You can type in any number of degrees, to make the sprite point wherever you like.
+Le bloc `s'orienter vers`{:class="block3motion"} nous permet de choisir la direction dans laquelle ton sprite est s'oriente. Tu le trouveras dans la section des blocs **Mouvement**. Tu peux taper n'importe quel nombre de degrés, pour orienter le sprite où tu le souhaites.
 
 --- /collapse ---
 
 --- task ---
 
-Grab a couple of `point in direction`{:class="block3motion"} block from the **Motion** list and connect them to your parrot’s code, like this:
+Prends quelques copies du bloc `s'orienter vers`{:class="block3motion"} de la liste **Mouvement** et connecte-les au code de ton perroquet, comme suit :
 
 ```blocks3
     when [left arrow v] key pressed
@@ -49,7 +49,7 @@ Grab a couple of `point in direction`{:class="block3motion"} block from the **Mo
 
 --- task ---
 
-Since the parrot has turned around, change the direction it flys in when the left arrow is pressed:
+Puisque le perroquet s'est retourné, change la direction dans laquelle il vole lorsque la flèche de gauche est pressée :
 
 ```blocks3
     when [left arrow v] key pressed
@@ -59,26 +59,26 @@ Since the parrot has turned around, change the direction it flys in when the lef
 
 --- /task ---
 
-If you tried moving the parrot around after you added the `point in direction`{:class="block3motion"} blocks, you might have noticed something a little strange happening. The parrot may not be turning quite right!
+Si tu essaies de déplacer le perroquet après avoir ajouté les blocs `s'orienter vers`{:class="block3motion"}, tu auras surement remarqué quelque chose d'un peu étrange. Le perroquet ne tourne peut-être pas très bien !
 
-![Upside down parrot](images/spritesUpsideDown.png)
+![Perroquet à l'envers](images/spritesUpsideDown.png)
 
 --- collapse ---
 ---
-title: Why does it go upside down?
+title: Pourquoi il se retourne ?
 ---
 
-The problem here is that the parrot sprite started, as all sprites do, with the 'all around' **rotation style**, and what you need it to have is the 'left-right' style.
+Le problème ici est que le sprite perroquet a commencé, comme tous les sprites le font, avec le **sens de rotation** « 360° » et ce dont tu as besoin est le style « gauche-droite ».
 
-As usual, there’s a block for that, and it’s in **Motion**!
+Comme d'habitude, il existe un bloc pour cela, et c'est dans **Mouvement** !
 
 --- /collapse ---
 
 --- task ---
 
-Look in the **Motion** category for the block `set rotation style`{:class="block3motion"}.
+Recherche dans la catégorie **Mouvement** le bloc` fixer le sens de rotation `{:class="block3motion"}.
 
-Add the block to your reset code from earlier and set the rotation style to `left-right`{:class="block3motion"}, like this:
+Ajoute le bloc à ton code de réinitialisation plus tôt et fixe le sens de rotation sur `gauche-droite`{:class="block3motion"}, comme ceci :
 
 ```blocks3
     when green flag clicked
