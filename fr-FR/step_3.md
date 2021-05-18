@@ -1,73 +1,73 @@
-## Adding & removing code
+## Ajouter et supprimer du code
 
-Great! You’ve written your first Scratch program. Time to learn a little more about getting code in and out of Scratch! Scratch code is made up of **blocks** that you snap together, such as these:
+Super ! Tu as écrit ton premier programme Scratch. Il est temps d'en apprendre un peu plus sur l'ajout et la suppression de code dans Scratch ! Le code Scratch est composé de **blocs** que tu assembles ensemble, tels que ceux-ci :
 
 ![](images/code1.png)
 
-You will find all blocks in the **code blocks palette**,where they are broken up into different categories.
+Tu trouveras tous les blocs dans la **palette de blocs de code**, où ils sont répartis en différentes catégories.
 
 --- collapse ---
 ---
-title: Using blocks from the different categories
+title: Utilisation de blocs de différentes catégories
 ---
 
-Clicking on a category name to see the blocks in that category. Here, the **Motion** category is selected.
+Clique sur un nom de catégorie pour voir les blocs dans cette catégorie. Ici, la catégorie **Mouvement** est sélectionnée.
 
 ![](images/code2a.png)
 
-All of the blocks in the selected category are shown in a list. You can pick the one you want, click on it, hold down the mouse button, and then just drag it onto the **current sprite panel** and let go.
+Tous les blocs de la catégorie sélectionnée sont affichés dans une liste. Tu peux choisir celui que tu veux, clique dessus, maintiens le bouton de la souris, puis fais-le glisser sur le **panneau de sprite actuel** et relâche-le.
 
-Once the block is in the **current sprite panel**, you can move it around and connect it to other blocks.
+Une fois que le bloc est dans le ** panneau de sprite actuel**, tu peux le déplacer et le connecter à d'autres blocs.
 
 ![](images/code2b.png)
 
 --- /collapse ---
 
-If you want to see what a block does, you can double-click on it to make it run! Try double-clicking on some of the blocks to see what they do.
+Si tu veux voir ce que fait un bloc, tu peux double-cliquer dessus pour l'exécuter ! Essaie de double-cliquer sur certains blocs pour voir ce qu’ils font.
 
 --- collapse ---
 ---
-title: Running the code
+title: Exécuter le code
 ---
 
-Normally, you want your blocks to run automatically whenever something specific happens. This is why most of your programs will start with a block from the **events** category. Most often, it will be this one:
+Normalement, tu veux que tes blocs s'exécutent automatiquement chaque fois que quelque chose de spécifique se produit. C'est pourquoi la plupart de tes programmes commenceront par un bloc de la catégorie **événements**. Le plus souvent, ce sera celui-ci :
 
 ```blocks3
     when green flag clicked
 ```
 
-The code blocks connected to this block will run after the **green flag** is clicked.
+Les blocs de code reliés à ce bloc seront exécutés après que le **drapeau vert** sera cliqué.
 
-Code blocks run from top to bottom, so the order in which you snap your code together in matters. In this example, the sprite will `say`{:class="block3looks"} `Hello!`{:class="block3looks"} before it will `play`{:class="block3sound"} the `meow`{:class="block3sound"} sound.
+Les blocs de code s'exécutent de haut en bas, donc l'ordre dans lequel tu relies ton code est important. Dans cet exemple, le sprite `dire`{:class="block3looks"} `Bonjour !`{:class="block3looks"} avant qu'il `ne joue`{:class="block3sound"} le son `miaou`{:class="block3sound"}.
 
 
 ```blocks3
-    when green flag clicked
-    say [Hello!]
-    play sound [meow v]
+    quand le drapeau vert est cliqué
+    dire [Bonjour !]
+    jouer le son [miaou v]
 ```
 
 --- /collapse ---
 
-Removing or deleting code blocks you don’t want in your program is easy! Just drag them back into the code blocks palette.
+Il est facile d'enlever ou de supprimer des blocs de code que tu ne veux pas dans ton programme ! Fais-les simplement glisser dans la palette des blocs de code.
 
-**Be careful:** when you drag a block into the code blocks palette, all the blocks connected to the block you drag will also be deleted, so make sure to separate code blocks you want to keep from those you want to remove. If you delete some code blocks by accident and want to get them back, you can right-click and then click on the **undo** option to get everything back.
+**Attention :** quand tu fais glisser un bloc dans la palette de blocs de code, tous les blocs connectés au bloc que tu fais glisser seront également supprimés, alors assure-toi de séparer les blocs de code que tu veux garder de ceux que tu veux retirer. Si tu supprimes des blocs de code par accident et que tu veux les récupérer, tu peux faire un clic droit puis cliquer sur l'option **annuler** pour tout récupérer.
 
 ![](images/code6.png)
 
 --- task ---
 
-Try adding, deleting, and undeleting some code blocks!
+Essaie d'ajouter, de supprimer, et d'annuler la suppression de certains blocs de code !
 
 --- /task ---
 
-### Putting it all together
+### Les assembler
 
-Now you know how to move code around and make things happen, time to try a simple program: making the Scratch Cat walk in a circle.
+Maintenant que tu sais comment déplacer le code et les exécuter, il est temps d'essayer un programme simple : faire marcher le chat Scratch en cercle.
 
 --- task ---
 
-Make sure you have the cat selected in the sprite list and then drag the following blocks together. You’ll find them in the **Events** and **Motion** lists.
+Assure-toi que le chat est sélectionné dans la liste des sprites et fais glisser les blocs suivants ensemble. Tu les trouveras dans les listes **Événements** et **Mouvement**.
 
 ```blocks3
 +    when green flag clicked
@@ -78,19 +78,19 @@ Make sure you have the cat selected in the sprite list and then drag the followi
 
 --- task ---
 
-Then, click on the green flag above the **Stage** a few times.
+Ensuite, clique plusieurs fois sur le drapeau vert au-dessus de la **Scène**.
 
 ![](images/code7.png)
 
 --- /task ---
 
-Note: If you click too many times and the cat walks away, you can drag it back!
+Remarque : si tu cliques trop souvent sur le drapeau et que le chat s'éloigne, tu peux le faire glisser !
 
-You should see the cat walking in a straight line...not exactly what you want, right?
+Tu devrais voir le chat marcher en ligne droite... ce n'est pas exactement ce que tu veux, exact ?
 
 --- task ---
 
-Snap a turn block to the end to make it walk in a circle. It’s in the **Motion** list too.
+Assemble le bloc tourner à la fin pour faire marcher le sprite du chat en cercle. Il se trouve aussi dans la liste **Mouvement**.
 
 ```blocks3
     when green flag clicked
@@ -100,14 +100,14 @@ Snap a turn block to the end to make it walk in a circle. It’s in the **Motion
 
 --- /task ---
 
-Try clicking the green flag a few more times to see the cat turn in a circle.
+Essaie de cliquer sur le drapeau vert plusieurs fois pour voir le chat tourner en cercle.
 
 --- collapse ---
 ---
-title: How does turning work?
+title: Comment fonctionne la rotation ?
 ---
 
-This block makes the cat turn 15 degrees of the full 360 degrees that make up a circle. You can change that number, or the number of steps, by clicking on the number and typing in a new value.
+Ce bloc fait tourner le chat de 15 degrés sur 360 degrés qui forment un cercle. Tu peux modifier ce nombre ou le nombre d'étapes en cliquant sur le numéro et en tapant une nouvelle valeur.
 
 ![](images/code9.png)
 
@@ -115,7 +115,7 @@ This block makes the cat turn 15 degrees of the full 360 degrees that make up a 
 
 --- task ---
 
-Now save your work!
+Maintenant, enregistre ton travail !
 
 --- /task ---
 
