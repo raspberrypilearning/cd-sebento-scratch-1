@@ -33,7 +33,7 @@ Maintenant tu dois mettre à jour la variable chaque fois qu'un moustique est ma
 
 --- /task ---
 
-Dans la section **Variables** , prend le `définir [ma variable v] à [0]`{:class="block3variables"} et `ajouter [1] à [ma variable v]`{:class ="block3variables"}. Dans chacun des blocs, clique sur la petite flèche puis choisis `score` dans la liste. Puis mets les blocs dans ton programme :
+Dans la section **Variables** , prend le `définir [ma variable v] à [0]`{:class="block3variables"} et `ajouter [1] à [ma variable v]`{:class="block3variables"}. Dans chacun des blocs, clique sur la petite flèche puis choisis `score` dans la liste. Puis mets les blocs dans ton programme :
 
 --- task ---
 
@@ -67,7 +67,7 @@ Cool ! Maintenant, tu as un score et tout.
 Enfin, ajoutez ce code pour que le perroquet présente le jeu :
 
 ```blocks3
-    quand le drapeau vert est cliqué
+    when green flag clicked
     mettre [score v] à [0]
     fixer le sens de rotation [gauche-droite v]
     aller à x: (0) y: (0)

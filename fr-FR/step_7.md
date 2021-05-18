@@ -135,7 +135,7 @@ Les **opérateurs** prennent une ou plusieurs valeurs (comme des nombres, du tex
 ```blocks3
     (() + ())
 
-    (rejoindre [bonjour] [world])
+    (join [bonjour] [world])
 
     <[] = []>
 ```

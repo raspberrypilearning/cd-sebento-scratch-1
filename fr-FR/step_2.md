@@ -92,7 +92,7 @@ Puis va dans **Apparence** dans la palette **de blocs de code** et trouve le blo
 Glisse-le sur le **panneau de sprite actuel**, en le connectant en bas de l'autre bloc, comme ceci :
 
 ```blocks3
-    quand le drapeau vert est cliqué
+    when green flag clicked
     dire [Bonjour !] pendant (2) secondes
 ```
 

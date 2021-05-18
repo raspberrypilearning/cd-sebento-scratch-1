@@ -42,7 +42,7 @@ Les blocs de code s'exécutent de haut en bas, donc l'ordre dans lequel tu relie
 
 
 ```blocks3
-    quand le drapeau vert est cliqué
+    when green flag clicked
     dire [Bonjour !]
     jouer le son [miaou v]
 ```
