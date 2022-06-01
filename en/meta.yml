@@ -1,7 +1,8 @@
+---
 title: Mosquito patrol
 hero_image: images/banner.png
 description: Make your first Scratch program!
-theme: orange # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: orange
 duration: 2
 listed: true
 ingredient: false
@@ -14,15 +15,19 @@ hardware: ''
 software: scratch
 version: 3.0.0
 last_tested: 2018-05-01
-steps: 
+steps:
 - title: Introduction
 - title: Getting set up
 - title: Adding & removing code
+  completion:
+  - engaged
 - title: Setting the scene
 - title: Moving things around
 - title: All the sprites
 - title: Remote-control mosquito
 - title: Let's catch some mosquitoes!
 - title: Keeping score
-- title: "Challenge: winning the game"
+  completion:
+  - internal
+- title: 'Challenge: winning the game'
   challenge: true
