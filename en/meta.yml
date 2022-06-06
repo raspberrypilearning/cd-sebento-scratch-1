@@ -17,15 +17,17 @@ version: 3.0.0
 last_tested: 2018-05-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Getting set up
 - title: Adding & removing code
+  completion:
+  - engaged
 - title: Setting the scene
 - title: Moving things around
 - title: All the sprites
 - title: Remote-control mosquito
 - title: Let's catch some mosquitoes!
-  completion: internal
 - title: Keeping score
+  completion:
+  - internal
 - title: 'Challenge: winning the game'
   challenge: true

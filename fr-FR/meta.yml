@@ -17,15 +17,17 @@ version: 3.0.0
 last_tested: 2018-05-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Mise en place
 - title: Ajouter et supprimer du code
+  completion:
+  - engaged
 - title: Préparer la scène
 - title: Déplacer des objets
 - title: Tous les sprites
 - title: Moustique contrôlé à distance
 - title: Attrapons des moustiques !
-  completion: internal
 - title: Garder le score
+  completion:
+  - internal
 - title: 'Défi : gagner la partie'
   challenge: true

@@ -17,15 +17,17 @@ version: 3.0.0
 last_tested: 2018-05-01
 steps:
 - title: Inleiding
-  completion: engaged
 - title: Opstarten
 - title: Code toevoegen & verwijderen
+  completion:
+  - engaged
 - title: Het instellen van de scène
 - title: Laat dingen bewegen
 - title: Alle sprites
 - title: Op afstand bestuurbare mug
 - title: Laten we wat muggen vangen!
-  completion: internal
 - title: Score bijhouden
+  completion:
+  - internal
 - title: 'Uitdaging: het spel winnen'
   challenge: true
