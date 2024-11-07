@@ -4,7 +4,7 @@ hero_image: images/banner.png
 description: Make your first Scratch program!
 theme: orange
 duration: 2
-listed: true
+listed: false
 ingredient: false
 copyedit: true
 curriculum: ''
